@@ -1,0 +1,7 @@
+site_name: JavaMini Documentation
+theme: readthedocs
+docs_dir: 'doc'
+pages:
+    - 'Home': 'index.md'
+    - 'Core':
+        - 'Number': 'core/number.md'
