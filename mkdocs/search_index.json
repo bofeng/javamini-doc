@@ -1,0 +1,29 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "What's Java?\n\n\ntodo\n\n\nAbout JavaMini\n\n\ntodo\n\n\nQuick Start\n\n\nCopy following example code to JavaMini editor then click the \"Run\" button:\n\n\n\n\nSay hello\n\n\n\n\npublic class Hello{\n    public static void main(String[] args) {\n        System.out.println(\nHello Java\n);\n    }\n}", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#whats-java", 
+            "text": "todo", 
+            "title": "What's Java?"
+        }, 
+        {
+            "location": "/#about-javamini", 
+            "text": "todo", 
+            "title": "About JavaMini"
+        }, 
+        {
+            "location": "/#quick-start", 
+            "text": "Copy following example code to JavaMini editor then click the \"Run\" button:   Say hello   public class Hello{\n    public static void main(String[] args) {\n        System.out.println( Hello Java );\n    }\n}", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/core/number/", 
+            "text": "todo", 
+            "title": "Number"
+        }
+    ]
+}
