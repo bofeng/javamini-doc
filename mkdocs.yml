@@ -4,4 +4,12 @@ docs_dir: 'doc'
 pages:
     - 'Home': 'index.md'
     - 'Core':
+        - 'Comments': 'core/comments.md'
         - 'Number': 'core/number.md'
+        - 'Operators': 'core/operators.md'
+        - 'Booleans & Comparison Operators': 'core/boolean.md'
+        - 'String': 'core/string.md'
+        - 'Arrays': 'core/arrays.md'
+        - 'Standard Input/Output': 'core/stdio.md'
+        - 'Exceptions': 'core/exceptions.md'
+        - 'Standard Java Library': 'core/stdlib.md'
