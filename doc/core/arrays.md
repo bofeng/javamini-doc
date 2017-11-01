@@ -1,4 +1,5 @@
-# 1-Dimensional Arrays
+#Arrays
+### 1-Dimensional Arrays
 
 <span style="color:blue">**How to Declare an Array**</span>    
 It is declared in the following format:  
@@ -47,7 +48,7 @@ int[] arr4 = new int[20];
 System.out.print(arr4.length); //This would print out 4
 ```
 ---
-# 2-Dimensional Arrays  
+### 2-Dimensional Arrays  
 <span style="color:blue">** How to Declare a 2-Dimensional Array ** </span>  
 Declaring a 2-dimensional array is similar to the way that the 1-dimensional array is declared. Instead of only having a "size" parameter, the 2-dimensional array has two size parameters, usually denoted with row and column.  
 
@@ -101,7 +102,7 @@ System.out.print(arr4.length); //This would print out 20
 System.out.print(arr4[0].length); //This would print out 5
 ```
 ---	
-# Initializing Arrays with a List
+### Initializing Arrays with a List
 <span style="color:blue">**How to Initialize in an 1-Dimensional Array with a List**  </span>  
 
 You need to use the "{" and "}" to denote the beginning and the end of the new list. 

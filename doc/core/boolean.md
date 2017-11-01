@@ -5,7 +5,7 @@ Booleans are used to show the logical values of _true_ and _false_.
 &nbsp;&nbsp; -- true  
 &nbsp;&nbsp; -- false  
 
-#Logical Operators
+###Logical Operators
 * ```!``` : Negates the value; For !x, if x is **true**, then !x is _false_. If x is **false**, then !x is _true_.
 * ```&&``` : If x && y, if both is **true**, then x && y is _true_, else x && y is _false_.
 * ```||``` : If x || y, if both is **false**, then x || y is _false_, else x || y is _true_.
@@ -24,7 +24,7 @@ System.out.println(x||y); //Prints true
 System.out.println(y||y); //Prints false
 ```
 
-#Comparison Operators
+###Comparison Operators
 * ```==``` : equal
 * ```!=``` : not equal
 * ```<``` : strictly less than
@@ -44,7 +44,7 @@ System.out.println(34 <= 23); //Prints false
 System.out.println(34 < 34); //Prints false
 ```
 
-#Object Comparison
+###Object Comparison
 There are two ways to compare two objects. One way is using the "==" comparison and the other way is using the .equals() function that exists in objects.  
 
 ** == **  
