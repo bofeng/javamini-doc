@@ -100,5 +100,56 @@ int[] arr4 = new int[20][5];
 System.out.print(arr4.length); //This would print out 20
 System.out.print(arr4[0].length); //This would print out 5
 ```
----
+---	
 # Initializing Arrays with a List
+<span style="color:blue">**How to Initialize in an 1-Dimensional Array with a List**  </span>  
+
+You need to use the "{" and "}" to denote the beginning and the end of the new list. 
+
+* Declare the array first and then initialize the array afterwards:  
+&nbsp;&nbsp;**int[] arrays;**  
+&nbsp;&nbsp;**arrays = new int[]{w,x,y...};**  
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.
+
+```
+int[] arrays; //Declares a new array called arrays
+arrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. 
+//arrays[0] = 4, arrays[4] = 8
+```
+
+* Declare and initialize the array at the same time:  
+&nbsp;&nbsp;**int[] arrays = {w,x,y...};**   
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.
+
+```
+int[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. 
+// arrays[0] = 4, arrays[4] = 8
+```
+
+<span style="color:blue">**How to Initialize in an 2-Dimensional Array with a List**  </span>  
+The main difference between initializing a 2-Dimensional Array and a 1-Dimensional array is the addition of a second parameter for size.  
+
+Rather than just using the "{}", to denote the new list, you need to nest "{" and "}". The notation for this is usually {{a,b,c}, {d,e,f}, {g,h,i}, {j,k,l}}.  
+
+The first "{" and the last "}" denotes the entire list. The first pair of "{}" that encloses a,b, and c denotes the first row of index 0. The value a would be in index [0][0], the value b would be in [0][1], and the value b would be in [0][2]. The last grouping represented by {j,k,l} would be the fourth row, which has the index 0. 
+
+
+* Declare the array first and then initialize the array afterwards:  
+&nbsp;&nbsp;**int[][] arrays;**  
+&nbsp;&nbsp;**arrays = new int[][]{{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};**  
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][1] = x, and arrays[1][2] = y2.
+
+```
+int[][] arrays; //Declares a new array called arrays
+arrays = new int[]{{4,5,6,7,8}, {2,1,2,9,5}}; //Initialized arrays with the values from the list.
+//arrays[0][0] = 4, arrays[1][3] = 9
+```
+
+* Declare and initialize the array at the same time:  
+&nbsp;&nbsp;**int[] arrays = {{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};**   
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][0] = w, and arrays[1][1] = x2.
+
+```
+int[][] array4 = {{4,5,6,7,8}, {0,1,3,2,11}}; //Initialized arrays with the list values. 
+// arrays[0][0] = 4, arrays[1][4] = 11
+```
