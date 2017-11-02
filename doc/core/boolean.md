@@ -1,9 +1,11 @@
-#Boolean
+#Boolean & Comparison Operators
+
+###Boolean
 Booleans are used to show the logical values of _true_ and _false_.  
 
 **Constants **   
-&nbsp;&nbsp; -- true  
-&nbsp;&nbsp; -- false  
+    -  true  
+    -  false  
 
 ###Logical Operators
 * ```!``` : Negates the value; For !x, if x is **true**, then !x is _false_. If x is **false**, then !x is _true_.
@@ -50,7 +52,7 @@ There are two ways to compare two objects. One way is using the "==" comparison 
 ** == **  
 The "==" is used to compare when primitive values, boolean, byte, char, double, int, float, short, and byte, are equal.It only checks if two values point to the same reference and does not check if the contents in the reference is the same.      
 
-** .equals() **
+** .equals() **  
 The ".equals()" is used to compare when two objects are equal, such as Strings. It checks if the contents within the reference are the same. A user cannot use .equals() function to check if primitive values are the same because primitive values cannot be dereferenced.  
 
 
