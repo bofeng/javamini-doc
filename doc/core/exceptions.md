@@ -1,4 +1,5 @@
 #Exceptions
+An exception is defined as "is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions". This means that something that shouldn't have happened in your program happened and the program has been terminated. 
 
 ##Types of Exceptions
 ###ArithmeticException  
