@@ -5,11 +5,11 @@
 * ```*```: if a * b, you multiply a and b
 * ```/```: if a / b, you divide a by b
 * ```%```: if a & b, you return the remainder after a / b
-
+---
 ##Incrementing or Decrementing
 * ```++```: if a++, you increase a by 1
 * ```--```: if a--, you decrease b by 1
-
+---
 ##Assignment
 * ```=```: if a = 10, you set the value of a to 10
 * ```+=```: if a += b, you set the value of a to the original value of a + b

@@ -1,8 +1,3 @@
-todo:
-```
-- go over int, double, byte, short, long, float
-- casting numbers (int), (double)
-```
 #Number
 Numbers of Java are all primitive types in Java.  
 
@@ -18,13 +13,14 @@ An _IEEE-754 floating point_ is a number that can be an integer or decimal value
 * ```long```: This is a signed 64-bit two's complement integer (this value takes _eight bytes_). It has a minimum value of -2<sup>63</sup> and a maximum value of 2<sup>63</sup>-1. 
 
 ###IEEE-754 Floating Point
-* ```float```: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined. 
-**Note: ** A floating point declaration must have a "f" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  
+* ```double```: This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.
+* ```float```: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.
 ```
 float f = 123.5f;
-```
-* ```double```: This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.
+```  
+**Note:** A floating point declaration must have a "f" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  
 
+---
 ##How to Cast Numbers
 You can make it so that a smaller number is placed in a larger type _without_ explicit casting. The rules are as follows:
 
