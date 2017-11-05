@@ -1,10 +1,3 @@
-todo:
-```
-Arithmetic Operators: + - * / %
-Increment/Decrement: ++ --
-Assignment: = += -= *= /= %=
-```
-
 #Operators
 ##Arithmetic Operators
 * ```+```: if a + b, you add the two together
@@ -33,5 +26,5 @@ a /= 3; //This changes a to 5
 a %= 2; //This changes a to 1
 
 int c = a + 8; //This sets c to 1 + 8 = 9
-c *= 2; //This sets c to 18.
+c *= 2; //This sets c to 18
 ```
