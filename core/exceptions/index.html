@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Number - JavaMini Documentation</title>
+  <title>Exceptions - JavaMini Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Number";
-    var mkdocs_page_input_path = "core\\number.md";
-    var mkdocs_page_url = "/core/number/";
+    var mkdocs_page_name = "Exceptions";
+    var mkdocs_page_input_path = "core\\exceptions.md";
+    var mkdocs_page_url = "/core/exceptions/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -60,23 +60,9 @@
                     
     <a class="" href="../comments/">Comments</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Number</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#number">Number</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#types-of-numbers-in-java">Types of Numbers in Java</a></li>
-        
-            <li><a class="toctree-l4" href="#how-to-cast-numbers">How to Cast Numbers</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../number/">Number</a>
                 </li>
                 <li class="">
                     
@@ -98,9 +84,21 @@
                     
     <a class="" href="../stdio/">Standard Input/Output</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../exceptions/">Exceptions</a>
+    <a class="current" href="./">Exceptions</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#exceptions">Exceptions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#types-of-exceptions">Types of Exceptions</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -135,7 +133,7 @@
         
       
     
-    <li>Number</li>
+    <li>Exceptions</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -145,53 +143,19 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="number">Number</h1>
-<p>Numbers of Java are all primitive types in Java.  </p>
-<h2 id="types-of-numbers-in-java">Types of Numbers in Java</h2>
-<p>There are <strong>integer</strong> types and <strong>IEEE-754 floating point</strong> types.<br />
-An <em>integer</em> is a number that is a positive or negative whole number or 0.<br />
-An <em>IEEE-754 floating point</em> is a number that can be an integer or decimal values between them.  </p>
-<h3 id="integer-types">Integer Types</h3>
-<ul>
-<li><code>byte</code>: This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes <em>one byte</em>). It has a minimum value of -128 and a maximum value of 127. </li>
-<li><code>short</code>: This is a signed 16-bit two's complement integer (this value takes <em>two bytes</em>). It has a minimum value of -32768 and a maximum value of 32767.  </li>
-<li><code>int</code>: This is a signed 32-bit two's complement integer (this value takes <em>four bytes</em>). It has a minimum value of -2<sup>31</sup> and a maximum value of 2<sup>31</sup>-1.  </li>
-<li><code>long</code>: This is a signed 64-bit two's complement integer (this value takes <em>eight bytes</em>). It has a minimum value of -2<sup>63</sup> and a maximum value of 2<sup>63</sup>-1. </li>
-</ul>
-<h3 id="ieee-754-floating-point">IEEE-754 Floating Point</h3>
-<ul>
-<li><code>float</code>: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.</li>
-</ul>
-<pre><code>float f = 123.5f;
-</code></pre>
-
-<p><strong>Note:</strong> A floating point declaration must have a "f" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  </p>
-<ul>
-<li><code>double</code>: This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.</li>
-</ul>
-<hr />
-<h2 id="how-to-cast-numbers">How to Cast Numbers</h2>
-<p>You can make it so that a smaller number is placed in a larger type <em>without</em> explicit casting. The rules are as follows:</p>
-<ul>
-<li>byte to short, int, long, float, or double  </li>
-<li>short to int, long, float, or double  </li>
-<li>int to long, float, or double  </li>
-<li>long to float or double  </li>
-<li>float to double  </li>
-</ul>
-<p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>byte x = 235;
-long s = x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 235.
-</code></pre>
-
-<p>Explicit casting is neaded to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.<br />
-The values have to be explicitly cast because the program may be <strong>losing</strong> information so the values have to be explicitly cast.</p>
-<p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>double x = 235;
-long s = (double) x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 235.
-</code></pre>
+                <h1 id="exceptions">Exceptions</h1>
+<p>An exception is defined as "is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions". This means that something that shouldn't have happened in your program happened and the program has been terminated. </p>
+<h2 id="types-of-exceptions">Types of Exceptions</h2>
+<h3 id="arithmeticexception">ArithmeticException</h3>
+<p>This exception is thrown when the math attempting to be calculated is not a valid arithmetic calculation, ie. if you try to divide a number by 0.</p>
+<h3 id="nullpointerexception">NullPointerException</h3>
+<p>This exception is thrown when a program tries to call an object but the object is null, ie. if an object is attempted to be modified, but the object is null. </p>
+<h3 id="indexoutofboundsexception">IndexOutOfBoundsException</h3>
+<p>An index that is called in any object that is not in bounds or out of range. The index is either less than zero or greater than size - 1. </p>
+<h3 id="arrayindexoutofboundsexception">ArrayIndexOutOfBoundsException</h3>
+<p>The ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBoundsException. It is thrown specificially when an index that is referenced from an array is not in bounds or out of range. The index is either less than zero or greater than size - 1. </p>
+<h3 id="illegalargumentexception">IllegalArgumentException</h3>
+<p>This exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.  </p>
               
             </div>
           </div>
@@ -199,10 +163,10 @@ float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 2
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../operators/" class="btn btn-neutral float-right" title="Operators">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../stdlib/" class="btn btn-neutral float-right" title="Standard Java Library">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../comments/" class="btn btn-neutral" title="Comments"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../stdio/" class="btn btn-neutral" title="Standard Input/Output"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -228,10 +192,10 @@ float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 2
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../comments/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../stdio/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../operators/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../stdlib/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

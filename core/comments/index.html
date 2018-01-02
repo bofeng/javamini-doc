@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Number - JavaMini Documentation</title>
+  <title>Comments - JavaMini Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Number";
-    var mkdocs_page_input_path = "core\\number.md";
-    var mkdocs_page_url = "/core/number/";
+    var mkdocs_page_name = "Comments";
+    var mkdocs_page_input_path = "core\\comments.md";
+    var mkdocs_page_url = "/core/comments/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -56,27 +56,27 @@
 		
     <span class="caption-text">Core</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../comments/">Comments</a>
-                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">Number</a>
+    <a class="current" href="./">Comments</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#number">Number</a></li>
+    <li class="toctree-l3"><a href="#comments">Comments</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#types-of-numbers-in-java">Types of Numbers in Java</a></li>
+            <li><a class="toctree-l4" href="#different-type-of-comments">Different Type of Comments</a></li>
         
-            <li><a class="toctree-l4" href="#how-to-cast-numbers">How to Cast Numbers</a></li>
+            <li><a class="toctree-l4" href="#javadoc">Javadoc</a></li>
         
         </ul>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../number/">Number</a>
                 </li>
                 <li class="">
                     
@@ -135,7 +135,7 @@
         
       
     
-    <li>Number</li>
+    <li>Comments</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -145,52 +145,46 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="number">Number</h1>
-<p>Numbers of Java are all primitive types in Java.  </p>
-<h2 id="types-of-numbers-in-java">Types of Numbers in Java</h2>
-<p>There are <strong>integer</strong> types and <strong>IEEE-754 floating point</strong> types.<br />
-An <em>integer</em> is a number that is a positive or negative whole number or 0.<br />
-An <em>IEEE-754 floating point</em> is a number that can be an integer or decimal values between them.  </p>
-<h3 id="integer-types">Integer Types</h3>
+                <h1 id="comments">Comments</h1>
+<p>All types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects. </p>
+<h3 id="different-type-of-comments">Different Type of Comments</h3>
 <ul>
-<li><code>byte</code>: This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes <em>one byte</em>). It has a minimum value of -128 and a maximum value of 127. </li>
-<li><code>short</code>: This is a signed 16-bit two's complement integer (this value takes <em>two bytes</em>). It has a minimum value of -32768 and a maximum value of 32767.  </li>
-<li><code>int</code>: This is a signed 32-bit two's complement integer (this value takes <em>four bytes</em>). It has a minimum value of -2<sup>31</sup> and a maximum value of 2<sup>31</sup>-1.  </li>
-<li><code>long</code>: This is a signed 64-bit two's complement integer (this value takes <em>eight bytes</em>). It has a minimum value of -2<sup>63</sup> and a maximum value of 2<sup>63</sup>-1. </li>
-</ul>
-<h3 id="ieee-754-floating-point">IEEE-754 Floating Point</h3>
-<ul>
-<li><code>float</code>: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.</li>
-</ul>
-<pre><code>float f = 123.5f;
-</code></pre>
-
-<p><strong>Note:</strong> A floating point declaration must have a "f" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  </p>
-<ul>
-<li><code>double</code>: This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.</li>
-</ul>
-<hr />
-<h2 id="how-to-cast-numbers">How to Cast Numbers</h2>
-<p>You can make it so that a smaller number is placed in a larger type <em>without</em> explicit casting. The rules are as follows:</p>
-<ul>
-<li>byte to short, int, long, float, or double  </li>
-<li>short to int, long, float, or double  </li>
-<li>int to long, float, or double  </li>
-<li>long to float or double  </li>
-<li>float to double  </li>
+<li><code>// text</code> : This is a comment where the compiler ignores everything from the "//" to the end of the line</li>
+<li><code>/* text */</code> : This is a comment where the compiler ignores everything enclosed by the "/*" and "*/". These type of quotes can span multiple lines.</li>
+<li><code>/** text */</code> : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the "<strong>/**</strong>" and "<strong>*/</strong>". These type of documentation usually spans multiple lines. </li>
 </ul>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>byte x = 235;
-long s = x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 235.
+<pre><code>System.out.println(&quot;Hello&quot;); //Prints &quot;Hello&quot; and the information after the // won't throw an error
+
+int x = 14;
+/*
+    x = 15; //This does not set a new value for x
+    System.out.println(x); //This is not printed
+*/
+
+System.out.println(x); //This would print out 14
+
+/\* You can also do this - it does not have to be a multi-lined comment.\*/
 </code></pre>
 
-<p>Explicit casting is neaded to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.<br />
-The values have to be explicitly cast because the program may be <strong>losing</strong> information so the values have to be explicitly cast.</p>
+<h3 id="javadoc">Javadoc</h3>
+<p>Javadoc is used by many programmers as a way to easily identify different parts of a function. It usually includes a short description about the function, @param and @return values. All of this information would be enclosed in "<strong>/**</strong>" and "<strong>*/</strong>" notation.  </p>
+<h6 id="javadoc-documentation">Javadoc Documentation</h6>
+<ul>
+<li><code>@param</code>:  "param" is short for parameter. This would denote the <em>types</em> of parameters that are used in a particular function along with a short description of the parameter.  </li>
+<li><code>@return</code>: This gives a description of what is being returned from the function.</li>
+</ul>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>double x = 235;
-long s = (double) x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 235.
+<pre><code>/**
+*   This function multiplies two integers.
+*   @param a the first integer that is being multiplied
+*   @param b the second integer that is being multiplied
+*   @return the product of multiplying a and b together
+*
+*/
+public static int multiply(int a, int b){
+    return a*b;
+}
 </code></pre>
               
             </div>
@@ -199,10 +193,10 @@ float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 2
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../operators/" class="btn btn-neutral float-right" title="Operators">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../number/" class="btn btn-neutral float-right" title="Number">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../comments/" class="btn btn-neutral" title="Comments"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -228,10 +222,10 @@ float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 2
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../comments/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../operators/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../number/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Booleans & Comparison Operators - JavaMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Booleans & Comparison Operators";
+    var mkdocs_page_input_path = "core\\boolean.md";
+    var mkdocs_page_url = "/core/boolean/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> JavaMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../comments/">Comments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operators/">Operators</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Booleans & Comparison Operators</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#boolean-comparison-operators">Boolean &amp; Comparison Operators</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#boolean">Boolean</a></li>
+        
+            <li><a class="toctree-l4" href="#logical-operators">Logical Operators</a></li>
+        
+            <li><a class="toctree-l4" href="#comparison-operators">Comparison Operators</a></li>
+        
+            <li><a class="toctree-l4" href="#object-comparison">Object Comparison</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../arrays/">Arrays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../stdio/">Standard Input/Output</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exceptions/">Exceptions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../stdlib/">Standard Java Library</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">JavaMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core &raquo;</li>
+        
+      
+    
+    <li>Booleans & Comparison Operators</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="boolean-comparison-operators">Boolean &amp; Comparison Operators</h1>
+<h3 id="boolean">Boolean</h3>
+<p>Booleans are used to show the logical values of <em>true</em> and <em>false</em>.  </p>
+<p><strong>Constants </strong> <br />
+    -  true<br />
+    -  false  </p>
+<h3 id="logical-operators">Logical Operators</h3>
+<ul>
+<li><code>!</code> : Negates the value; For !x, if x is <strong>true</strong>, then !x is <em>false</em>. If x is <strong>false</strong>, then !x is <em>true</em>.</li>
+<li><code>&amp;&amp;</code> : If x &amp;&amp; y, if both is <strong>true</strong>, then x &amp;&amp; y is <em>true</em>, else x &amp;&amp; y is <em>false</em>.</li>
+<li><code>||</code> : If x || y, if both is <strong>false</strong>, then x || y is <em>false</em>, else x || y is <em>true</em>.</li>
+</ul>
+<p><span style="color:blue"><strong>Example</strong></span>     </p>
+<pre><code>boolean x = true; //Sets the value of x to true
+boolean y = false; //Sets the value of y to false
+System.out.println(!x); //Prints false
+System.out.println(!y); //Prints true
+System.out.println(x&amp;&amp;x); //Prints true
+System.out.println(x&amp;&amp;y); //Prints false
+System.out.println(y&amp;&amp;y); //Prints false
+System.out.println(x||x); //Prints true
+System.out.println(x||y); //Prints true
+System.out.println(y||y); //Prints false
+</code></pre>
+
+<h3 id="comparison-operators">Comparison Operators</h3>
+<ul>
+<li><code>==</code> : equal</li>
+<li><code>!=</code> : not equal</li>
+<li><code>&lt;</code> : strictly less than</li>
+<li><code>&lt;=</code> : less than or equal to</li>
+<li><code>&gt;</code> : strictly greater than</li>
+<li><code>&gt;=</code> : greater than or equal to</li>
+</ul>
+<p><span style="color:blue"><strong>Example</strong></span>    </p>
+<pre><code>System.out.println(45 == 45); //Prints true
+System.out.println(45 != 45); //Prints false
+System.out.println(45 &gt;= 34); //Prints true
+System.out.println(45 &gt;= 45); //Prints true
+System.out.println(45 &gt; 23); //Prints true
+System.out.println(45 &gt; 45); //Prints false
+System.out.println(34 &lt;= 23); //Prints false
+System.out.println(34 &lt; 34); //Prints false
+</code></pre>
+
+<h3 id="object-comparison">Object Comparison</h3>
+<p>There are two ways to compare two objects. One way is using the "==" comparison and the other way is using the .equals() function that exists in objects.  </p>
+<p><strong> == </strong><br />
+The "==" is used to compare when primitive values, boolean, byte, char, double, int, float, short, and byte, are equal.It only checks if two values point to the same reference and does not check if the contents in the reference is the same.      </p>
+<p><strong> .equals() </strong><br />
+The ".equals()" is used to compare when two objects are equal, such as Strings. It checks if the contents within the reference are the same. A user cannot use .equals() function to check if primitive values are the same because primitive values cannot be dereferenced.  </p>
+<p><span style="color:blue"><strong>Example</strong></span>    </p>
+<pre><code>boolean x = 56; 
+System.out.println(x == 56);//Prints true
+String str1 = &quot;Hello&quot;; //Creates a new String called &quot;Hello&quot;
+String str2 = new String(&quot;Hello&quot;); //Creates a new String called &quot;Hello&quot;
+System.out.println(str1 == str2); //Prints false
+System.out.println(str1.equals(str2)); //Prints true 
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../string/" class="btn btn-neutral float-right" title="String">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../operators/" class="btn btn-neutral" title="Operators"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../operators/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../string/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

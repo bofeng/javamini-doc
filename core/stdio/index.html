@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Number - JavaMini Documentation</title>
+  <title>Standard Input/Output - JavaMini Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Number";
-    var mkdocs_page_input_path = "core\\number.md";
-    var mkdocs_page_url = "/core/number/";
+    var mkdocs_page_name = "Standard Input/Output";
+    var mkdocs_page_input_path = "core\\stdio.md";
+    var mkdocs_page_url = "/core/stdio/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -60,23 +60,9 @@
                     
     <a class="" href="../comments/">Comments</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Number</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#number">Number</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#types-of-numbers-in-java">Types of Numbers in Java</a></li>
-        
-            <li><a class="toctree-l4" href="#how-to-cast-numbers">How to Cast Numbers</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../number/">Number</a>
                 </li>
                 <li class="">
                     
@@ -94,9 +80,23 @@
                     
     <a class="" href="../arrays/">Arrays</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../stdio/">Standard Input/Output</a>
+    <a class="current" href="./">Standard Input/Output</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#stdio">Stdio</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#systemoutprint-and-systemoutprintln">System.out.print() and System.out.println()</a></li>
+        
+            <li><a class="toctree-l4" href="#how-to-use-a-scanner">How to Use a Scanner</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -135,7 +135,7 @@
         
       
     
-    <li>Number</li>
+    <li>Standard Input/Output</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -145,53 +145,64 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="number">Number</h1>
-<p>Numbers of Java are all primitive types in Java.  </p>
-<h2 id="types-of-numbers-in-java">Types of Numbers in Java</h2>
-<p>There are <strong>integer</strong> types and <strong>IEEE-754 floating point</strong> types.<br />
-An <em>integer</em> is a number that is a positive or negative whole number or 0.<br />
-An <em>IEEE-754 floating point</em> is a number that can be an integer or decimal values between them.  </p>
-<h3 id="integer-types">Integer Types</h3>
-<ul>
-<li><code>byte</code>: This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes <em>one byte</em>). It has a minimum value of -128 and a maximum value of 127. </li>
-<li><code>short</code>: This is a signed 16-bit two's complement integer (this value takes <em>two bytes</em>). It has a minimum value of -32768 and a maximum value of 32767.  </li>
-<li><code>int</code>: This is a signed 32-bit two's complement integer (this value takes <em>four bytes</em>). It has a minimum value of -2<sup>31</sup> and a maximum value of 2<sup>31</sup>-1.  </li>
-<li><code>long</code>: This is a signed 64-bit two's complement integer (this value takes <em>eight bytes</em>). It has a minimum value of -2<sup>63</sup> and a maximum value of 2<sup>63</sup>-1. </li>
-</ul>
-<h3 id="ieee-754-floating-point">IEEE-754 Floating Point</h3>
-<ul>
-<li><code>float</code>: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.</li>
-</ul>
-<pre><code>float f = 123.5f;
+                <h1 id="stdio">Stdio</h1>
+<h2 id="systemoutprint-and-systemoutprintln">System.out.print() and System.out.println()</h2>
+<p>Both System.out.print and System.out.println print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.  </p>
+<p>You can use the "+" to append multiple things together.  </p>
+<p><span style="color:blue"><strong>Example</strong></span>    </p>
+<pre><code>System.out.println(3 + 4); 
+
+System.out.println(3 + &quot;Strings&quot; + 4);
 </code></pre>
 
-<p><strong>Note:</strong> A floating point declaration must have a "f" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  </p>
-<ul>
-<li><code>double</code>: This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.</li>
-</ul>
-<hr />
-<h2 id="how-to-cast-numbers">How to Cast Numbers</h2>
-<p>You can make it so that a smaller number is placed in a larger type <em>without</em> explicit casting. The rules are as follows:</p>
-<ul>
-<li>byte to short, int, long, float, or double  </li>
-<li>short to int, long, float, or double  </li>
-<li>int to long, float, or double  </li>
-<li>long to float or double  </li>
-<li>float to double  </li>
-</ul>
+<p>Arithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended.  </p>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>byte x = 235;
-long s = x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 235.
+<pre><code>System.out.println(3 + 4); //This prints out 7
+
+System.out.println(3 + 4 + &quot;hi&quot;); //This prints out 7hi
+
+System.out.println(&quot;hi&quot; + 3 + 4); //This prints out hi34
 </code></pre>
 
-<p>Explicit casting is neaded to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.<br />
-The values have to be explicitly cast because the program may be <strong>losing</strong> information so the values have to be explicitly cast.</p>
-<p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>double x = 235;
-long s = (double) x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 235.
+<p><br/></p>
+<h2 id="how-to-use-a-scanner">How to Use a Scanner</h2>
+<h4 id="how-to-declare-a-scanner">How to Declare a Scanner</h4>
+<p>At the beginning of the program, you should have the import statement.</p>
+<pre><code>import java.util.Scanner;
 </code></pre>
+
+<p>Then you must declare a Scanner, the scanner here is to be called "input".</p>
+<pre><code>Scanner input = new Scanner(System.in);
+</code></pre>
+
+<p>Then, you call the scanner with any of the following functions, where input is the name of your new Scanner: </p>
+<ul>
+<li>input.next(): Returns the next token from the input as a String up until the space</li>
+<li>input.nextLine(): Returns the entire line from where the Scanner is currently pointing as a String.</li>
+<li>input.nextByte(): Takes the next element from the input as a byte</li>
+<li>input.nextShort(): Takes the next element from the input as a short</li>
+<li>input.nextInt(): Takes the next element from the input as a integer</li>
+<li>input.nextLong(): Takes the next element from the input as a long</li>
+<li>input.nextFloat(): Takes the next element from the input as a float</li>
+<li>input.nextDouble(): Takes the next element from the input as a double<br />
+<br>
+<br>
+<span style="color:blue"><strong>Example</strong></span>    </li>
+</ul>
+<pre><code>//If the input is &quot;3 4 5 6 7 8 9&quot;
+System.out.println(input.next()); //Returns 3
+System.out.println(input.nextLine()); 
+//Returns &quot; 4 5 6 7 8 9&quot; since the pointer has already been advanced from the previous call.
+</code></pre>
+
+<p><br/></p>
+<h4 id="read-input-in-javamini">Read Input in JavaMini</h4>
+<p>The way that the JavaMini works is that you must place the input <em>prior</em> to running the program. <br />
+<br>
+<img alt="Before" src="../images/stdio1.png" /></p>
+<p>Then, you click the up arrow at the bottom-right next to the "Expand Standard Input/User Input". It should look like the image below. </p>
+<p><img alt="Before" src="../images/stdio2.png" /></p>
+<p>Then you can input whatever input you wish to have, and then click the "Run" so your program would run with the parameters you wish. </p>
               
             </div>
           </div>
@@ -199,10 +210,10 @@ float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 2
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../operators/" class="btn btn-neutral float-right" title="Operators">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../exceptions/" class="btn btn-neutral float-right" title="Exceptions">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../comments/" class="btn btn-neutral" title="Comments"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../arrays/" class="btn btn-neutral" title="Arrays"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -228,10 +239,10 @@ float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 2
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../comments/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../arrays/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../operators/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../exceptions/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

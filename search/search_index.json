@@ -1,0 +1,244 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "What's Java?\n\n\ntodo\n\n\nAbout JavaMini\n\n\nJavaMini is an application built into the OYOclass platform which can be used to write Python code following the guidelines for the AP Computer Science A exam. It cannot do everything that can be done using the Java programming language. It is limited to simple standard input and output and the Java standard libraries. It is designed to allow you to run Java code in the browser, making storage and sharing your work easier.\n\n\nYou cannot use it to make user interfaces or games with dynamic input. All input must be entered into the small box at the bottom of the output window (where it says \"Expand Standard Input/User Input\") \nbefore\n running the program.\n\n\nQuick Start\n\n\nCopy following example code to JavaMini editor then click the \"Run\" button:\n\n\n\n\nSay hello\n\n\n\n\npublic class Hello{\n    public static void main(String[] args) {\n        System.out.println(\nHello Java\n);\n    }\n}\n\n\n\n\nTODO: More code samples\n\n\nBeyond JavaMini\n\n\nIf you would like to do more with Java and go beyond the capabilities of Java Mini, please download and install the JDK (Java Development Kit) and a Java IDE (Integrated Development Environment) which you can find links to below:\n\n\n\n\nlink to download JDK\n\n\nlink to download Eclipse (explain it is an IDE)\n\n\nlink to official documentation https://docs.oracle.com/javase/7/docs/api/", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#whats-java", 
+            "text": "todo", 
+            "title": "What's Java?"
+        }, 
+        {
+            "location": "/#about-javamini", 
+            "text": "JavaMini is an application built into the OYOclass platform which can be used to write Python code following the guidelines for the AP Computer Science A exam. It cannot do everything that can be done using the Java programming language. It is limited to simple standard input and output and the Java standard libraries. It is designed to allow you to run Java code in the browser, making storage and sharing your work easier.  You cannot use it to make user interfaces or games with dynamic input. All input must be entered into the small box at the bottom of the output window (where it says \"Expand Standard Input/User Input\")  before  running the program.", 
+            "title": "About JavaMini"
+        }, 
+        {
+            "location": "/#quick-start", 
+            "text": "Copy following example code to JavaMini editor then click the \"Run\" button:   Say hello   public class Hello{\n    public static void main(String[] args) {\n        System.out.println( Hello Java );\n    }\n}  TODO: More code samples", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/#beyond-javamini", 
+            "text": "If you would like to do more with Java and go beyond the capabilities of Java Mini, please download and install the JDK (Java Development Kit) and a Java IDE (Integrated Development Environment) which you can find links to below:   link to download JDK  link to download Eclipse (explain it is an IDE)  link to official documentation https://docs.oracle.com/javase/7/docs/api/", 
+            "title": "Beyond JavaMini"
+        }, 
+        {
+            "location": "/core/comments/", 
+            "text": "Comments\n\n\nAll types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects. \n\n\nDifferent Type of Comments\n\n\n\n\n// text\n : This is a comment where the compiler ignores everything from the \"//\" to the end of the line\n\n\n/* text */\n : This is a comment where the compiler ignores everything enclosed by the \"/*\" and \"*/\". These type of quotes can span multiple lines.\n\n\n/** text */\n : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the \"\n/**\n\" and \"\n*/\n\". These type of documentation usually spans multiple lines. \n\n\n\n\nExample\n    \n\n\nSystem.out.println(\nHello\n); //Prints \nHello\n and the information after the // won't throw an error\n\nint x = 14;\n/*\n    x = 15; //This does not set a new value for x\n    System.out.println(x); //This is not printed\n*/\n\nSystem.out.println(x); //This would print out 14\n\n/\\* You can also do this - it does not have to be a multi-lined comment.\\*/\n\n\n\n\nJavadoc\n\n\nJavadoc is used by many programmers as a way to easily identify different parts of a function. It usually includes a short description about the function, @param and @return values. All of this information would be enclosed in \"\n/**\n\" and \"\n*/\n\" notation.  \n\n\nJavadoc Documentation\n\n\n\n\n@param\n:  \"param\" is short for parameter. This would denote the \ntypes\n of parameters that are used in a particular function along with a short description of the parameter.  \n\n\n@return\n: This gives a description of what is being returned from the function.\n\n\n\n\nExample\n    \n\n\n/**\n*   This function multiplies two integers.\n*   @param a the first integer that is being multiplied\n*   @param b the second integer that is being multiplied\n*   @return the product of multiplying a and b together\n*\n*/\npublic static int multiply(int a, int b){\n    return a*b;\n}", 
+            "title": "Comments"
+        }, 
+        {
+            "location": "/core/comments/#comments", 
+            "text": "All types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects.", 
+            "title": "Comments"
+        }, 
+        {
+            "location": "/core/comments/#different-type-of-comments", 
+            "text": "// text  : This is a comment where the compiler ignores everything from the \"//\" to the end of the line  /* text */  : This is a comment where the compiler ignores everything enclosed by the \"/*\" and \"*/\". These type of quotes can span multiple lines.  /** text */  : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the \" /** \" and \" */ \". These type of documentation usually spans multiple lines.    Example       System.out.println( Hello ); //Prints  Hello  and the information after the // won't throw an error\n\nint x = 14;\n/*\n    x = 15; //This does not set a new value for x\n    System.out.println(x); //This is not printed\n*/\n\nSystem.out.println(x); //This would print out 14\n\n/\\* You can also do this - it does not have to be a multi-lined comment.\\*/", 
+            "title": "Different Type of Comments"
+        }, 
+        {
+            "location": "/core/comments/#javadoc", 
+            "text": "Javadoc is used by many programmers as a way to easily identify different parts of a function. It usually includes a short description about the function, @param and @return values. All of this information would be enclosed in \" /** \" and \" */ \" notation.", 
+            "title": "Javadoc"
+        }, 
+        {
+            "location": "/core/comments/#javadoc-documentation", 
+            "text": "@param :  \"param\" is short for parameter. This would denote the  types  of parameters that are used in a particular function along with a short description of the parameter.    @return : This gives a description of what is being returned from the function.   Example       /**\n*   This function multiplies two integers.\n*   @param a the first integer that is being multiplied\n*   @param b the second integer that is being multiplied\n*   @return the product of multiplying a and b together\n*\n*/\npublic static int multiply(int a, int b){\n    return a*b;\n}", 
+            "title": "Javadoc Documentation"
+        }, 
+        {
+            "location": "/core/number/", 
+            "text": "Number\n\n\nNumbers of Java are all primitive types in Java.  \n\n\nTypes of Numbers in Java\n\n\nThere are \ninteger\n types and \nIEEE-754 floating point\n types.\n\nAn \ninteger\n is a number that is a positive or negative whole number or 0.\n\nAn \nIEEE-754 floating point\n is a number that can be an integer or decimal values between them.  \n\n\nInteger Types\n\n\n\n\nbyte\n: This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes \none byte\n). It has a minimum value of -128 and a maximum value of 127. \n\n\nshort\n: This is a signed 16-bit two's complement integer (this value takes \ntwo bytes\n). It has a minimum value of -32768 and a maximum value of 32767.  \n\n\nint\n: This is a signed 32-bit two's complement integer (this value takes \nfour bytes\n). It has a minimum value of -2\n31\n and a maximum value of 2\n31\n-1.  \n\n\nlong\n: This is a signed 64-bit two's complement integer (this value takes \neight bytes\n). It has a minimum value of -2\n63\n and a maximum value of 2\n63\n-1. \n\n\n\n\nIEEE-754 Floating Point\n\n\n\n\nfloat\n: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.\n\n\n\n\nfloat f = 123.5f;\n\n\n\n\nNote:\n A floating point declaration must have a \"f\" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  \n\n\n\n\ndouble\n: This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.\n\n\n\n\n\n\nHow to Cast Numbers\n\n\nYou can make it so that a smaller number is placed in a larger type \nwithout\n explicit casting. The rules are as follows:\n\n\n\n\nbyte to short, int, long, float, or double  \n\n\nshort to int, long, float, or double  \n\n\nint to long, float, or double  \n\n\nlong to float or double  \n\n\nfloat to double  \n\n\n\n\nExample\n    \n\n\nbyte x = 235;\nlong s = x; //Sets the long value \ns\n to \nx\n or 235.\nfloat f = s; //Sets the float value \nf\n to \ns\n or 235.\n\n\n\n\nExplicit casting is neaded to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.\n\nThe values have to be explicitly cast because the program may be \nlosing\n information so the values have to be explicitly cast.\n\n\nExample\n    \n\n\ndouble x = 235;\nlong s = (double) x; //Sets the long value \ns\n to \nx\n or 235.\nfloat f = (double) x; //Sets the float value \nf\n to \nx\n or 235.", 
+            "title": "Number"
+        }, 
+        {
+            "location": "/core/number/#number", 
+            "text": "Numbers of Java are all primitive types in Java.", 
+            "title": "Number"
+        }, 
+        {
+            "location": "/core/number/#types-of-numbers-in-java", 
+            "text": "There are  integer  types and  IEEE-754 floating point  types. \nAn  integer  is a number that is a positive or negative whole number or 0. \nAn  IEEE-754 floating point  is a number that can be an integer or decimal values between them.", 
+            "title": "Types of Numbers in Java"
+        }, 
+        {
+            "location": "/core/number/#integer-types", 
+            "text": "byte : This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes  one byte ). It has a minimum value of -128 and a maximum value of 127.   short : This is a signed 16-bit two's complement integer (this value takes  two bytes ). It has a minimum value of -32768 and a maximum value of 32767.    int : This is a signed 32-bit two's complement integer (this value takes  four bytes ). It has a minimum value of -2 31  and a maximum value of 2 31 -1.    long : This is a signed 64-bit two's complement integer (this value takes  eight bytes ). It has a minimum value of -2 63  and a maximum value of 2 63 -1.", 
+            "title": "Integer Types"
+        }, 
+        {
+            "location": "/core/number/#ieee-754-floating-point", 
+            "text": "float : This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.   float f = 123.5f;  Note:  A floating point declaration must have a \"f\" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.     double : This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.", 
+            "title": "IEEE-754 Floating Point"
+        }, 
+        {
+            "location": "/core/number/#how-to-cast-numbers", 
+            "text": "You can make it so that a smaller number is placed in a larger type  without  explicit casting. The rules are as follows:   byte to short, int, long, float, or double    short to int, long, float, or double    int to long, float, or double    long to float or double    float to double     Example       byte x = 235;\nlong s = x; //Sets the long value  s  to  x  or 235.\nfloat f = s; //Sets the float value  f  to  s  or 235.  Explicit casting is neaded to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte. \nThe values have to be explicitly cast because the program may be  losing  information so the values have to be explicitly cast.  Example       double x = 235;\nlong s = (double) x; //Sets the long value  s  to  x  or 235.\nfloat f = (double) x; //Sets the float value  f  to  x  or 235.", 
+            "title": "How to Cast Numbers"
+        }, 
+        {
+            "location": "/core/operators/", 
+            "text": "Operators\n\n\nArithmetic Operators\n\n\n\n\n+\n: if a + b, you add the two together\n\n\n-\n: if a - b, you subtract b from a\n\n\n*\n: if a * b, you multiply a and b\n\n\n/\n: if a / b, you divide a by b\n\n\n%\n: if a \n b, you return the remainder after a / b\n\n\n\n\n\n\nIncrementing or Decrementing\n\n\n\n\n++\n: if a++, you increase a by 1\n\n\n--\n: if a--, you decrease b by 1\n\n\n\n\n\n\nAssignment\n\n\n\n\n=\n: if a = 10, you set the value of a to 10\n\n\n+=\n: if a += b, you set the value of a to the original value of a + b\n\n\n-=\n: if a -= b, you set the value of a to the original value of a - b\n\n\n*=\n: if a *= b, you set the value of a to the original value of a * b\n\n\n/=\n: if a /= b, you set the value of a to the original value of a / b\n\n\n%=\n: if a %= b, you set the value of a to the original value of a % b\n\n\n\n\nExample\n    \n\n\nint a = 14;\na++; //This changes a to 15\na /= 3; //This changes a to 5\na %= 2; //This changes a to 1\n\nint c = a + 8; //This sets c to 1 + 8 = 9\nc *= 2; //This sets c to 18", 
+            "title": "Operators"
+        }, 
+        {
+            "location": "/core/operators/#operators", 
+            "text": "", 
+            "title": "Operators"
+        }, 
+        {
+            "location": "/core/operators/#arithmetic-operators", 
+            "text": "+ : if a + b, you add the two together  - : if a - b, you subtract b from a  * : if a * b, you multiply a and b  / : if a / b, you divide a by b  % : if a   b, you return the remainder after a / b", 
+            "title": "Arithmetic Operators"
+        }, 
+        {
+            "location": "/core/operators/#incrementing-or-decrementing", 
+            "text": "++ : if a++, you increase a by 1  -- : if a--, you decrease b by 1", 
+            "title": "Incrementing or Decrementing"
+        }, 
+        {
+            "location": "/core/operators/#assignment", 
+            "text": "= : if a = 10, you set the value of a to 10  += : if a += b, you set the value of a to the original value of a + b  -= : if a -= b, you set the value of a to the original value of a - b  *= : if a *= b, you set the value of a to the original value of a * b  /= : if a /= b, you set the value of a to the original value of a / b  %= : if a %= b, you set the value of a to the original value of a % b   Example       int a = 14;\na++; //This changes a to 15\na /= 3; //This changes a to 5\na %= 2; //This changes a to 1\n\nint c = a + 8; //This sets c to 1 + 8 = 9\nc *= 2; //This sets c to 18", 
+            "title": "Assignment"
+        }, 
+        {
+            "location": "/core/boolean/", 
+            "text": "Boolean \n Comparison Operators\n\n\nBoolean\n\n\nBooleans are used to show the logical values of \ntrue\n and \nfalse\n.  \n\n\nConstants \n \n\n    -  true\n\n    -  false  \n\n\nLogical Operators\n\n\n\n\n!\n : Negates the value; For !x, if x is \ntrue\n, then !x is \nfalse\n. If x is \nfalse\n, then !x is \ntrue\n.\n\n\n : If x \n y, if both is \ntrue\n, then x \n y is \ntrue\n, else x \n y is \nfalse\n.\n\n\n||\n : If x || y, if both is \nfalse\n, then x || y is \nfalse\n, else x || y is \ntrue\n.\n\n\n\n\nExample\n     \n\n\nboolean x = true; //Sets the value of x to true\nboolean y = false; //Sets the value of y to false\nSystem.out.println(!x); //Prints false\nSystem.out.println(!y); //Prints true\nSystem.out.println(x\nx); //Prints true\nSystem.out.println(x\ny); //Prints false\nSystem.out.println(y\ny); //Prints false\nSystem.out.println(x||x); //Prints true\nSystem.out.println(x||y); //Prints true\nSystem.out.println(y||y); //Prints false\n\n\n\n\nComparison Operators\n\n\n\n\n==\n : equal\n\n\n!=\n : not equal\n\n\n : strictly less than\n\n\n=\n : less than or equal to\n\n\n : strictly greater than\n\n\n=\n : greater than or equal to\n\n\n\n\nExample\n    \n\n\nSystem.out.println(45 == 45); //Prints true\nSystem.out.println(45 != 45); //Prints false\nSystem.out.println(45 \n= 34); //Prints true\nSystem.out.println(45 \n= 45); //Prints true\nSystem.out.println(45 \n 23); //Prints true\nSystem.out.println(45 \n 45); //Prints false\nSystem.out.println(34 \n= 23); //Prints false\nSystem.out.println(34 \n 34); //Prints false\n\n\n\n\nObject Comparison\n\n\nThere are two ways to compare two objects. One way is using the \"==\" comparison and the other way is using the .equals() function that exists in objects.  \n\n\n == \n\nThe \"==\" is used to compare when primitive values, boolean, byte, char, double, int, float, short, and byte, are equal.It only checks if two values point to the same reference and does not check if the contents in the reference is the same.      \n\n\n .equals() \n\nThe \".equals()\" is used to compare when two objects are equal, such as Strings. It checks if the contents within the reference are the same. A user cannot use .equals() function to check if primitive values are the same because primitive values cannot be dereferenced.  \n\n\nExample\n    \n\n\nboolean x = 56; \nSystem.out.println(x == 56);//Prints true\nString str1 = \nHello\n; //Creates a new String called \nHello\n\nString str2 = new String(\nHello\n); //Creates a new String called \nHello\n\nSystem.out.println(str1 == str2); //Prints false\nSystem.out.println(str1.equals(str2)); //Prints true", 
+            "title": "Booleans & Comparison Operators"
+        }, 
+        {
+            "location": "/core/boolean/#boolean-comparison-operators", 
+            "text": "", 
+            "title": "Boolean &amp; Comparison Operators"
+        }, 
+        {
+            "location": "/core/boolean/#boolean", 
+            "text": "Booleans are used to show the logical values of  true  and  false .    Constants    \n    -  true \n    -  false", 
+            "title": "Boolean"
+        }, 
+        {
+            "location": "/core/boolean/#logical-operators", 
+            "text": "!  : Negates the value; For !x, if x is  true , then !x is  false . If x is  false , then !x is  true .   : If x   y, if both is  true , then x   y is  true , else x   y is  false .  ||  : If x || y, if both is  false , then x || y is  false , else x || y is  true .   Example        boolean x = true; //Sets the value of x to true\nboolean y = false; //Sets the value of y to false\nSystem.out.println(!x); //Prints false\nSystem.out.println(!y); //Prints true\nSystem.out.println(x x); //Prints true\nSystem.out.println(x y); //Prints false\nSystem.out.println(y y); //Prints false\nSystem.out.println(x||x); //Prints true\nSystem.out.println(x||y); //Prints true\nSystem.out.println(y||y); //Prints false", 
+            "title": "Logical Operators"
+        }, 
+        {
+            "location": "/core/boolean/#comparison-operators", 
+            "text": "==  : equal  !=  : not equal   : strictly less than  =  : less than or equal to   : strictly greater than  =  : greater than or equal to   Example       System.out.println(45 == 45); //Prints true\nSystem.out.println(45 != 45); //Prints false\nSystem.out.println(45  = 34); //Prints true\nSystem.out.println(45  = 45); //Prints true\nSystem.out.println(45   23); //Prints true\nSystem.out.println(45   45); //Prints false\nSystem.out.println(34  = 23); //Prints false\nSystem.out.println(34   34); //Prints false", 
+            "title": "Comparison Operators"
+        }, 
+        {
+            "location": "/core/boolean/#object-comparison", 
+            "text": "There are two ways to compare two objects. One way is using the \"==\" comparison and the other way is using the .equals() function that exists in objects.     ==  \nThe \"==\" is used to compare when primitive values, boolean, byte, char, double, int, float, short, and byte, are equal.It only checks if two values point to the same reference and does not check if the contents in the reference is the same.         .equals()  \nThe \".equals()\" is used to compare when two objects are equal, such as Strings. It checks if the contents within the reference are the same. A user cannot use .equals() function to check if primitive values are the same because primitive values cannot be dereferenced.    Example       boolean x = 56; \nSystem.out.println(x == 56);//Prints true\nString str1 =  Hello ; //Creates a new String called  Hello \nString str2 = new String( Hello ); //Creates a new String called  Hello \nSystem.out.println(str1 == str2); //Prints false\nSystem.out.println(str1.equals(str2)); //Prints true", 
+            "title": "Object Comparison"
+        }, 
+        {
+            "location": "/core/string/", 
+            "text": "todo\n\n\ngo over:\n- char type\n- Strings\n- String literals\n- String concatenation\n- escape sequences \\\n, \\\\, \\n\n- equals() and compareTo()", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/arrays/", 
+            "text": "Arrays\n\n\n1-Dimensional Arrays\n\n\nHow to Declare an Array\n  \n\nIt is declared in the following format:\n\n\ntype[] name\n: the type represents the type of variable ie. int, and the name is the name of the new array\n\n\nint[] arr1; //Creates an array called arr1 that holds integer values\nfloat[] arr2; //Creates an array called arr2 that holds floating-point values\n\n\n\n\nHow to Initialize the Size of an Array\n \n \n\nIn Java, you must declare the size of the array. If not, the size will \nalways\n be zero.\n\n\n\n\ntype[] name;\n\n\nname = new type[size];\n\n  You declare the array first and then you create the size of the array after the declaration.\n\n\n\n\nint[] arr1; //This is the initial declaration of an array.\narr1 = new int[2]; //This sets the newly created array to size 2.\n\n\n\n\n\n\ntype[] name = new type[size]\n: You declare and initialize the array in the same line, and make an array of a type that has a certain size.\n\n\n\n\nint[] arr2 = new int[10]; //This makes an array that can hold 10 integers.\nString[] arr3 = new String[5]; //This makes an array that can hold 5 Strings.\n\n\n\n\nHow to Reference the Indices in an Array\n  \n\nThe indices of an array start at 0. So, the first element of an array would be at the 0th position.\n\nThe highest position would then be \nsize - 1\n.\n\n\nint[] arr4 = new int[20];\narr4[1] = 20; //Sets the 2nd integer in the array to 20.\narr4[0] = 40; //Sets the 1st integer in the array to 40.\n\nString[] arr5 = new String[25];\narr5[0] = \nHi\n; //Sets the 1st indice to \nHi\n\n\n\n\n\nHow to Find the Length in an Array\n  \n\nYou can find the length of an array using the .length function.  \n\n\nint[] arr4 = new int[20];\nSystem.out.print(arr4.length); //This would print out 4\n\n\n\n\n\n\n2-Dimensional Arrays\n\n\n How to Declare a 2-Dimensional Array \n \n\nDeclaring a 2-dimensional array is similar to the way that the 1-dimensional array is declared. Instead of only having a \"size\" parameter, the 2-dimensional array has two size parameters, usually denoted with row and column.  \n\n\nIt is declared in the following format:\n\n\ntype[][] name\n: the type represents the type of variable ie. int, and the name is the name of the new array\n\n\nint[][] arr1; //Creates an array called arr1 that holds integer values\nfloat[][] arr2; //Creates an array called arr2 that holds floating-point values\n\n\n\n\nHow to Initialize the Size of a 2-Dimensional Array\n \n  \n\n\n\n\ntype[][] name;\n\n\nname = new type[row][col];\n\n  You declare the array first and then you create the size of the array after the declaration.\n\n  There are \"row\" x \"col\" elements in an array. \n\n\n\n\nint[][] arr1; //This is the initial declaration of an array.\narr1 = new int[2][3]; //Sets the newly created array to 2 by 3. There are 6 elements in the array.\n\n\n\n\n\n\ntype[][] name = new type[row][col]\n: You declare and initialize the array in the same line, and make an array of a type that has a certain size.\n\n\n\n\nint[] arr2 = new int[10][2]; //This makes an array that can hold 20 integers.\nString[] arr3 = new String[5][3]; //This makes an array that can hold 15 Strings.\n\n\n\n\nHow to Reference the Indices in an Array\n  \n\nThe indice of a 1-Dimensional Array starts at 0. Similarly, the 2-Dimensional array would start at index 0 too, but since there are two size parameters, the array would start at arr[0][0]. \nThe highest position would then be \narr[size-1][size-1]\n.\n\n\nint[] arr4 = new int[20][5];\narr4[19][4] = 20; //Sets the last element at row 19 and col 4 in the array to 20.\narr4[0][0] = 40; //Sets the first integer, at index [0][0] in the array to 40. \n\nString[] arr5 = new String[2][5];\narr5[0][0] = \nHello\n; #Sets the element at row 0 and col 0 to \nHi\n\n\n\n\n\nHow to Find the Length in an Array\n  \n\nTo find the length of the row and the length of the column. \n\n\n\n\narr.length: Find the number of rows in the array \"arr\".\n\n\narr[i].length: Find the number of cols in the row \"i\" in the array \"arr\".\n\n\n\n\nint[] arr4 = new int[20][5];\nSystem.out.print(arr4.length); //This would print out 20\nSystem.out.print(arr4[0].length); //This would print out 5\n\n\n\n\n\n\nInitializing Arrays with a List\n\n\nHow to Initialize in an 1-Dimensional Array with a List\n  \n  \n\n\nYou need to use the \"{\" and \"}\" to denote the beginning and the end of the new list. \n\n\n\n\nDeclare the array first and then initialize the array afterwards:\n\n\nint[] arrays;\n\n\narrays = new int[]{w,x,y...};\n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.\n\n\n\n\nint[] arrays; //Declares a new array called arrays\narrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. \n//arrays[0] = 4, arrays[4] = 8\n\n\n\n\n\n\nDeclare and initialize the array at the same time:\n\n\nint[] arrays = {w,x,y...};\n \n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.\n\n\n\n\nint[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. \n// arrays[0] = 4, arrays[4] = 8\n\n\n\n\nHow to Initialize in an 2-Dimensional Array with a List\n  \n\nThe main difference between initializing a 2-Dimensional Array and a 1-Dimensional array is the addition of a second parameter for size.  \n\n\nRather than just using the \"{}\", to denote the new list, you need to nest \"{\" and \"}\". The notation for this is usually {{a,b,c}, {d,e,f}, {g,h,i}, {j,k,l}}.  \n\n\nThe first \"{\" and the last \"}\" denotes the entire list. The first pair of \"{}\" that encloses a,b, and c denotes the first row of index 0. The value a would be in index [0][0], the value b would be in [0][1], and the value b would be in [0][2]. The last grouping represented by {j,k,l} would be the fourth row, which has the index 0. \n\n\n\n\nDeclare the array first and then initialize the array afterwards:\n\n\nint[][] arrays;\n\n\narrays = new int[][]{{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};\n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][1] = x, and arrays[1][2] = y2.\n\n\n\n\nint[][] arrays; //Declares a new array called arrays\narrays = new int[]{{4,5,6,7,8}, {2,1,2,9,5}}; //Initialized arrays with the values from the list.\n//arrays[0][0] = 4, arrays[1][3] = 9\n\n\n\n\n\n\nDeclare and initialize the array at the same time:\n\n\nint[] arrays = {{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};\n \n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][0] = w, and arrays[1][1] = x2.\n\n\n\n\nint[][] array4 = {{4,5,6,7,8}, {0,1,3,2,11}}; //Initialized arrays with the list values. \n// arrays[0][0] = 4, arrays[1][4] = 11", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#arrays", 
+            "text": "", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#1-dimensional-arrays", 
+            "text": "How to Declare an Array    \nIt is declared in the following format:  type[] name : the type represents the type of variable ie. int, and the name is the name of the new array  int[] arr1; //Creates an array called arr1 that holds integer values\nfloat[] arr2; //Creates an array called arr2 that holds floating-point values  How to Initialize the Size of an Array     \nIn Java, you must declare the size of the array. If not, the size will  always  be zero.   type[] name;  name = new type[size]; \n  You declare the array first and then you create the size of the array after the declaration.   int[] arr1; //This is the initial declaration of an array.\narr1 = new int[2]; //This sets the newly created array to size 2.   type[] name = new type[size] : You declare and initialize the array in the same line, and make an array of a type that has a certain size.   int[] arr2 = new int[10]; //This makes an array that can hold 10 integers.\nString[] arr3 = new String[5]; //This makes an array that can hold 5 Strings.  How to Reference the Indices in an Array    \nThe indices of an array start at 0. So, the first element of an array would be at the 0th position. \nThe highest position would then be  size - 1 .  int[] arr4 = new int[20];\narr4[1] = 20; //Sets the 2nd integer in the array to 20.\narr4[0] = 40; //Sets the 1st integer in the array to 40.\n\nString[] arr5 = new String[25];\narr5[0] =  Hi ; //Sets the 1st indice to  Hi   How to Find the Length in an Array    \nYou can find the length of an array using the .length function.    int[] arr4 = new int[20];\nSystem.out.print(arr4.length); //This would print out 4", 
+            "title": "1-Dimensional Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#2-dimensional-arrays", 
+            "text": "How to Declare a 2-Dimensional Array    \nDeclaring a 2-dimensional array is similar to the way that the 1-dimensional array is declared. Instead of only having a \"size\" parameter, the 2-dimensional array has two size parameters, usually denoted with row and column.    It is declared in the following format:  type[][] name : the type represents the type of variable ie. int, and the name is the name of the new array  int[][] arr1; //Creates an array called arr1 that holds integer values\nfloat[][] arr2; //Creates an array called arr2 that holds floating-point values  How to Initialize the Size of a 2-Dimensional Array        type[][] name;  name = new type[row][col]; \n  You declare the array first and then you create the size of the array after the declaration. \n  There are \"row\" x \"col\" elements in an array.    int[][] arr1; //This is the initial declaration of an array.\narr1 = new int[2][3]; //Sets the newly created array to 2 by 3. There are 6 elements in the array.   type[][] name = new type[row][col] : You declare and initialize the array in the same line, and make an array of a type that has a certain size.   int[] arr2 = new int[10][2]; //This makes an array that can hold 20 integers.\nString[] arr3 = new String[5][3]; //This makes an array that can hold 15 Strings.  How to Reference the Indices in an Array    \nThe indice of a 1-Dimensional Array starts at 0. Similarly, the 2-Dimensional array would start at index 0 too, but since there are two size parameters, the array would start at arr[0][0]. \nThe highest position would then be  arr[size-1][size-1] .  int[] arr4 = new int[20][5];\narr4[19][4] = 20; //Sets the last element at row 19 and col 4 in the array to 20.\narr4[0][0] = 40; //Sets the first integer, at index [0][0] in the array to 40. \n\nString[] arr5 = new String[2][5];\narr5[0][0] =  Hello ; #Sets the element at row 0 and col 0 to  Hi   How to Find the Length in an Array    \nTo find the length of the row and the length of the column.    arr.length: Find the number of rows in the array \"arr\".  arr[i].length: Find the number of cols in the row \"i\" in the array \"arr\".   int[] arr4 = new int[20][5];\nSystem.out.print(arr4.length); //This would print out 20\nSystem.out.print(arr4[0].length); //This would print out 5", 
+            "title": "2-Dimensional Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#initializing-arrays-with-a-list", 
+            "text": "How to Initialize in an 1-Dimensional Array with a List        You need to use the \"{\" and \"}\" to denote the beginning and the end of the new list.    Declare the array first and then initialize the array afterwards:  int[] arrays;  arrays = new int[]{w,x,y...}; \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.   int[] arrays; //Declares a new array called arrays\narrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. \n//arrays[0] = 4, arrays[4] = 8   Declare and initialize the array at the same time:  int[] arrays = {w,x,y...};   \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.   int[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. \n// arrays[0] = 4, arrays[4] = 8  How to Initialize in an 2-Dimensional Array with a List    \nThe main difference between initializing a 2-Dimensional Array and a 1-Dimensional array is the addition of a second parameter for size.    Rather than just using the \"{}\", to denote the new list, you need to nest \"{\" and \"}\". The notation for this is usually {{a,b,c}, {d,e,f}, {g,h,i}, {j,k,l}}.    The first \"{\" and the last \"}\" denotes the entire list. The first pair of \"{}\" that encloses a,b, and c denotes the first row of index 0. The value a would be in index [0][0], the value b would be in [0][1], and the value b would be in [0][2]. The last grouping represented by {j,k,l} would be the fourth row, which has the index 0.    Declare the array first and then initialize the array afterwards:  int[][] arrays;  arrays = new int[][]{{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..}; \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][1] = x, and arrays[1][2] = y2.   int[][] arrays; //Declares a new array called arrays\narrays = new int[]{{4,5,6,7,8}, {2,1,2,9,5}}; //Initialized arrays with the values from the list.\n//arrays[0][0] = 4, arrays[1][3] = 9   Declare and initialize the array at the same time:  int[] arrays = {{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};   \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][0] = w, and arrays[1][1] = x2.   int[][] array4 = {{4,5,6,7,8}, {0,1,3,2,11}}; //Initialized arrays with the list values. \n// arrays[0][0] = 4, arrays[1][4] = 11", 
+            "title": "Initializing Arrays with a List"
+        }, 
+        {
+            "location": "/core/stdio/", 
+            "text": "Stdio\n\n\nSystem.out.print() and System.out.println()\n\n\nBoth System.out.print and System.out.println print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.  \n\n\nYou can use the \"+\" to append multiple things together.  \n\n\nExample\n    \n\n\nSystem.out.println(3 + 4); \n\nSystem.out.println(3 + \nStrings\n + 4);\n\n\n\n\nArithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended.  \n\n\nExample\n    \n\n\nSystem.out.println(3 + 4); //This prints out 7\n\nSystem.out.println(3 + 4 + \nhi\n); //This prints out 7hi\n\nSystem.out.println(\nhi\n + 3 + 4); //This prints out hi34\n\n\n\n\n\n\nHow to Use a Scanner\n\n\nHow to Declare a Scanner\n\n\nAt the beginning of the program, you should have the import statement.\n\n\nimport java.util.Scanner;\n\n\n\n\nThen you must declare a Scanner, the scanner here is to be called \"input\".\n\n\nScanner input = new Scanner(System.in);\n\n\n\n\nThen, you call the scanner with any of the following functions, where input is the name of your new Scanner: \n\n\n\n\ninput.next(): Returns the next token from the input as a String up until the space\n\n\ninput.nextLine(): Returns the entire line from where the Scanner is currently pointing as a String.\n\n\ninput.nextByte(): Takes the next element from the input as a byte\n\n\ninput.nextShort(): Takes the next element from the input as a short\n\n\ninput.nextInt(): Takes the next element from the input as a integer\n\n\ninput.nextLong(): Takes the next element from the input as a long\n\n\ninput.nextFloat(): Takes the next element from the input as a float\n\n\ninput.nextDouble(): Takes the next element from the input as a double\n\n\n\n\n\n\nExample\n    \n\n\n\n\n//If the input is \n3 4 5 6 7 8 9\n\nSystem.out.println(input.next()); //Returns 3\nSystem.out.println(input.nextLine()); \n//Returns \n 4 5 6 7 8 9\n since the pointer has already been advanced from the previous call.\n\n\n\n\n\n\nRead Input in JavaMini\n\n\nThe way that the JavaMini works is that you must place the input \nprior\n to running the program. \n\n\n\n\n\n\nThen, you click the up arrow at the bottom-right next to the \"Expand Standard Input/User Input\". It should look like the image below. \n\n\n\n\nThen you can input whatever input you wish to have, and then click the \"Run\" so your program would run with the parameters you wish.", 
+            "title": "Standard Input/Output"
+        }, 
+        {
+            "location": "/core/stdio/#stdio", 
+            "text": "", 
+            "title": "Stdio"
+        }, 
+        {
+            "location": "/core/stdio/#systemoutprint-and-systemoutprintln", 
+            "text": "Both System.out.print and System.out.println print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.    You can use the \"+\" to append multiple things together.    Example       System.out.println(3 + 4); \n\nSystem.out.println(3 +  Strings  + 4);  Arithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended.    Example       System.out.println(3 + 4); //This prints out 7\n\nSystem.out.println(3 + 4 +  hi ); //This prints out 7hi\n\nSystem.out.println( hi  + 3 + 4); //This prints out hi34", 
+            "title": "System.out.print() and System.out.println()"
+        }, 
+        {
+            "location": "/core/stdio/#how-to-use-a-scanner", 
+            "text": "", 
+            "title": "How to Use a Scanner"
+        }, 
+        {
+            "location": "/core/stdio/#how-to-declare-a-scanner", 
+            "text": "At the beginning of the program, you should have the import statement.  import java.util.Scanner;  Then you must declare a Scanner, the scanner here is to be called \"input\".  Scanner input = new Scanner(System.in);  Then, you call the scanner with any of the following functions, where input is the name of your new Scanner:    input.next(): Returns the next token from the input as a String up until the space  input.nextLine(): Returns the entire line from where the Scanner is currently pointing as a String.  input.nextByte(): Takes the next element from the input as a byte  input.nextShort(): Takes the next element from the input as a short  input.nextInt(): Takes the next element from the input as a integer  input.nextLong(): Takes the next element from the input as a long  input.nextFloat(): Takes the next element from the input as a float  input.nextDouble(): Takes the next element from the input as a double    Example        //If the input is  3 4 5 6 7 8 9 \nSystem.out.println(input.next()); //Returns 3\nSystem.out.println(input.nextLine()); \n//Returns   4 5 6 7 8 9  since the pointer has already been advanced from the previous call.", 
+            "title": "How to Declare a Scanner"
+        }, 
+        {
+            "location": "/core/stdio/#read-input-in-javamini", 
+            "text": "The way that the JavaMini works is that you must place the input  prior  to running the program.     Then, you click the up arrow at the bottom-right next to the \"Expand Standard Input/User Input\". It should look like the image below.    Then you can input whatever input you wish to have, and then click the \"Run\" so your program would run with the parameters you wish.", 
+            "title": "Read Input in JavaMini"
+        }, 
+        {
+            "location": "/core/exceptions/", 
+            "text": "Exceptions\n\n\nAn exception is defined as \"is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions\". This means that something that shouldn't have happened in your program happened and the program has been terminated. \n\n\nTypes of Exceptions\n\n\nArithmeticException\n\n\nThis exception is thrown when the math attempting to be calculated is not a valid arithmetic calculation, ie. if you try to divide a number by 0.\n\n\nNullPointerException\n\n\nThis exception is thrown when a program tries to call an object but the object is null, ie. if an object is attempted to be modified, but the object is null. \n\n\nIndexOutOfBoundsException\n\n\nAn index that is called in any object that is not in bounds or out of range. The index is either less than zero or greater than size - 1. \n\n\nArrayIndexOutOfBoundsException\n\n\nThe ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBoundsException. It is thrown specificially when an index that is referenced from an array is not in bounds or out of range. The index is either less than zero or greater than size - 1. \n\n\nIllegalArgumentException\n\n\nThis exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.", 
+            "title": "Exceptions"
+        }, 
+        {
+            "location": "/core/exceptions/#exceptions", 
+            "text": "An exception is defined as \"is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions\". This means that something that shouldn't have happened in your program happened and the program has been terminated.", 
+            "title": "Exceptions"
+        }, 
+        {
+            "location": "/core/exceptions/#types-of-exceptions", 
+            "text": "", 
+            "title": "Types of Exceptions"
+        }, 
+        {
+            "location": "/core/exceptions/#arithmeticexception", 
+            "text": "This exception is thrown when the math attempting to be calculated is not a valid arithmetic calculation, ie. if you try to divide a number by 0.", 
+            "title": "ArithmeticException"
+        }, 
+        {
+            "location": "/core/exceptions/#nullpointerexception", 
+            "text": "This exception is thrown when a program tries to call an object but the object is null, ie. if an object is attempted to be modified, but the object is null.", 
+            "title": "NullPointerException"
+        }, 
+        {
+            "location": "/core/exceptions/#indexoutofboundsexception", 
+            "text": "An index that is called in any object that is not in bounds or out of range. The index is either less than zero or greater than size - 1.", 
+            "title": "IndexOutOfBoundsException"
+        }, 
+        {
+            "location": "/core/exceptions/#arrayindexoutofboundsexception", 
+            "text": "The ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBoundsException. It is thrown specificially when an index that is referenced from an array is not in bounds or out of range. The index is either less than zero or greater than size - 1.", 
+            "title": "ArrayIndexOutOfBoundsException"
+        }, 
+        {
+            "location": "/core/exceptions/#illegalargumentexception", 
+            "text": "This exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.", 
+            "title": "IllegalArgumentException"
+        }, 
+        {
+            "location": "/core/stdlib/", 
+            "text": "As in the AP CS A Java Subset requirements, go over:\n- Object\n- Integer\n- Double\n- String\n- Math\n- List\nE\n\n- ArrayList\nE\n\n- Collections\n- Arrays", 
+            "title": "Standard Java Library"
+        }
+    ]
+}

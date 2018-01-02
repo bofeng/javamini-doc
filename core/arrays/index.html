@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Arrays - JavaMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Arrays";
+    var mkdocs_page_input_path = "core\\arrays.md";
+    var mkdocs_page_url = "/core/arrays/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> JavaMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../comments/">Comments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operators/">Operators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../boolean/">Booleans & Comparison Operators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../string/">String</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Arrays</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#arrays">Arrays</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#1-dimensional-arrays">1-Dimensional Arrays</a></li>
+        
+            <li><a class="toctree-l4" href="#2-dimensional-arrays">2-Dimensional Arrays</a></li>
+        
+            <li><a class="toctree-l4" href="#initializing-arrays-with-a-list">Initializing Arrays with a List</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../stdio/">Standard Input/Output</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exceptions/">Exceptions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../stdlib/">Standard Java Library</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">JavaMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core &raquo;</li>
+        
+      
+    
+    <li>Arrays</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="arrays">Arrays</h1>
+<h3 id="1-dimensional-arrays">1-Dimensional Arrays</h3>
+<p><span style="color:blue"><strong>How to Declare an Array</strong></span>  <br />
+It is declared in the following format:<br />
+<strong>type[] name</strong>: the type represents the type of variable ie. int, and the name is the name of the new array</p>
+<pre><code>int[] arr1; //Creates an array called arr1 that holds integer values
+float[] arr2; //Creates an array called arr2 that holds floating-point values
+</code></pre>
+
+<p><span style="color:blue"><strong>How to Initialize the Size of an Array</strong> </span> <br />
+In Java, you must declare the size of the array. If not, the size will <em>always</em> be zero.</p>
+<ul>
+<li><strong>type[] name;</strong><br />
+<strong>name = new type[size];</strong><br />
+  You declare the array first and then you create the size of the array after the declaration.</li>
+</ul>
+<pre><code>int[] arr1; //This is the initial declaration of an array.
+arr1 = new int[2]; //This sets the newly created array to size 2.
+</code></pre>
+
+<ul>
+<li><strong>type[] name = new type[size]</strong>: You declare and initialize the array in the same line, and make an array of a type that has a certain size.</li>
+</ul>
+<pre><code>int[] arr2 = new int[10]; //This makes an array that can hold 10 integers.
+String[] arr3 = new String[5]; //This makes an array that can hold 5 Strings.
+</code></pre>
+
+<p><span style="color:blue"><strong>How to Reference the Indices in an Array</strong>  </span><br />
+The indices of an array start at 0. So, the first element of an array would be at the 0th position.<br />
+The highest position would then be <em>size - 1</em>.</p>
+<pre><code>int[] arr4 = new int[20];
+arr4[1] = 20; //Sets the 2nd integer in the array to 20.
+arr4[0] = 40; //Sets the 1st integer in the array to 40.
+
+String[] arr5 = new String[25];
+arr5[0] = &quot;Hi&quot;; //Sets the 1st indice to &quot;Hi&quot;
+</code></pre>
+
+<p><span style="color:blue"><strong>How to Find the Length in an Array</strong>  </span><br />
+You can find the length of an array using the .length function.  </p>
+<pre><code>int[] arr4 = new int[20];
+System.out.print(arr4.length); //This would print out 4
+</code></pre>
+
+<hr />
+<h3 id="2-dimensional-arrays">2-Dimensional Arrays</h3>
+<p><span style="color:blue"><strong> How to Declare a 2-Dimensional Array </strong> </span><br />
+Declaring a 2-dimensional array is similar to the way that the 1-dimensional array is declared. Instead of only having a "size" parameter, the 2-dimensional array has two size parameters, usually denoted with row and column.  </p>
+<p>It is declared in the following format:<br />
+<strong>type[][] name</strong>: the type represents the type of variable ie. int, and the name is the name of the new array</p>
+<pre><code>int[][] arr1; //Creates an array called arr1 that holds integer values
+float[][] arr2; //Creates an array called arr2 that holds floating-point values
+</code></pre>
+
+<p><span style="color:blue"><strong>How to Initialize the Size of a 2-Dimensional Array</strong> </span>  </p>
+<ul>
+<li><strong>type[][] name;</strong><br />
+<strong>name = new type[row][col];</strong><br />
+  You declare the array first and then you create the size of the array after the declaration.<br />
+  There are "row" x "col" elements in an array. </li>
+</ul>
+<pre><code>int[][] arr1; //This is the initial declaration of an array.
+arr1 = new int[2][3]; //Sets the newly created array to 2 by 3. There are 6 elements in the array.
+</code></pre>
+
+<ul>
+<li><strong>type[][] name = new type[row][col]</strong>: You declare and initialize the array in the same line, and make an array of a type that has a certain size.</li>
+</ul>
+<pre><code>int[] arr2 = new int[10][2]; //This makes an array that can hold 20 integers.
+String[] arr3 = new String[5][3]; //This makes an array that can hold 15 Strings.
+</code></pre>
+
+<p><span style="color:blue"><strong>How to Reference the Indices in an Array</strong>  </span><br />
+The indice of a 1-Dimensional Array starts at 0. Similarly, the 2-Dimensional array would start at index 0 too, but since there are two size parameters, the array would start at arr[0][0]. 
+The highest position would then be <em>arr[size-1][size-1]</em>.</p>
+<pre><code>int[] arr4 = new int[20][5];
+arr4[19][4] = 20; //Sets the last element at row 19 and col 4 in the array to 20.
+arr4[0][0] = 40; //Sets the first integer, at index [0][0] in the array to 40. 
+
+String[] arr5 = new String[2][5];
+arr5[0][0] = &quot;Hello&quot;; #Sets the element at row 0 and col 0 to &quot;Hi&quot;
+</code></pre>
+
+<p><span style="color:blue"><strong>How to Find the Length in an Array</strong>  </span><br />
+To find the length of the row and the length of the column. </p>
+<ul>
+<li>arr.length: Find the number of rows in the array "arr".</li>
+<li>arr[i].length: Find the number of cols in the row "i" in the array "arr".</li>
+</ul>
+<pre><code>int[] arr4 = new int[20][5];
+System.out.print(arr4.length); //This would print out 20
+System.out.print(arr4[0].length); //This would print out 5
+</code></pre>
+
+<hr />
+<h3 id="initializing-arrays-with-a-list">Initializing Arrays with a List</h3>
+<p><span style="color:blue"><strong>How to Initialize in an 1-Dimensional Array with a List</strong>  </span>  </p>
+<p>You need to use the "{" and "}" to denote the beginning and the end of the new list. </p>
+<ul>
+<li>Declare the array first and then initialize the array afterwards:<br />
+&nbsp;&nbsp;<strong>int[] arrays;</strong><br />
+&nbsp;&nbsp;<strong>arrays = new int[]{w,x,y...};</strong><br />
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.</li>
+</ul>
+<pre><code>int[] arrays; //Declares a new array called arrays
+arrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. 
+//arrays[0] = 4, arrays[4] = 8
+</code></pre>
+
+<ul>
+<li>Declare and initialize the array at the same time:<br />
+&nbsp;&nbsp;<strong>int[] arrays = {w,x,y...};</strong> <br />
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.</li>
+</ul>
+<pre><code>int[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. 
+// arrays[0] = 4, arrays[4] = 8
+</code></pre>
+
+<p><span style="color:blue"><strong>How to Initialize in an 2-Dimensional Array with a List</strong>  </span><br />
+The main difference between initializing a 2-Dimensional Array and a 1-Dimensional array is the addition of a second parameter for size.  </p>
+<p>Rather than just using the "{}", to denote the new list, you need to nest "{" and "}". The notation for this is usually {{a,b,c}, {d,e,f}, {g,h,i}, {j,k,l}}.  </p>
+<p>The first "{" and the last "}" denotes the entire list. The first pair of "{}" that encloses a,b, and c denotes the first row of index 0. The value a would be in index [0][0], the value b would be in [0][1], and the value b would be in [0][2]. The last grouping represented by {j,k,l} would be the fourth row, which has the index 0. </p>
+<ul>
+<li>Declare the array first and then initialize the array afterwards:<br />
+&nbsp;&nbsp;<strong>int[][] arrays;</strong><br />
+&nbsp;&nbsp;<strong>arrays = new int[][]{{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};</strong><br />
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][1] = x, and arrays[1][2] = y2.</li>
+</ul>
+<pre><code>int[][] arrays; //Declares a new array called arrays
+arrays = new int[]{{4,5,6,7,8}, {2,1,2,9,5}}; //Initialized arrays with the values from the list.
+//arrays[0][0] = 4, arrays[1][3] = 9
+</code></pre>
+
+<ul>
+<li>Declare and initialize the array at the same time:<br />
+&nbsp;&nbsp;<strong>int[] arrays = {{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};</strong> <br />
+The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][0] = w, and arrays[1][1] = x2.</li>
+</ul>
+<pre><code>int[][] array4 = {{4,5,6,7,8}, {0,1,3,2,11}}; //Initialized arrays with the list values. 
+// arrays[0][0] = 4, arrays[1][4] = 11
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../stdio/" class="btn btn-neutral float-right" title="Standard Input/Output">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../string/" class="btn btn-neutral" title="String"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../string/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../stdio/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

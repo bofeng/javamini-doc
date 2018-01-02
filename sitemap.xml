@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2018-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,8 +12,56 @@
     
         
     <url>
+     <loc>/core/comments/</loc>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/core/number/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/core/operators/</loc>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/core/boolean/</loc>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/core/string/</loc>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/core/arrays/</loc>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/core/stdio/</loc>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/core/exceptions/</loc>
+     <lastmod>2018-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/core/stdlib/</loc>
+     <lastmod>2018-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
