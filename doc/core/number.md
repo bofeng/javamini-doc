@@ -14,7 +14,7 @@ An _IEEE-754 floating point_ is a number that can be an integer or decimal value
 
 ###IEEE-754 Floating Point
 * ```float```: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.
-```
+```java
 float f = 123.5f;
 ```  
 **Note:** A floating point declaration must have a "f" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  
@@ -32,7 +32,7 @@ You can make it so that a smaller number is placed in a larger type _without_ ex
 * float to double  
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 byte x = 235;
 long s = x; //Sets the long value "s" to "x" or 235.
 float f = s; //Sets the float value "f" to "s" or 235.
@@ -42,7 +42,7 @@ Explicit casting is neaded to convert from larger types to smaller types, ie. an
 The values have to be explicitly cast because the program may be **losing** information so the values have to be explicitly cast.
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 double x = 235;
 long s = (double) x; //Sets the long value "s" to "x" or 235.
 float f = (double) x; //Sets the float value "f" to "x" or 235.

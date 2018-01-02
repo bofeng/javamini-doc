@@ -13,7 +13,7 @@ Booleans are used to show the logical values of _true_ and _false_.
 * ```||``` : If x || y, if both is **false**, then x || y is _false_, else x || y is _true_.
 
 <span style="color:blue">**Example**</span>     
-```
+```java
 boolean x = true; //Sets the value of x to true
 boolean y = false; //Sets the value of y to false
 System.out.println(!x); //Prints false
@@ -35,7 +35,7 @@ System.out.println(y||y); //Prints false
 * ```>=``` : greater than or equal to
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 System.out.println(45 == 45); //Prints true
 System.out.println(45 != 45); //Prints false
 System.out.println(45 >= 34); //Prints true
@@ -57,7 +57,7 @@ The ".equals()" is used to compare when two objects are equal, such as Strings. 
 
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 boolean x = 56; 
 System.out.println(x == 56);//Prints true
 String str1 = "Hello"; //Creates a new String called "Hello"

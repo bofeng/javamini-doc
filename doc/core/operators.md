@@ -19,7 +19,7 @@
 * ```%=```: if a %= b, you set the value of a to the original value of a % b
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 int a = 14;
 a++; //This changes a to 15
 a /= 3; //This changes a to 5

@@ -5,7 +5,7 @@ Both System.out.print and System.out.println print out the resulting statement e
 You can use the "+" to append multiple things together.  
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 System.out.println(3 + 4); 
 
 System.out.println(3 + "Strings" + 4);
@@ -14,23 +14,24 @@ System.out.println(3 + "Strings" + 4);
 Arithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended.  
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 System.out.println(3 + 4); //This prints out 7
 
 System.out.println(3 + 4 + "hi"); //This prints out 7hi
 
 System.out.println("hi" + 3 + 4); //This prints out hi34
 ```
-<br/>
+
+---
 ##How to Use a Scanner 
 ####How to Declare a Scanner
 At the beginning of the program, you should have the import statement.
-```
+```java
 import java.util.Scanner;
 ```
 
 Then you must declare a Scanner, the scanner here is to be called "input".
-```
+```java
 Scanner input = new Scanner(System.in);
 ```
 
@@ -47,7 +48,7 @@ Then, you call the scanner with any of the following functions, where input is t
 <br>
 <br>
 <span style="color:blue">**Example**</span>    
-```
+```java
 //If the input is "3 4 5 6 7 8 9"
 System.out.println(input.next()); //Returns 3
 System.out.println(input.nextLine()); 

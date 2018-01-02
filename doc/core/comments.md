@@ -8,7 +8,7 @@ All types of comments are ignored by the Java Compiler. Comments are used for th
 * ```/** text */``` : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the "**/\*\***" and "***/**". These type of documentation usually spans multiple lines. 
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 System.out.println("Hello"); //Prints "Hello" and the information after the // won't throw an error
 
 int x = 14;
@@ -30,7 +30,7 @@ Javadoc is used by many programmers as a way to easily identify different parts 
 *   ```@return```: This gives a description of what is being returned from the function.
 
 <span style="color:blue">**Example**</span>    
-```
+```java
 /**
 * 	This function multiplies two integers.
 *	@param a the first integer that is being multiplied
