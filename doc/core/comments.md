@@ -1,11 +1,11 @@
 #Comments
-All types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects. 
+All types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects.
 
 ###Different Type of Comments
 
 * ```// text ``` : This is a comment where the compiler ignores everything from the "//" to the end of the line
 * ```/* text */``` : This is a comment where the compiler ignores everything enclosed by the "/\*" and "*/". These type of quotes can span multiple lines.
-* ```/** text */``` : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the "**/\*\***" and "***/**". These type of documentation usually spans multiple lines. 
+* ```/** text */``` : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the "**/\*\***" and "***/**". These type of documentation usually spans multiple lines.
 
 <span style="color:blue">**Example**</span>    
 ```java
@@ -19,10 +19,10 @@ int x = 14;
 
 System.out.println(x); //This would print out 14
 
-/\* You can also do this - it does not have to be a multi-lined comment.\*/
+/* You can also do this - it does not have to be a multi-lined comment.*/
 ```
 
-###Javadoc 
+###Javadoc
 Javadoc is used by many programmers as a way to easily identify different parts of a function. It usually includes a short description about the function, @param and @return values. All of this information would be enclosed in "**/\*\***" and "**\*/**" notation.  
 
 ######Javadoc Documentation######

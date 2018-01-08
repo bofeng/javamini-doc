@@ -16,8 +16,8 @@ class Test implements Cloneable{
 }  
 ```
 
-Shallow Cloning v. Deep Cloning  
-Shadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object. 
+#### Shallow Cloning v. Deep Cloning  
+Shadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object.
 Deep cloning copies all the separate field and creates new references for the new object so all it's contents are copies to a new object.
 
 <span style="color:blue">**Shallow Clone Example**</span>    
@@ -35,13 +35,13 @@ class Test implements Cloneable
 class Test implements Cloneable
 {
     ArrayList c = new ArrayList<>();
- 
+
     public Object clone() throws CloneNotSupportedException
     {
         Test t = (Test)super.clone();
- 
+
         t.c = new ArrayList<>();
- 
+
         // Create a new object for the field and assign it to shallow copy obtained to make it a deep copy
         return t;
     }
@@ -51,7 +51,7 @@ class Test implements Cloneable
 
 <span style="font-size: 20px"><b>toString</b></span>  
 
-In an object, the toString() method returns the string representation of the object. 
+In an object, the toString() method returns the string representation of the object.
 ```java
 class Test implements Cloneable{
 	private int a;
@@ -64,9 +64,9 @@ class Test implements Cloneable{
 ```
 
 ### Integer and Double
-Integer is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects. 
+Integer is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects.
 
-<b> Autoboxing </b> is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and <b> unboxing </b> is when the Java complier converts the wrapper class to the primitive type. 
+<b> Autoboxing </b> is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and <b> unboxing </b> is when the Java complier converts the wrapper class to the primitive type.
 
 ###### Converting Between int and Integer  
 *   int -> Integer : Integer newInteger = new Integer(i);  
@@ -121,7 +121,7 @@ List<Integer> ints = new ArrayList<Integer>();
 ```
 
 ##### Methods Used for List&lt;E&gt; and ArrayList&lt;E&gt;
-* int size(): Returns the number of values in the list 
+* int size(): Returns the number of values in the list
 * boolean add(Object x): Adds Object x to the end of the list and returns true
 * Object get(int index): Returns the object in the list at index
 * Object set(int index, Object x): Sets the value at index to Object x and returns the old value at index
@@ -132,7 +132,7 @@ List<Integer> ints = new ArrayList<Integer>();
 * boolean remove(Object x): If the List contains x, removes the <b> first </b> occurence and removes true, else returns false
 
 <b> Note </b>:  
-<i> add</i> and <i> remove </i> changes the size of the ArrayList. 
+<i> add</i> and <i> remove </i> changes the size of the ArrayList.
 
 <span style="color:blue">**Example**</span>     
 ```java
@@ -162,7 +162,7 @@ The Collection interface is typically used to move and manipulate groups of obje
 * boolean contains(Object o): Returns true is the Collection contains o
 * boolean isEmpty(): Returns true is there are no elements in the collection
 * boolean remove(Object o): Removes an instance of the element if it is present in the collection
-* int size(): Returns the number of elements in the collection. 
+* int size(): Returns the number of elements in the collection.
 
 [More information about Collection &lt;E&gt; Here](https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html)
 

@@ -1,6 +1,6 @@
 # String
 ### How to Declare a String
-You can declare a String in 3 different ways. 
+You can declare a String in 3 different ways.
 ##### char
 You can create a char[] array to represent a String.
 ```java
@@ -27,19 +27,19 @@ String s5 = "Hello";
 String s6 = new String("Hello");
 String s7 = new String("Hello");
 
-System.out.println(s4 == s5); 
+System.out.println(s4 == s5);
 //Prints true because they share the same memory address
-System.out.println(s4 == s7); 
+System.out.println(s4 == s7);
 //Prints false because s6 creates a String object with a different memory address
-System.out.println(s6 == s7); 
+System.out.println(s6 == s7);
 //Prints false because s6 and s7 are both String objects created with different memory addresses
 ```
 ### String concatenation
 String concatentation can be done in two ways.  
 ##### concat() Method
-You use the method as follows: 
+You use the method as follows:
 s1 = s1.concat("s2");
-s1 is the original String and s2 is the String you want to concatenate with. 
+s1 is the original String and s2 is the String you want to concatenate with.
 
 ```java
 String s1 = new String("Hello");
@@ -68,10 +68,10 @@ System.out.println(s); //Prints out \"Hello"\
 
 String ss = "Hi\nHello";
 System.out.println(ss);
-//Prints out 
-//Hi 
+//Prints out
+//Hi
 //Hello
-``` 
+```
 ### equals() vs. compareTo()
 Both equals() and compareTo() compares 2 objects.
 ###### equals()
@@ -86,18 +86,18 @@ System.out.println(sss1.equals(sss2));
 //Prints false because one String is Java and the other is Python.
 ```
 ###### compareTo()
-The compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. 
-A negative interger is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive interger is returned if the String is greater than the String specified.  
-<b>Note:</b> Greater than refers to later in the alphabet and less than refers to earlier in the alphabet.
+The compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. A negative integer is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive integer is returned if the String is greater than the String specified.  
+
+<b>Note:</b> Greater than refers to later in the alphabet and less than refers to earlier in the alphabet. Lowercase letters are considered later in the alphabet. It compares two strings, using the ASCII values for each character. For example, 'H' < 'T' and 'T' < 'b'. To see the table of ASCII characters, [click here](http://www.asciitable.com/). In the first table, the number under "Dec" is the number for that character. Therefore characters that appear later in the list are greater than those that appear before.
 ```java
 String ss1 = "Hello";
 String ss2 = "Hi";
 String ss3 = "There";
 String ss4 = "Hi";
 System.out.println(ss2.compareTo(ss3));
-//Returns a positive integer since ss2 is greater than ss3.
+//Returns a negative integer since ss2 comes before ss3 alphabetically (ss2 is less than ss3).
 System.out.println(ss2.compareTo(ss1));
-//Returns a negative integer since ss2 is less than ss1. 
+//Returns a positive integer since ss2 comes after ss1 alphabetically (ss2 is greater than ss1).
 System.out.println(ss2.compareTo(ss4));
-//Returns 0 becacuse ss2 is equal to ss2.
+//Returns 0 because ss2 is equal to ss4.
 ```

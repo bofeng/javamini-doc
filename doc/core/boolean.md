@@ -58,10 +58,10 @@ The ".equals()" is used to compare when two objects are equal, such as Strings. 
 
 <span style="color:blue">**Example**</span>    
 ```java
-boolean x = 56; 
+int x = 56; 
 System.out.println(x == 56);//Prints true
 String str1 = "Hello"; //Creates a new String called "Hello"
 String str2 = new String("Hello"); //Creates a new String called "Hello"
 System.out.println(str1 == str2); //Prints false
-System.out.println(str1.equals(str2)); //Prints true 
+System.out.println(str1.equals(str2)); //Prints true
 ```
