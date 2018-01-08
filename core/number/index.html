@@ -153,10 +153,10 @@ An <em>integer</em> is a number that is a positive or negative whole number or 0
 An <em>IEEE-754 floating point</em> is a number that can be an integer or decimal values between them.  </p>
 <h3 id="integer-types">Integer Types</h3>
 <ul>
-<li><code>byte</code>: This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes <em>one byte</em>). It has a minimum value of -128 and a maximum value of 127. </li>
+<li><code>byte</code>: This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes <em>one byte</em>). It has a minimum value of -128 and a maximum value of 127.</li>
 <li><code>short</code>: This is a signed 16-bit two's complement integer (this value takes <em>two bytes</em>). It has a minimum value of -32768 and a maximum value of 32767.  </li>
 <li><code>int</code>: This is a signed 32-bit two's complement integer (this value takes <em>four bytes</em>). It has a minimum value of -2<sup>31</sup> and a maximum value of 2<sup>31</sup>-1.  </li>
-<li><code>long</code>: This is a signed 64-bit two's complement integer (this value takes <em>eight bytes</em>). It has a minimum value of -2<sup>63</sup> and a maximum value of 2<sup>63</sup>-1. </li>
+<li><code>long</code>: This is a signed 64-bit two's complement integer (this value takes <em>eight bytes</em>). It has a minimum value of -2<sup>63</sup> and a maximum value of 2<sup>63</sup>-1.</li>
 </ul>
 <h3 id="ieee-754-floating-point">IEEE-754 Floating Point</h3>
 <ul>
@@ -180,17 +180,17 @@ An <em>IEEE-754 floating point</em> is a number that can be an integer or decima
 <li>float to double  </li>
 </ul>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code class="java">byte x = 235;
-long s = x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 235.
+<pre><code class="java">byte x = 105;
+long s = x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 105.
+float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 105.0.
 </code></pre>
 
-<p>Explicit casting is neaded to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.<br />
-The values have to be explicitly cast because the program may be <strong>losing</strong> information so the values have to be explicitly cast.</p>
+<p>Explicit casting is needed to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.<br />
+The values have to be explicitly cast because the program may be <strong>losing</strong> information so the values have to be explicitly cast. Note that when you cast a double or float (a number with a decimal) to an integer, no rounding occurs. It simply drops all the digits after the decimal point and leaves you with the integer portion of the number.</p>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code class="java">double x = 235;
-long s = (double) x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
-float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 235.
+<pre><code class="java">double x = 235.054;
+long s = (int) x; // Sets the long value &quot;s&quot; to &quot;x&quot; as an integer or 235.
+float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 235.0.
 </code></pre>
               
             </div>

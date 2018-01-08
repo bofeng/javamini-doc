@@ -91,6 +91,8 @@
         
             <li><a class="toctree-l4" href="#systemoutprint-and-systemoutprintln">System.out.print() and System.out.println()</a></li>
         
+            <li><a class="toctree-l4" href="#formatting-print-statements">Formatting Print Statements</a></li>
+        
             <li><a class="toctree-l4" href="#how-to-use-a-scanner">How to Use a Scanner</a></li>
         
         </ul>
@@ -147,21 +149,45 @@
               
                 <h1 id="stdio">Stdio</h1>
 <h2 id="systemoutprint-and-systemoutprintln">System.out.print() and System.out.println()</h2>
-<p>Both System.out.print and System.out.println print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.  </p>
+<p>Both System.out.print() and System.out.println() print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.  </p>
 <p>You can use the "+" to append multiple things together.  </p>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code class="java">System.out.println(3 + 4); 
+<pre><code class="java">System.out.println(3 + 4);
 
 System.out.println(3 + &quot;Strings&quot; + 4);
 </code></pre>
 
-<p>Arithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended.  </p>
+<p>Arithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended. To do math after the string in the print statement, surround the arithmetic part with parentheses.</p>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
 <pre><code class="java">System.out.println(3 + 4); //This prints out 7
 
 System.out.println(3 + 4 + &quot;hi&quot;); //This prints out 7hi
 
 System.out.println(&quot;hi&quot; + 3 + 4); //This prints out hi34
+
+System.out.println(&quot;hi&quot; + (3 + 4)); //This prints out hi7
+</code></pre>
+
+<h2 id="formatting-print-statements">Formatting Print Statements</h2>
+<p>When formatting print statements you can use System.out.printf(string, args), where "string" is the entirety of the string you want to print with % and the type you want to use replacing where the variables will go and "args" is where you list out each argument in the order you want it to appear.</p>
+<ul>
+<li><code>%s</code> is used for strings and characters.</li>
+<li><code>%d</code> is used for integers, longs, bytes, and shorts</li>
+<li><code>%f</code> is used for doubles and floats.</li>
+</ul>
+<p>Between the percent sign and the letter for the type, you can put numbers to show how much space before the variable or how many digits to show in the variable.</p>
+<p><span style="color:blue"><strong>Example</strong></span></p>
+<pre><code class="java">int a = 5;
+double b = 10.256;
+String s = &quot;Hello&quot;;
+System.out.printf(&quot;%15s.\n&quot;, s);
+// since &quot;Hello&quot; is 5 letters long, then &quot;Hello&quot; will now take up 15 spaces
+// prints out &quot;          Hello.&quot; (10 spaces (then &quot;Hello&quot;))
+
+System.out.printf(&quot;%03d + %.2f = %.2f&quot;, a, b, (a + b));
+// since &quot;03&quot; comes before d, it will print out the value stored in a as 3 digits, like 005
+// &quot;.2f&quot; means it will print out the number rounded to the nearest 2 decimal places
+// prints out &quot;005 + 10.26 = 15.26&quot;
 </code></pre>
 
 <hr />
@@ -175,7 +201,7 @@ System.out.println(&quot;hi&quot; + 3 + 4); //This prints out hi34
 <pre><code class="java">Scanner input = new Scanner(System.in);
 </code></pre>
 
-<p>Then, you call the scanner with any of the following functions, where input is the name of your new Scanner: </p>
+<p>Then, you call the scanner with any of the following functions, where input is the name of your new Scanner:</p>
 <ul>
 <li>input.next(): Returns the next token from the input as a String up until the space</li>
 <li>input.nextLine(): Returns the entire line from where the Scanner is currently pointing as a String.</li>
@@ -191,7 +217,7 @@ System.out.println(&quot;hi&quot; + 3 + 4); //This prints out hi34
 </ul>
 <pre><code class="java">//If the input is &quot;3 4 5 6 7 8 9&quot;
 System.out.println(input.next()); //Returns 3
-System.out.println(input.nextLine()); 
+System.out.println(input.nextLine());
 //Returns &quot; 4 5 6 7 8 9&quot; since the pointer has already been advanced from the previous call.
 </code></pre>
 
@@ -200,9 +226,11 @@ System.out.println(input.nextLine());
 <p>The way that the JavaMini works is that you must place the input <em>prior</em> to running the program. <br />
 <br>
 <img alt="Before" src="../images/stdio1.png" /></p>
-<p>Then, you click the up arrow at the bottom-right next to the "Expand Standard Input/User Input". It should look like the image below. </p>
+<p>Then, you click the up arrow at the bottom-right next to the "Expand Standard Input/User Input". It should look like the image below.</p>
 <p><img alt="Before" src="../images/stdio2.png" /></p>
-<p>Then you can input whatever input you wish to have, and then click the "Run" so your program would run with the parameters you wish. </p>
+<p>Then you can input whatever input you wish to have, and then click the "Run" so your program would run with the parameters you wish.</p>
+<p><span style="color:blue"><strong>Example - Reading Input in Java Mini</strong></span>
+<img alt="In Java Mini" src="../images/stdio3.png" /></p>
               
             </div>
           </div>

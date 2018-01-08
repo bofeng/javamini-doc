@@ -169,8 +169,8 @@ For the clone method, you must throw the exception that corresponds to the infer
 }  
 </code></pre>
 
-<p>Shallow Cloning v. Deep Cloning<br />
-Shadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object. 
+<h4 id="shallow-cloning-v-deep-cloning">Shallow Cloning v. Deep Cloning</h4>
+<p>Shadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object.
 Deep cloning copies all the separate field and creates new references for the new object so all it's contents are copies to a new object.</p>
 <p><span style="color:blue"><strong>Shallow Clone Example</strong></span>    </p>
 <pre><code class="java">class Test implements Cloneable
@@ -199,7 +199,7 @@ Deep cloning copies all the separate field and creates new references for the ne
 </code></pre>
 
 <p><span style="font-size: 20px"><b>toString</b></span>  </p>
-<p>In an object, the toString() method returns the string representation of the object. </p>
+<p>In an object, the toString() method returns the string representation of the object.</p>
 <pre><code class="java">class Test implements Cloneable{
     private int a;
     private int b;
@@ -211,8 +211,8 @@ Deep cloning copies all the separate field and creates new references for the ne
 </code></pre>
 
 <h3 id="integer-and-double">Integer and Double</h3>
-<p>Integer is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects. </p>
-<p><b> Autoboxing </b> is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and <b> unboxing </b> is when the Java complier converts the wrapper class to the primitive type. </p>
+<p>Integer is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects.</p>
+<p><b> Autoboxing </b> is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and <b> unboxing </b> is when the Java complier converts the wrapper class to the primitive type.</p>
 <h6 id="converting-between-int-and-integer">Converting Between int and Integer</h6>
 <ul>
 <li>int -&gt; Integer : Integer newInteger = new Integer(i);  </li>
@@ -269,7 +269,7 @@ Because ArrayList&lt;E&gt; implements List&lt;E&gt;, an ArrayList can be declare
 
 <h5 id="methods-used-for-liste-and-arrayliste">Methods Used for List&lt;E&gt; and ArrayList&lt;E&gt;</h5>
 <ul>
-<li>int size(): Returns the number of values in the list </li>
+<li>int size(): Returns the number of values in the list</li>
 <li>boolean add(Object x): Adds Object x to the end of the list and returns true</li>
 <li>Object get(int index): Returns the object in the list at index</li>
 <li>Object set(int index, Object x): Sets the value at index to Object x and returns the old value at index</li>
@@ -280,7 +280,7 @@ Because ArrayList&lt;E&gt; implements List&lt;E&gt;, an ArrayList can be declare
 <li>boolean remove(Object x): If the List contains x, removes the <b> first </b> occurence and removes true, else returns false</li>
 </ul>
 <p><b> Note </b>:<br />
-<i> add</i> and <i> remove </i> changes the size of the ArrayList. </p>
+<i> add</i> and <i> remove </i> changes the size of the ArrayList.</p>
 <p><span style="color:blue"><strong>Example</strong></span>     </p>
 <pre><code class="java">ArrayList&lt;String&gt; newList = new ArrayList&lt;String&gt;();
 newList.add(&quot;Hello&quot;);
@@ -309,7 +309,7 @@ for(String word: list)
 <li>boolean contains(Object o): Returns true is the Collection contains o</li>
 <li>boolean isEmpty(): Returns true is there are no elements in the collection</li>
 <li>boolean remove(Object o): Removes an instance of the element if it is present in the collection</li>
-<li>int size(): Returns the number of elements in the collection. </li>
+<li>int size(): Returns the number of elements in the collection.</li>
 </ul>
 <p><a href="https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html">More information about Collection &lt;E&gt; Here</a></p>
 <h4 id="collections">Collections</h4>

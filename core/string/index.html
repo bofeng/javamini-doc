@@ -151,7 +151,7 @@
               
                 <h1 id="string">String</h1>
 <h3 id="how-to-declare-a-string">How to Declare a String</h3>
-<p>You can declare a String in 3 different ways. </p>
+<p>You can declare a String in 3 different ways.</p>
 <h5 id="char">char</h5>
 <p>You can create a char[] array to represent a String.</p>
 <pre><code class="java">char[] s1 = {'H', 'e', 'l', 'l', 'o'};
@@ -175,20 +175,20 @@ String s5 = &quot;Hello&quot;;
 String s6 = new String(&quot;Hello&quot;);
 String s7 = new String(&quot;Hello&quot;);
 
-System.out.println(s4 == s5); 
+System.out.println(s4 == s5);
 //Prints true because they share the same memory address
-System.out.println(s4 == s7); 
+System.out.println(s4 == s7);
 //Prints false because s6 creates a String object with a different memory address
-System.out.println(s6 == s7); 
+System.out.println(s6 == s7);
 //Prints false because s6 and s7 are both String objects created with different memory addresses
 </code></pre>
 
 <h3 id="string-concatenation">String concatenation</h3>
 <p>String concatentation can be done in two ways.  </p>
 <h5 id="concat-method">concat() Method</h5>
-<p>You use the method as follows: 
+<p>You use the method as follows:
 s1 = s1.concat("s2");
-s1 is the original String and s2 is the String you want to concatenate with. </p>
+s1 is the original String and s2 is the String you want to concatenate with.</p>
 <pre><code class="java">String s1 = new String(&quot;Hello&quot;);
 s1 = s1.concat(&quot; There&quot;);
 System.out.println(s1); //Prints out &quot;Hello There&quot;
@@ -213,8 +213,8 @@ System.out.println(s); //Prints out \&quot;Hello&quot;\
 
 String ss = &quot;Hi\nHello&quot;;
 System.out.println(ss);
-//Prints out 
-//Hi 
+//Prints out
+//Hi
 //Hello
 </code></pre>
 
@@ -232,19 +232,18 @@ System.out.println(sss1.equals(sss2));
 </code></pre>
 
 <h6 id="compareto">compareTo()</h6>
-<p>The compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. 
-A negative interger is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive interger is returned if the String is greater than the String specified.<br />
-<b>Note:</b> Greater than refers to later in the alphabet and less than refers to earlier in the alphabet.</p>
+<p>The compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. A negative integer is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive integer is returned if the String is greater than the String specified.  </p>
+<p><b>Note:</b> Greater than refers to later in the alphabet and less than refers to earlier in the alphabet. Lowercase letters are considered later in the alphabet. It compares two strings, using the ASCII values for each character. For example, 'H' &lt; 'T' and 'T' &lt; 'b'. To see the table of ASCII characters, <a href="http://www.asciitable.com/">click here</a>. In the first table, the number under "Dec" is the number for that character. Therefore characters that appear later in the list are greater than those that appear before.</p>
 <pre><code class="java">String ss1 = &quot;Hello&quot;;
 String ss2 = &quot;Hi&quot;;
 String ss3 = &quot;There&quot;;
 String ss4 = &quot;Hi&quot;;
 System.out.println(ss2.compareTo(ss3));
-//Returns a positive integer since ss2 is greater than ss3.
+//Returns a negative integer since ss2 comes before ss3 alphabetically (ss2 is less than ss3).
 System.out.println(ss2.compareTo(ss1));
-//Returns a negative integer since ss2 is less than ss1. 
+//Returns a positive integer since ss2 comes after ss1 alphabetically (ss2 is greater than ss1).
 System.out.println(ss2.compareTo(ss4));
-//Returns 0 becacuse ss2 is equal to ss2.
+//Returns 0 because ss2 is equal to ss4.
 </code></pre>
               
             </div>
