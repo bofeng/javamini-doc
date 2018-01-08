@@ -162,7 +162,7 @@ An <em>IEEE-754 floating point</em> is a number that can be an integer or decima
 <ul>
 <li><code>float</code>: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.</li>
 </ul>
-<pre><code>float f = 123.5f;
+<pre><code class="java">float f = 123.5f;
 </code></pre>
 
 <p><strong>Note:</strong> A floating point declaration must have a "f" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  </p>
@@ -180,7 +180,7 @@ An <em>IEEE-754 floating point</em> is a number that can be an integer or decima
 <li>float to double  </li>
 </ul>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>byte x = 235;
+<pre><code class="java">byte x = 235;
 long s = x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
 float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 235.
 </code></pre>
@@ -188,7 +188,7 @@ float f = s; //Sets the float value &quot;f&quot; to &quot;s&quot; or 235.
 <p>Explicit casting is neaded to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.<br />
 The values have to be explicitly cast because the program may be <strong>losing</strong> information so the values have to be explicitly cast.</p>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>double x = 235;
+<pre><code class="java">double x = 235;
 long s = (double) x; //Sets the long value &quot;s&quot; to &quot;x&quot; or 235.
 float f = (double) x; //Sets the float value &quot;f&quot; to &quot;x&quot; or 235.
 </code></pre>

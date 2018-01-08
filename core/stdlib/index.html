@@ -93,6 +93,25 @@
     <a class="current" href="./">Standard Java Library</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#stdio">Stdio</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#object">Object</a></li>
+        
+            <li><a class="toctree-l4" href="#integer-and-double">Integer and Double</a></li>
+        
+            <li><a class="toctree-l4" href="#string">String</a></li>
+        
+            <li><a class="toctree-l4" href="#math">Math</a></li>
+        
+            <li><a class="toctree-l4" href="#liste-and-arrayliste">List&lt;E&gt; and ArrayList&lt;E&gt;</a></li>
+        
+            <li><a class="toctree-l4" href="#collection-e-collections-and-arrays">Collection &lt;E&gt;, Collections and Arrays</a></li>
+        
+        </ul>
+    
+
     </ul>
                 </li>
     </ul>
@@ -134,17 +153,182 @@
           <div role="main">
             <div class="section">
               
-                <pre><code>As in the AP CS A Java Subset requirements, go over:
-- Object
-- Integer
-- Double
-- String
-- Math
-- List&lt;E&gt;
-- ArrayList&lt;E&gt;
-- Collections
-- Arrays
+                <h1 id="stdio">Stdio</h1>
+<h3 id="object">Object</h3>
+<p><span style="font-size: 20px"><b>clone</b>  </span><br />
+Cloning in Java uses the .clone() method. The class must implement the Cloneable interface.
+For the clone method, you must throw the exception that corresponds to the inferface.</p>
+<p><span style="color:blue"><strong>Example</strong></span>    </p>
+<pre><code class="java">class Test implements Cloneable{
+    public static void main(String[] args){
+
+    }
+
+    protected Object clone() throws CloneNotSupportedException{
+    }
+}  
 </code></pre>
+
+<p>Shallow Cloning v. Deep Cloning<br />
+Shadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object. 
+Deep cloning copies all the separate field and creates new references for the new object so all it's contents are copies to a new object.</p>
+<p><span style="color:blue"><strong>Shallow Clone Example</strong></span>    </p>
+<pre><code class="java">class Test implements Cloneable
+{
+    public Object clone() throws CloneNotSupportedException{
+        return super.clone();
+    }
+}
+</code></pre>
+
+<p><span style="color:blue"><strong>Deep Clone Example</strong></span>    </p>
+<pre><code class="java">class Test implements Cloneable
+{
+    ArrayList c = new ArrayList&lt;&gt;();
+
+    public Object clone() throws CloneNotSupportedException
+    {
+        Test t = (Test)super.clone();
+
+        t.c = new ArrayList&lt;&gt;();
+
+        // Create a new object for the field and assign it to shallow copy obtained to make it a deep copy
+        return t;
+    }
+}
+</code></pre>
+
+<p><span style="font-size: 20px"><b>toString</b></span>  </p>
+<p>In an object, the toString() method returns the string representation of the object. </p>
+<pre><code class="java">class Test implements Cloneable{
+    private int a;
+    private int b;
+    //Overriding the toString() method
+    public String toString(){
+        return &quot;A: &quot; + a + &quot;B: &quot; + b;
+    }
+}
+</code></pre>
+
+<h3 id="integer-and-double">Integer and Double</h3>
+<p>Integer is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects. </p>
+<p><b> Autoboxing </b> is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and <b> unboxing </b> is when the Java complier converts the wrapper class to the primitive type. </p>
+<h6 id="converting-between-int-and-integer">Converting Between int and Integer</h6>
+<ul>
+<li>int -&gt; Integer : Integer newInteger = new Integer(i);  </li>
+<li>Integer -&gt; int : Integer.valueOf(i)</li>
+</ul>
+<h6 id="converting-between-double-and-double">Converting Between Double and double</h6>
+<ul>
+<li>double -&gt; Double : Double newDouble = new Double(d);</li>
+<li>Double -&gt; double: double -&gt; Double : d.doubleValue()  </li>
+</ul>
+<p><span style="color:blue"><strong>Example</strong></span>     </p>
+<pre><code class="java">ArrayList&lt;Integer&gt; numberList = new ArrayList&lt;Integer&gt;;
+numberList.add(22); //This is compiled as numberList.add(new Integer(22));
+</code></pre>
+
+<h3 id="string">String</h3>
+<p>The String class</p>
+<h3 id="math">Math</h3>
+<h5 id="static-methods">Static Methods</h5>
+<ul>
+<li>abs(a): This returns the absolute value of the number "a"</li>
+<li>sqrt(a): This returns the square root of the number "a"</li>
+<li>pow(a,b): This returns a<sup>b</sup></li>
+<li>random(): This returns a number (0,1] (excluding 0 to including 1)</li>
+<li>min(a,b): This returns the minimum between a and b</li>
+<li>max(a,b): This returns the maximum between a and b</li>
+</ul>
+<h5 id="variables">Variables</h5>
+<ul>
+<li>Math.PI: Represents π</li>
+<li>Math.E: Represents e</li>
+</ul>
+<h5 id="how-to-call-the-methods">How to call the methods</h5>
+<p>The methods must be called using the dot notation and "Math" as the prefix.<br />
+<br>
+<span style="color:blue"><strong>Example</strong></span>     </p>
+<pre><code class="java">double radius = 22;
+double areaOfCircle = 2*Math.PI*radius;
+
+double x = Math.min(22, 32); //This should assign 22 to the variable x
+double y = Math.max(22, 32); //This should assign 32 to the variable y
+</code></pre>
+
+<h3 id="liste-and-arrayliste">List&lt;E&gt; and ArrayList&lt;E&gt;</h3>
+<p>List&lt;E&gt; is an interface and java.util.ArrayList&lt;E&gt; implements List&lt;E&gt;. An ArrayList stores the elements within an <b> array</b>.<br />
+<br>
+Because ArrayList&lt;E&gt; implements List&lt;E&gt;, an ArrayList can be declared in two ways with the type of object between &lt; and &gt;:</p>
+<pre><code class="java">ArrayList&lt;Integer&gt; ints = new ArrayList&lt;Integer&gt;();
+</code></pre>
+
+<p>or  </p>
+<pre><code class="java">List&lt;Integer&gt; ints = new ArrayList&lt;Integer&gt;();
+</code></pre>
+
+<h5 id="methods-used-for-liste-and-arrayliste">Methods Used for List&lt;E&gt; and ArrayList&lt;E&gt;</h5>
+<ul>
+<li>int size(): Returns the number of values in the list </li>
+<li>boolean add(Object x): Adds Object x to the end of the list and returns true</li>
+<li>Object get(int index): Returns the object in the list at index</li>
+<li>Object set(int index, Object x): Sets the value at index to Object x and returns the old value at index</li>
+<li>Object remove(int index): Removes the value at index, shifts every element behind index towards the front of the list by 1 and returns the old value that was stored in index</li>
+<li>void add(int index, Object x): Adds Object x at index and shifts every element behind index towards the end of the list by 1</li>
+<li>boolean contains(Object x): Returns true if one of the elements in the List is equal to x</li>
+<li>int indexOf(Object x): Returns the index of the <b> first </b> occurence of x in the List and -1 if x never appears in the List</li>
+<li>boolean remove(Object x): If the List contains x, removes the <b> first </b> occurence and removes true, else returns false</li>
+</ul>
+<p><b> Note </b>:<br />
+<i> add</i> and <i> remove </i> changes the size of the ArrayList. </p>
+<p><span style="color:blue"><strong>Example</strong></span>     </p>
+<pre><code class="java">ArrayList&lt;String&gt; newList = new ArrayList&lt;String&gt;();
+newList.add(&quot;Hello&quot;);
+newList.add(&quot;HiThere&quot;);
+
+for(String word: list)
+    System.out.println(word + &quot; &quot;);
+//Prints out Hello HiThere
+
+System.out.println(newList.get(0)); //Prints out Hello
+newList.add(0, &quot;Hi&quot;);
+System.out.println(newList.size()); //Prints out 3
+
+for(String word: list)
+    System.out.println(word + &quot; &quot;);
+//Prints out Hi Hello HiThere
+</code></pre>
+
+<h3 id="collection-e-collections-and-arrays">Collection &lt;E&gt;, Collections and Arrays</h3>
+<h4 id="collection-e">Collection &lt;E&gt;</h4>
+<p>The Collection interface is typically used to move and manipulate groups of object with maximum generality.</p>
+<h6 id="methods-used-in-collection-e">Methods Used in Collection &lt;E&gt;</h6>
+<ul>
+<li>boolean add(Element e): Makes Element e an element in the collection</li>
+<li>void clear(): Removes all elements in the collection</li>
+<li>boolean contains(Object o): Returns true is the Collection contains o</li>
+<li>boolean isEmpty(): Returns true is there are no elements in the collection</li>
+<li>boolean remove(Object o): Removes an instance of the element if it is present in the collection</li>
+<li>int size(): Returns the number of elements in the collection. </li>
+</ul>
+<p><a href="https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html">More information about Collection &lt;E&gt; Here</a></p>
+<h4 id="collections">Collections</h4>
+<p>This class consists of methods used to manipulate a Collection.</p>
+<h6 id="methods-used-in-collections">Methods Used in Collections</h6>
+<ul>
+<li>static void reverse: Reverses the order or elements in a specified list</li>
+<li>static void shuffle: Randomly orders the specified list using the default source of randomness  </li>
+</ul>
+<p><a href="https://docs.oracle.com/javase/7/docs/api/java/util/Collections.html">More information about Collections Here</a></p>
+<h4 id="arrays">Arrays</h4>
+<p>This class consists of methods to manipulate arrays.</p>
+<h6 id="methods-used-in-arrays">Methods Used in Arrays</h6>
+<ul>
+<li>sort(byte[] a): Orders the Array a based on acsending numerical value.   </li>
+</ul>
+<p>There are many different methods to sort in Arrays  </p>
+<p><img alt="" src="../images/Sort.png" /></p>
+<p><a href="https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html">More Information about Arrays Here</a></p>
               
             </div>
           </div>

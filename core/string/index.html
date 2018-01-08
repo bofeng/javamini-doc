@@ -77,6 +77,21 @@
     <a class="current" href="./">String</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#string">String</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#how-to-declare-a-string">How to Declare a String</a></li>
+        
+            <li><a class="toctree-l4" href="#string-concatenation">String concatenation</a></li>
+        
+            <li><a class="toctree-l4" href="#escape-sequences">Escape Sequences</a></li>
+        
+            <li><a class="toctree-l4" href="#equals-vs-compareto">equals() vs. compareTo()</a></li>
+        
+        </ul>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -134,14 +149,102 @@
           <div role="main">
             <div class="section">
               
-                <p>todo</p>
-<pre><code>go over:
-- char type
-- Strings
-- String literals
-- String concatenation
-- escape sequences \&quot;, \\, \n
-- equals() and compareTo()
+                <h1 id="string">String</h1>
+<h3 id="how-to-declare-a-string">How to Declare a String</h3>
+<p>You can declare a String in 3 different ways. </p>
+<h5 id="char">char</h5>
+<p>You can create a char[] array to represent a String.</p>
+<pre><code class="java">char[] s1 = {'H', 'e', 'l', 'l', 'o'};
+</code></pre>
+
+<h5 id="strings">Strings</h5>
+<p>You can create a String object.  </p>
+<pre><code class="java">String s2 = new String(&quot;Hello&quot;);
+</code></pre>
+
+<h5 id="string-literals">String literals</h5>
+<p>You can create a String using String literals.<br />
+A String literal is something that is contained within quotation marks.</p>
+<pre><code class="java">String s3 = &quot;Hello&quot;;
+</code></pre>
+
+<h5 id="difference-between-string-and-string-literal">Difference between String and String Literal</h5>
+<p>The difference between a String and a String Literal is that when assigned, if two String literals are created, it would point to the same reference in memory. For a String, if there is a new object created, it always creates a new reference.</p>
+<pre><code class="java">String s4 = &quot;Hello&quot;;
+String s5 = &quot;Hello&quot;;
+String s6 = new String(&quot;Hello&quot;);
+String s7 = new String(&quot;Hello&quot;);
+
+System.out.println(s4 == s5); 
+//Prints true because they share the same memory address
+System.out.println(s4 == s7); 
+//Prints false because s6 creates a String object with a different memory address
+System.out.println(s6 == s7); 
+//Prints false because s6 and s7 are both String objects created with different memory addresses
+</code></pre>
+
+<h3 id="string-concatenation">String concatenation</h3>
+<p>String concatentation can be done in two ways.  </p>
+<h5 id="concat-method">concat() Method</h5>
+<p>You use the method as follows: 
+s1 = s1.concat("s2");
+s1 is the original String and s2 is the String you want to concatenate with. </p>
+<pre><code class="java">String s1 = new String(&quot;Hello&quot;);
+s1 = s1.concat(&quot; There&quot;);
+System.out.println(s1); //Prints out &quot;Hello There&quot;
+</code></pre>
+
+<h5 id="operator">+ operator</h5>
+<pre><code class="java">String s2 = &quot;Hi&quot;;
+s2 = s2 + &quot;, Hello There&quot;;
+System.out.println(s2); //Prints &quot;Hi, Hello There&quot;
+</code></pre>
+
+<h3 id="escape-sequences">Escape Sequences</h3>
+<p>Escape sequences have specific meanings to a compiler.</p>
+<h5 id="_1">\"</h5>
+<p>Inserts a quotation mark into a String.</p>
+<h5 id="92">\</h5>
+<p>Inserts a backslash into a String.</p>
+<h5 id="n">\n</h5>
+<p>Inserts a newline into a String.</p>
+<pre><code class="java">String s = &quot;\\\&quot;Hello\&quot;\\&quot;;
+System.out.println(s); //Prints out \&quot;Hello&quot;\
+
+String ss = &quot;Hi\nHello&quot;;
+System.out.println(ss);
+//Prints out 
+//Hi 
+//Hello
+</code></pre>
+
+<h3 id="equals-vs-compareto">equals() vs. compareTo()</h3>
+<p>Both equals() and compareTo() compares 2 objects.</p>
+<h6 id="equals">equals()</h6>
+<p>The equals() method is from the Object class. It tells the user is "equal to" another String. It returns true if the contents of the String is the same.</p>
+<pre><code class="java">String sss1 = &quot;Java&quot;;
+String sss2 = &quot;Python&quot;;
+String sss3 = &quot;Java&quot;;
+System.out.println(sss1.equals(sss3));
+//Prints true because the contents of sss1 and sss3 both say &quot;Java&quot;.
+System.out.println(sss1.equals(sss2));
+//Prints false because one String is Java and the other is Python.
+</code></pre>
+
+<h6 id="compareto">compareTo()</h6>
+<p>The compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. 
+A negative interger is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive interger is returned if the String is greater than the String specified.<br />
+<b>Note:</b> Greater than refers to later in the alphabet and less than refers to earlier in the alphabet.</p>
+<pre><code class="java">String ss1 = &quot;Hello&quot;;
+String ss2 = &quot;Hi&quot;;
+String ss3 = &quot;There&quot;;
+String ss4 = &quot;Hi&quot;;
+System.out.println(ss2.compareTo(ss3));
+//Returns a positive integer since ss2 is greater than ss3.
+System.out.println(ss2.compareTo(ss1));
+//Returns a negative integer since ss2 is less than ss1. 
+System.out.println(ss2.compareTo(ss4));
+//Returns 0 becacuse ss2 is equal to ss2.
 </code></pre>
               
             </div>

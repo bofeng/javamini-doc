@@ -150,29 +150,29 @@
 <p>Both System.out.print and System.out.println print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.  </p>
 <p>You can use the "+" to append multiple things together.  </p>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>System.out.println(3 + 4); 
+<pre><code class="java">System.out.println(3 + 4); 
 
 System.out.println(3 + &quot;Strings&quot; + 4);
 </code></pre>
 
 <p>Arithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended.  </p>
 <p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code>System.out.println(3 + 4); //This prints out 7
+<pre><code class="java">System.out.println(3 + 4); //This prints out 7
 
 System.out.println(3 + 4 + &quot;hi&quot;); //This prints out 7hi
 
 System.out.println(&quot;hi&quot; + 3 + 4); //This prints out hi34
 </code></pre>
 
-<p><br/></p>
+<hr />
 <h2 id="how-to-use-a-scanner">How to Use a Scanner</h2>
 <h4 id="how-to-declare-a-scanner">How to Declare a Scanner</h4>
 <p>At the beginning of the program, you should have the import statement.</p>
-<pre><code>import java.util.Scanner;
+<pre><code class="java">import java.util.Scanner;
 </code></pre>
 
 <p>Then you must declare a Scanner, the scanner here is to be called "input".</p>
-<pre><code>Scanner input = new Scanner(System.in);
+<pre><code class="java">Scanner input = new Scanner(System.in);
 </code></pre>
 
 <p>Then, you call the scanner with any of the following functions, where input is the name of your new Scanner: </p>
@@ -189,7 +189,7 @@ System.out.println(&quot;hi&quot; + 3 + 4); //This prints out hi34
 <br>
 <span style="color:blue"><strong>Example</strong></span>    </li>
 </ul>
-<pre><code>//If the input is &quot;3 4 5 6 7 8 9&quot;
+<pre><code class="java">//If the input is &quot;3 4 5 6 7 8 9&quot;
 System.out.println(input.next()); //Returns 3
 System.out.println(input.nextLine()); 
 //Returns &quot; 4 5 6 7 8 9&quot; since the pointer has already been advanced from the previous call.

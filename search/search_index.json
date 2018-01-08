@@ -137,8 +137,88 @@
         }, 
         {
             "location": "/core/string/", 
-            "text": "todo\n\n\ngo over:\n- char type\n- Strings\n- String literals\n- String concatenation\n- escape sequences \\\n, \\\\, \\n\n- equals() and compareTo()", 
+            "text": "String\n\n\nHow to Declare a String\n\n\nYou can declare a String in 3 different ways. \n\n\nchar\n\n\nYou can create a char[] array to represent a String.\n\n\nchar[] s1 = {'H', 'e', 'l', 'l', 'o'};\n\n\n\n\nStrings\n\n\nYou can create a String object.  \n\n\nString s2 = new String(\nHello\n);\n\n\n\n\nString literals\n\n\nYou can create a String using String literals.\n\nA String literal is something that is contained within quotation marks.\n\n\nString s3 = \nHello\n;\n\n\n\n\nDifference between String and String Literal\n\n\nThe difference between a String and a String Literal is that when assigned, if two String literals are created, it would point to the same reference in memory. For a String, if there is a new object created, it always creates a new reference.\n\n\nString s4 = \nHello\n;\nString s5 = \nHello\n;\nString s6 = new String(\nHello\n);\nString s7 = new String(\nHello\n);\n\nSystem.out.println(s4 == s5); \n//Prints true because they share the same memory address\nSystem.out.println(s4 == s7); \n//Prints false because s6 creates a String object with a different memory address\nSystem.out.println(s6 == s7); \n//Prints false because s6 and s7 are both String objects created with different memory addresses\n\n\n\n\nString concatenation\n\n\nString concatentation can be done in two ways.  \n\n\nconcat() Method\n\n\nYou use the method as follows: \ns1 = s1.concat(\"s2\");\ns1 is the original String and s2 is the String you want to concatenate with. \n\n\nString s1 = new String(\nHello\n);\ns1 = s1.concat(\n There\n);\nSystem.out.println(s1); //Prints out \nHello There\n\n\n\n\n\n+ operator\n\n\nString s2 = \nHi\n;\ns2 = s2 + \n, Hello There\n;\nSystem.out.println(s2); //Prints \nHi, Hello There\n\n\n\n\n\nEscape Sequences\n\n\nEscape sequences have specific meanings to a compiler.\n\n\n\\\"\n\n\nInserts a quotation mark into a String.\n\n\n\\\n\n\nInserts a backslash into a String.\n\n\n\\n\n\n\nInserts a newline into a String.\n\n\nString s = \n\\\\\\\nHello\\\n\\\\\n;\nSystem.out.println(s); //Prints out \\\nHello\n\\\n\nString ss = \nHi\\nHello\n;\nSystem.out.println(ss);\n//Prints out \n//Hi \n//Hello\n\n\n\n\nequals() vs. compareTo()\n\n\nBoth equals() and compareTo() compares 2 objects.\n\n\nequals()\n\n\nThe equals() method is from the Object class. It tells the user is \"equal to\" another String. It returns true if the contents of the String is the same.\n\n\nString sss1 = \nJava\n;\nString sss2 = \nPython\n;\nString sss3 = \nJava\n;\nSystem.out.println(sss1.equals(sss3));\n//Prints true because the contents of sss1 and sss3 both say \nJava\n.\nSystem.out.println(sss1.equals(sss2));\n//Prints false because one String is Java and the other is Python.\n\n\n\n\ncompareTo()\n\n\nThe compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. \nA negative interger is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive interger is returned if the String is greater than the String specified.\n\n\nNote:\n Greater than refers to later in the alphabet and less than refers to earlier in the alphabet.\n\n\nString ss1 = \nHello\n;\nString ss2 = \nHi\n;\nString ss3 = \nThere\n;\nString ss4 = \nHi\n;\nSystem.out.println(ss2.compareTo(ss3));\n//Returns a positive integer since ss2 is greater than ss3.\nSystem.out.println(ss2.compareTo(ss1));\n//Returns a negative integer since ss2 is less than ss1. \nSystem.out.println(ss2.compareTo(ss4));\n//Returns 0 becacuse ss2 is equal to ss2.", 
             "title": "String"
+        }, 
+        {
+            "location": "/core/string/#string", 
+            "text": "", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/string/#how-to-declare-a-string", 
+            "text": "You can declare a String in 3 different ways.", 
+            "title": "How to Declare a String"
+        }, 
+        {
+            "location": "/core/string/#char", 
+            "text": "You can create a char[] array to represent a String.  char[] s1 = {'H', 'e', 'l', 'l', 'o'};", 
+            "title": "char"
+        }, 
+        {
+            "location": "/core/string/#strings", 
+            "text": "You can create a String object.    String s2 = new String( Hello );", 
+            "title": "Strings"
+        }, 
+        {
+            "location": "/core/string/#string-literals", 
+            "text": "You can create a String using String literals. \nA String literal is something that is contained within quotation marks.  String s3 =  Hello ;", 
+            "title": "String literals"
+        }, 
+        {
+            "location": "/core/string/#difference-between-string-and-string-literal", 
+            "text": "The difference between a String and a String Literal is that when assigned, if two String literals are created, it would point to the same reference in memory. For a String, if there is a new object created, it always creates a new reference.  String s4 =  Hello ;\nString s5 =  Hello ;\nString s6 = new String( Hello );\nString s7 = new String( Hello );\n\nSystem.out.println(s4 == s5); \n//Prints true because they share the same memory address\nSystem.out.println(s4 == s7); \n//Prints false because s6 creates a String object with a different memory address\nSystem.out.println(s6 == s7); \n//Prints false because s6 and s7 are both String objects created with different memory addresses", 
+            "title": "Difference between String and String Literal"
+        }, 
+        {
+            "location": "/core/string/#string-concatenation", 
+            "text": "String concatentation can be done in two ways.", 
+            "title": "String concatenation"
+        }, 
+        {
+            "location": "/core/string/#concat-method", 
+            "text": "You use the method as follows: \ns1 = s1.concat(\"s2\");\ns1 is the original String and s2 is the String you want to concatenate with.   String s1 = new String( Hello );\ns1 = s1.concat(  There );\nSystem.out.println(s1); //Prints out  Hello There", 
+            "title": "concat() Method"
+        }, 
+        {
+            "location": "/core/string/#operator", 
+            "text": "String s2 =  Hi ;\ns2 = s2 +  , Hello There ;\nSystem.out.println(s2); //Prints  Hi, Hello There", 
+            "title": "+ operator"
+        }, 
+        {
+            "location": "/core/string/#escape-sequences", 
+            "text": "Escape sequences have specific meanings to a compiler.", 
+            "title": "Escape Sequences"
+        }, 
+        {
+            "location": "/core/string/#_1", 
+            "text": "Inserts a quotation mark into a String.", 
+            "title": "\\\""
+        }, 
+        {
+            "location": "/core/string/#92", 
+            "text": "Inserts a backslash into a String.", 
+            "title": "\\"
+        }, 
+        {
+            "location": "/core/string/#n", 
+            "text": "Inserts a newline into a String.  String s =  \\\\\\ Hello\\ \\\\ ;\nSystem.out.println(s); //Prints out \\ Hello \\\n\nString ss =  Hi\\nHello ;\nSystem.out.println(ss);\n//Prints out \n//Hi \n//Hello", 
+            "title": "\\n"
+        }, 
+        {
+            "location": "/core/string/#equals-vs-compareto", 
+            "text": "Both equals() and compareTo() compares 2 objects.", 
+            "title": "equals() vs. compareTo()"
+        }, 
+        {
+            "location": "/core/string/#equals", 
+            "text": "The equals() method is from the Object class. It tells the user is \"equal to\" another String. It returns true if the contents of the String is the same.  String sss1 =  Java ;\nString sss2 =  Python ;\nString sss3 =  Java ;\nSystem.out.println(sss1.equals(sss3));\n//Prints true because the contents of sss1 and sss3 both say  Java .\nSystem.out.println(sss1.equals(sss2));\n//Prints false because one String is Java and the other is Python.", 
+            "title": "equals()"
+        }, 
+        {
+            "location": "/core/string/#compareto", 
+            "text": "The compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. \nA negative interger is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive interger is returned if the String is greater than the String specified.  Note:  Greater than refers to later in the alphabet and less than refers to earlier in the alphabet.  String ss1 =  Hello ;\nString ss2 =  Hi ;\nString ss3 =  There ;\nString ss4 =  Hi ;\nSystem.out.println(ss2.compareTo(ss3));\n//Returns a positive integer since ss2 is greater than ss3.\nSystem.out.println(ss2.compareTo(ss1));\n//Returns a negative integer since ss2 is less than ss1. \nSystem.out.println(ss2.compareTo(ss4));\n//Returns 0 becacuse ss2 is equal to ss2.", 
+            "title": "compareTo()"
         }, 
         {
             "location": "/core/arrays/", 
@@ -237,8 +317,103 @@
         }, 
         {
             "location": "/core/stdlib/", 
-            "text": "As in the AP CS A Java Subset requirements, go over:\n- Object\n- Integer\n- Double\n- String\n- Math\n- List\nE\n\n- ArrayList\nE\n\n- Collections\n- Arrays", 
+            "text": "Stdio\n\n\nObject\n\n\nclone\n  \n\nCloning in Java uses the .clone() method. The class must implement the Cloneable interface.\nFor the clone method, you must throw the exception that corresponds to the inferface.\n\n\nExample\n    \n\n\nclass Test implements Cloneable{\n    public static void main(String[] args){\n\n    }\n\n    protected Object clone() throws CloneNotSupportedException{\n    }\n}  \n\n\n\n\nShallow Cloning v. Deep Cloning\n\nShadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object. \nDeep cloning copies all the separate field and creates new references for the new object so all it's contents are copies to a new object.\n\n\nShallow Clone Example\n    \n\n\nclass Test implements Cloneable\n{\n    public Object clone() throws CloneNotSupportedException{\n        return super.clone();\n    }\n}\n\n\n\n\nDeep Clone Example\n    \n\n\nclass Test implements Cloneable\n{\n    ArrayList c = new ArrayList\n();\n\n    public Object clone() throws CloneNotSupportedException\n    {\n        Test t = (Test)super.clone();\n\n        t.c = new ArrayList\n();\n\n        // Create a new object for the field and assign it to shallow copy obtained to make it a deep copy\n        return t;\n    }\n}\n\n\n\n\ntoString\n  \n\n\nIn an object, the toString() method returns the string representation of the object. \n\n\nclass Test implements Cloneable{\n    private int a;\n    private int b;\n    //Overriding the toString() method\n    public String toString(){\n        return \nA: \n + a + \nB: \n + b;\n    }\n}\n\n\n\n\nInteger and Double\n\n\nInteger is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects. \n\n\n Autoboxing \n is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and \n unboxing \n is when the Java complier converts the wrapper class to the primitive type. \n\n\nConverting Between int and Integer\n\n\n\n\nint -\n Integer : Integer newInteger = new Integer(i);  \n\n\nInteger -\n int : Integer.valueOf(i)\n\n\n\n\nConverting Between Double and double\n\n\n\n\ndouble -\n Double : Double newDouble = new Double(d);\n\n\nDouble -\n double: double -\n Double : d.doubleValue()  \n\n\n\n\nExample\n     \n\n\nArrayList\nInteger\n numberList = new ArrayList\nInteger\n;\nnumberList.add(22); //This is compiled as numberList.add(new Integer(22));\n\n\n\n\nString\n\n\nThe String class\n\n\nMath\n\n\nStatic Methods\n\n\n\n\nabs(a): This returns the absolute value of the number \"a\"\n\n\nsqrt(a): This returns the square root of the number \"a\"\n\n\npow(a,b): This returns a\nb\n\n\nrandom(): This returns a number (0,1] (excluding 0 to including 1)\n\n\nmin(a,b): This returns the minimum between a and b\n\n\nmax(a,b): This returns the maximum between a and b\n\n\n\n\nVariables\n\n\n\n\nMath.PI: Represents \u03c0\n\n\nMath.E: Represents e\n\n\n\n\nHow to call the methods\n\n\nThe methods must be called using the dot notation and \"Math\" as the prefix.\n\n\n\n\nExample\n     \n\n\ndouble radius = 22;\ndouble areaOfCircle = 2*Math.PI*radius;\n\ndouble x = Math.min(22, 32); //This should assign 22 to the variable x\ndouble y = Math.max(22, 32); //This should assign 32 to the variable y\n\n\n\n\nList\nE\n and ArrayList\nE\n\n\nList\nE\n is an interface and java.util.ArrayList\nE\n implements List\nE\n. An ArrayList stores the elements within an \n array\n.\n\n\n\nBecause ArrayList\nE\n implements List\nE\n, an ArrayList can be declared in two ways with the type of object between \n and \n:\n\n\nArrayList\nInteger\n ints = new ArrayList\nInteger\n();\n\n\n\n\nor  \n\n\nList\nInteger\n ints = new ArrayList\nInteger\n();\n\n\n\n\nMethods Used for List\nE\n and ArrayList\nE\n\n\n\n\nint size(): Returns the number of values in the list \n\n\nboolean add(Object x): Adds Object x to the end of the list and returns true\n\n\nObject get(int index): Returns the object in the list at index\n\n\nObject set(int index, Object x): Sets the value at index to Object x and returns the old value at index\n\n\nObject remove(int index): Removes the value at index, shifts every element behind index towards the front of the list by 1 and returns the old value that was stored in index\n\n\nvoid add(int index, Object x): Adds Object x at index and shifts every element behind index towards the end of the list by 1\n\n\nboolean contains(Object x): Returns true if one of the elements in the List is equal to x\n\n\nint indexOf(Object x): Returns the index of the \n first \n occurence of x in the List and -1 if x never appears in the List\n\n\nboolean remove(Object x): If the List contains x, removes the \n first \n occurence and removes true, else returns false\n\n\n\n\n Note \n:\n\n\n add\n and \n remove \n changes the size of the ArrayList. \n\n\nExample\n     \n\n\nArrayList\nString\n newList = new ArrayList\nString\n();\nnewList.add(\nHello\n);\nnewList.add(\nHiThere\n);\n\nfor(String word: list)\n    System.out.println(word + \n \n);\n//Prints out Hello HiThere\n\nSystem.out.println(newList.get(0)); //Prints out Hello\nnewList.add(0, \nHi\n);\nSystem.out.println(newList.size()); //Prints out 3\n\nfor(String word: list)\n    System.out.println(word + \n \n);\n//Prints out Hi Hello HiThere\n\n\n\n\nCollection \nE\n, Collections and Arrays\n\n\nCollection \nE\n\n\nThe Collection interface is typically used to move and manipulate groups of object with maximum generality.\n\n\nMethods Used in Collection \nE\n\n\n\n\nboolean add(Element e): Makes Element e an element in the collection\n\n\nvoid clear(): Removes all elements in the collection\n\n\nboolean contains(Object o): Returns true is the Collection contains o\n\n\nboolean isEmpty(): Returns true is there are no elements in the collection\n\n\nboolean remove(Object o): Removes an instance of the element if it is present in the collection\n\n\nint size(): Returns the number of elements in the collection. \n\n\n\n\nMore information about Collection \nE\n Here\n\n\nCollections\n\n\nThis class consists of methods used to manipulate a Collection.\n\n\nMethods Used in Collections\n\n\n\n\nstatic void reverse: Reverses the order or elements in a specified list\n\n\nstatic void shuffle: Randomly orders the specified list using the default source of randomness  \n\n\n\n\nMore information about Collections Here\n\n\nArrays\n\n\nThis class consists of methods to manipulate arrays.\n\n\nMethods Used in Arrays\n\n\n\n\nsort(byte[] a): Orders the Array a based on acsending numerical value.   \n\n\n\n\nThere are many different methods to sort in Arrays  \n\n\n\n\nMore Information about Arrays Here", 
             "title": "Standard Java Library"
+        }, 
+        {
+            "location": "/core/stdlib/#stdio", 
+            "text": "", 
+            "title": "Stdio"
+        }, 
+        {
+            "location": "/core/stdlib/#object", 
+            "text": "clone    \nCloning in Java uses the .clone() method. The class must implement the Cloneable interface.\nFor the clone method, you must throw the exception that corresponds to the inferface.  Example       class Test implements Cloneable{\n    public static void main(String[] args){\n\n    }\n\n    protected Object clone() throws CloneNotSupportedException{\n    }\n}    Shallow Cloning v. Deep Cloning \nShadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object. \nDeep cloning copies all the separate field and creates new references for the new object so all it's contents are copies to a new object.  Shallow Clone Example       class Test implements Cloneable\n{\n    public Object clone() throws CloneNotSupportedException{\n        return super.clone();\n    }\n}  Deep Clone Example       class Test implements Cloneable\n{\n    ArrayList c = new ArrayList ();\n\n    public Object clone() throws CloneNotSupportedException\n    {\n        Test t = (Test)super.clone();\n\n        t.c = new ArrayList ();\n\n        // Create a new object for the field and assign it to shallow copy obtained to make it a deep copy\n        return t;\n    }\n}  toString     In an object, the toString() method returns the string representation of the object.   class Test implements Cloneable{\n    private int a;\n    private int b;\n    //Overriding the toString() method\n    public String toString(){\n        return  A:   + a +  B:   + b;\n    }\n}", 
+            "title": "Object"
+        }, 
+        {
+            "location": "/core/stdlib/#integer-and-double", 
+            "text": "Integer is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects.    Autoboxing   is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and   unboxing   is when the Java complier converts the wrapper class to the primitive type.", 
+            "title": "Integer and Double"
+        }, 
+        {
+            "location": "/core/stdlib/#converting-between-int-and-integer", 
+            "text": "int -  Integer : Integer newInteger = new Integer(i);    Integer -  int : Integer.valueOf(i)", 
+            "title": "Converting Between int and Integer"
+        }, 
+        {
+            "location": "/core/stdlib/#converting-between-double-and-double", 
+            "text": "double -  Double : Double newDouble = new Double(d);  Double -  double: double -  Double : d.doubleValue()     Example        ArrayList Integer  numberList = new ArrayList Integer ;\nnumberList.add(22); //This is compiled as numberList.add(new Integer(22));", 
+            "title": "Converting Between Double and double"
+        }, 
+        {
+            "location": "/core/stdlib/#string", 
+            "text": "The String class", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/stdlib/#math", 
+            "text": "", 
+            "title": "Math"
+        }, 
+        {
+            "location": "/core/stdlib/#static-methods", 
+            "text": "abs(a): This returns the absolute value of the number \"a\"  sqrt(a): This returns the square root of the number \"a\"  pow(a,b): This returns a b  random(): This returns a number (0,1] (excluding 0 to including 1)  min(a,b): This returns the minimum between a and b  max(a,b): This returns the maximum between a and b", 
+            "title": "Static Methods"
+        }, 
+        {
+            "location": "/core/stdlib/#variables", 
+            "text": "Math.PI: Represents \u03c0  Math.E: Represents e", 
+            "title": "Variables"
+        }, 
+        {
+            "location": "/core/stdlib/#how-to-call-the-methods", 
+            "text": "The methods must be called using the dot notation and \"Math\" as the prefix.   Example        double radius = 22;\ndouble areaOfCircle = 2*Math.PI*radius;\n\ndouble x = Math.min(22, 32); //This should assign 22 to the variable x\ndouble y = Math.max(22, 32); //This should assign 32 to the variable y", 
+            "title": "How to call the methods"
+        }, 
+        {
+            "location": "/core/stdlib/#liste-and-arrayliste", 
+            "text": "List E  is an interface and java.util.ArrayList E  implements List E . An ArrayList stores the elements within an   array .  \nBecause ArrayList E  implements List E , an ArrayList can be declared in two ways with the type of object between   and  :  ArrayList Integer  ints = new ArrayList Integer ();  or    List Integer  ints = new ArrayList Integer ();", 
+            "title": "List&lt;E&gt; and ArrayList&lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-for-liste-and-arrayliste", 
+            "text": "int size(): Returns the number of values in the list   boolean add(Object x): Adds Object x to the end of the list and returns true  Object get(int index): Returns the object in the list at index  Object set(int index, Object x): Sets the value at index to Object x and returns the old value at index  Object remove(int index): Removes the value at index, shifts every element behind index towards the front of the list by 1 and returns the old value that was stored in index  void add(int index, Object x): Adds Object x at index and shifts every element behind index towards the end of the list by 1  boolean contains(Object x): Returns true if one of the elements in the List is equal to x  int indexOf(Object x): Returns the index of the   first   occurence of x in the List and -1 if x never appears in the List  boolean remove(Object x): If the List contains x, removes the   first   occurence and removes true, else returns false    Note  :   add  and   remove   changes the size of the ArrayList.   Example        ArrayList String  newList = new ArrayList String ();\nnewList.add( Hello );\nnewList.add( HiThere );\n\nfor(String word: list)\n    System.out.println(word +    );\n//Prints out Hello HiThere\n\nSystem.out.println(newList.get(0)); //Prints out Hello\nnewList.add(0,  Hi );\nSystem.out.println(newList.size()); //Prints out 3\n\nfor(String word: list)\n    System.out.println(word +    );\n//Prints out Hi Hello HiThere", 
+            "title": "Methods Used for List&lt;E&gt; and ArrayList&lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#collection-e-collections-and-arrays", 
+            "text": "", 
+            "title": "Collection &lt;E&gt;, Collections and Arrays"
+        }, 
+        {
+            "location": "/core/stdlib/#collection-e", 
+            "text": "The Collection interface is typically used to move and manipulate groups of object with maximum generality.", 
+            "title": "Collection &lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-in-collection-e", 
+            "text": "boolean add(Element e): Makes Element e an element in the collection  void clear(): Removes all elements in the collection  boolean contains(Object o): Returns true is the Collection contains o  boolean isEmpty(): Returns true is there are no elements in the collection  boolean remove(Object o): Removes an instance of the element if it is present in the collection  int size(): Returns the number of elements in the collection.    More information about Collection  E  Here", 
+            "title": "Methods Used in Collection &lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#collections", 
+            "text": "This class consists of methods used to manipulate a Collection.", 
+            "title": "Collections"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-in-collections", 
+            "text": "static void reverse: Reverses the order or elements in a specified list  static void shuffle: Randomly orders the specified list using the default source of randomness     More information about Collections Here", 
+            "title": "Methods Used in Collections"
+        }, 
+        {
+            "location": "/core/stdlib/#arrays", 
+            "text": "This class consists of methods to manipulate arrays.", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-in-arrays", 
+            "text": "sort(byte[] a): Orders the Array a based on acsending numerical value.      There are many different methods to sort in Arrays     More Information about Arrays Here", 
+            "title": "Methods Used in Arrays"
         }
     ]
 }

@@ -152,7 +152,7 @@
 <p><span style="color:blue"><strong>How to Declare an Array</strong></span>  <br />
 It is declared in the following format:<br />
 <strong>type[] name</strong>: the type represents the type of variable ie. int, and the name is the name of the new array</p>
-<pre><code>int[] arr1; //Creates an array called arr1 that holds integer values
+<pre><code class="java">int[] arr1; //Creates an array called arr1 that holds integer values
 float[] arr2; //Creates an array called arr2 that holds floating-point values
 </code></pre>
 
@@ -163,21 +163,21 @@ In Java, you must declare the size of the array. If not, the size will <em>alway
 <strong>name = new type[size];</strong><br />
   You declare the array first and then you create the size of the array after the declaration.</li>
 </ul>
-<pre><code>int[] arr1; //This is the initial declaration of an array.
+<pre><code class="java">int[] arr1; //This is the initial declaration of an array.
 arr1 = new int[2]; //This sets the newly created array to size 2.
 </code></pre>
 
 <ul>
 <li><strong>type[] name = new type[size]</strong>: You declare and initialize the array in the same line, and make an array of a type that has a certain size.</li>
 </ul>
-<pre><code>int[] arr2 = new int[10]; //This makes an array that can hold 10 integers.
+<pre><code class="java">int[] arr2 = new int[10]; //This makes an array that can hold 10 integers.
 String[] arr3 = new String[5]; //This makes an array that can hold 5 Strings.
 </code></pre>
 
 <p><span style="color:blue"><strong>How to Reference the Indices in an Array</strong>  </span><br />
 The indices of an array start at 0. So, the first element of an array would be at the 0th position.<br />
 The highest position would then be <em>size - 1</em>.</p>
-<pre><code>int[] arr4 = new int[20];
+<pre><code class="java">int[] arr4 = new int[20];
 arr4[1] = 20; //Sets the 2nd integer in the array to 20.
 arr4[0] = 40; //Sets the 1st integer in the array to 40.
 
@@ -187,7 +187,7 @@ arr5[0] = &quot;Hi&quot;; //Sets the 1st indice to &quot;Hi&quot;
 
 <p><span style="color:blue"><strong>How to Find the Length in an Array</strong>  </span><br />
 You can find the length of an array using the .length function.  </p>
-<pre><code>int[] arr4 = new int[20];
+<pre><code class="java">int[] arr4 = new int[20];
 System.out.print(arr4.length); //This would print out 4
 </code></pre>
 
@@ -197,7 +197,7 @@ System.out.print(arr4.length); //This would print out 4
 Declaring a 2-dimensional array is similar to the way that the 1-dimensional array is declared. Instead of only having a "size" parameter, the 2-dimensional array has two size parameters, usually denoted with row and column.  </p>
 <p>It is declared in the following format:<br />
 <strong>type[][] name</strong>: the type represents the type of variable ie. int, and the name is the name of the new array</p>
-<pre><code>int[][] arr1; //Creates an array called arr1 that holds integer values
+<pre><code class="java">int[][] arr1; //Creates an array called arr1 that holds integer values
 float[][] arr2; //Creates an array called arr2 that holds floating-point values
 </code></pre>
 
@@ -208,21 +208,21 @@ float[][] arr2; //Creates an array called arr2 that holds floating-point values
   You declare the array first and then you create the size of the array after the declaration.<br />
   There are "row" x "col" elements in an array. </li>
 </ul>
-<pre><code>int[][] arr1; //This is the initial declaration of an array.
+<pre><code class="java">int[][] arr1; //This is the initial declaration of an array.
 arr1 = new int[2][3]; //Sets the newly created array to 2 by 3. There are 6 elements in the array.
 </code></pre>
 
 <ul>
 <li><strong>type[][] name = new type[row][col]</strong>: You declare and initialize the array in the same line, and make an array of a type that has a certain size.</li>
 </ul>
-<pre><code>int[] arr2 = new int[10][2]; //This makes an array that can hold 20 integers.
+<pre><code class="java">int[] arr2 = new int[10][2]; //This makes an array that can hold 20 integers.
 String[] arr3 = new String[5][3]; //This makes an array that can hold 15 Strings.
 </code></pre>
 
 <p><span style="color:blue"><strong>How to Reference the Indices in an Array</strong>  </span><br />
 The indice of a 1-Dimensional Array starts at 0. Similarly, the 2-Dimensional array would start at index 0 too, but since there are two size parameters, the array would start at arr[0][0]. 
 The highest position would then be <em>arr[size-1][size-1]</em>.</p>
-<pre><code>int[] arr4 = new int[20][5];
+<pre><code class="java">int[] arr4 = new int[20][5];
 arr4[19][4] = 20; //Sets the last element at row 19 and col 4 in the array to 20.
 arr4[0][0] = 40; //Sets the first integer, at index [0][0] in the array to 40. 
 
@@ -236,7 +236,7 @@ To find the length of the row and the length of the column. </p>
 <li>arr.length: Find the number of rows in the array "arr".</li>
 <li>arr[i].length: Find the number of cols in the row "i" in the array "arr".</li>
 </ul>
-<pre><code>int[] arr4 = new int[20][5];
+<pre><code class="java">int[] arr4 = new int[20][5];
 System.out.print(arr4.length); //This would print out 20
 System.out.print(arr4[0].length); //This would print out 5
 </code></pre>
@@ -251,7 +251,7 @@ System.out.print(arr4[0].length); //This would print out 5
 &nbsp;&nbsp;<strong>arrays = new int[]{w,x,y...};</strong><br />
 The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.</li>
 </ul>
-<pre><code>int[] arrays; //Declares a new array called arrays
+<pre><code class="java">int[] arrays; //Declares a new array called arrays
 arrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. 
 //arrays[0] = 4, arrays[4] = 8
 </code></pre>
@@ -261,7 +261,7 @@ arrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7,
 &nbsp;&nbsp;<strong>int[] arrays = {w,x,y...};</strong> <br />
 The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.</li>
 </ul>
-<pre><code>int[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. 
+<pre><code class="java">int[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8. 
 // arrays[0] = 4, arrays[4] = 8
 </code></pre>
 
@@ -275,7 +275,7 @@ The main difference between initializing a 2-Dimensional Array and a 1-Dimension
 &nbsp;&nbsp;<strong>arrays = new int[][]{{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};</strong><br />
 The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][1] = x, and arrays[1][2] = y2.</li>
 </ul>
-<pre><code>int[][] arrays; //Declares a new array called arrays
+<pre><code class="java">int[][] arrays; //Declares a new array called arrays
 arrays = new int[]{{4,5,6,7,8}, {2,1,2,9,5}}; //Initialized arrays with the values from the list.
 //arrays[0][0] = 4, arrays[1][3] = 9
 </code></pre>
@@ -285,7 +285,7 @@ arrays = new int[]{{4,5,6,7,8}, {2,1,2,9,5}}; //Initialized arrays with the valu
 &nbsp;&nbsp;<strong>int[] arrays = {{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};</strong> <br />
 The order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][0] = w, and arrays[1][1] = x2.</li>
 </ul>
-<pre><code>int[][] array4 = {{4,5,6,7,8}, {0,1,3,2,11}}; //Initialized arrays with the list values. 
+<pre><code class="java">int[][] array4 = {{4,5,6,7,8}, {0,1,3,2,11}}; //Initialized arrays with the list values. 
 // arrays[0][0] = 4, arrays[1][4] = 11
 </code></pre>
               
