@@ -50,8 +50,8 @@ If you would like to do more with Java and go beyond the capabilities of Java Mi
 
 * To download the JDK, [Click here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * To download the Eclipse IDE, [Click here](http://www.eclipse.org/downloads/eclipse-packages/),
-  * In the orange bar, choose your operating system (Windows, Mac OS X, or Linux)
-  * Click where it says "64 bit" next to "Eclipse IDE for Java Developers"
+    * In the orange bar, choose your operating system (Windows, Mac OS X, or Linux)
+    * Click where it says "64 bit" next to "Eclipse IDE for Java Developers"
 * To download the Netbeans IDE, [Click here](https://netbeans.org/downloads/)
-  * Underneath the first column, where it says "Java SE", click on the Download button
+    * Underneath the first column, where it says "Java SE", click on the Download button
 * If you download the JDK from above, you are probably using JDK 8. Java Mini uses JDK 7. There aren't too many differences. [Click here](https://docs.oracle.com/javase/7/docs/api/) for the documentation for Java 7.
