@@ -13,3 +13,9 @@ pages:
         - 'Standard Input/Output': 'core/stdio.md'
         - 'Exceptions': 'core/exceptions.md'
         - 'Standard Java Library': 'core/stdlib.md'
+    - 'Structures':
+        - 'Control Statements': 'structures/control.md'
+        - 'Methods': 'structures/methods.md'
+        - 'Classes & Objects': 'structures/classes.md'
+        - 'Inheritance': 'structures/inheritance.md'
+        - 'Interfaces': 'structures/interfaces.md'

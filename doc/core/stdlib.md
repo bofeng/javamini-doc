@@ -1,4 +1,22 @@
 # Stdio
+
+## Importing Packages
+To import every class within a package in Java, you would write the following in your code before the class declaration:
+``` java
+// the general formula is:
+import packageName.*;
+// example:
+import java.util.*;
+```
+
+If you want to import only one class from a library, you replace the asterisk in the last example with the class name:
+``` java
+// general formula:
+import packageName.className;
+// example:
+import java.util.ArrayList;
+```
+
 ### Object
 <span style="font-size: 20px"><b>clone</b>  </span>  
 Cloning in Java uses the .clone() method. The class must implement the Cloneable interface.
