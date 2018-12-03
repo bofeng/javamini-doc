@@ -81,17 +81,3 @@ System.out.println(input.nextLine());
 //Returns " 4 5 6 7 8 9" since the pointer has already been advanced from the previous call.
 ```
 
-<br/>
-####Read Input in JavaMini
-The way that the JavaMini works is that you must place the input _prior_ to running the program.   
-<br>
-![Before](images/stdio1.png)
-
-Then, you click the up arrow at the bottom-right next to the "Expand Standard Input/User Input". It should look like the image below.
-
-![Before](images/stdio2.png)
-
-Then you can input whatever input you wish to have, and then click the "Run" so your program would run with the parameters you wish.
-
-<span style="color:blue">**Example - Reading Input in Java Mini**</span>
-![In Java Mini](images/stdio3.png)
