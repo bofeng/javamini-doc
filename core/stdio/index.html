@@ -13,18 +13,19 @@
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Standard Input/Output";
     var mkdocs_page_input_path = "core\\stdio.md";
-    var mkdocs_page_url = "/core/stdio/";
+    var mkdocs_page_url = null;
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
 
@@ -38,7 +39,7 @@
         <a href="../.." class="icon icon-home"> JavaMini Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -220,17 +221,6 @@ System.out.println(input.next()); //Returns 3
 System.out.println(input.nextLine());
 //Returns &quot; 4 5 6 7 8 9&quot; since the pointer has already been advanced from the previous call.
 </code></pre>
-
-<p><br/></p>
-<h4 id="read-input-in-javamini">Read Input in JavaMini</h4>
-<p>The way that the JavaMini works is that you must place the input <em>prior</em> to running the program. <br />
-<br>
-<img alt="Before" src="../images/stdio1.png" /></p>
-<p>Then, you click the up arrow at the bottom-right next to the "Expand Standard Input/User Input". It should look like the image below.</p>
-<p><img alt="Before" src="../images/stdio2.png" /></p>
-<p>Then you can input whatever input you wish to have, and then click the "Run" so your program would run with the parameters you wish.</p>
-<p><span style="color:blue"><strong>Example - Reading Input in Java Mini</strong></span>
-<img alt="In Java Mini" src="../images/stdio3.png" /></p>
               
             </div>
           </div>
@@ -275,9 +265,8 @@ System.out.println(input.nextLine());
     </span>
 </div>
     <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-      <script src="../../search/require.js"></script>
-      <script src="../../search/search.js"></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
 
 </body>
 </html>
