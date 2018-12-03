@@ -215,11 +215,14 @@ System.out.printf(&quot;%03d + %.2f = %.2f&quot;, a, b, (a + b));
 <br>
 <span style="color:blue"><strong>Example</strong></span>    </li>
 </ul>
-<pre><code class="java">//If the input is &quot;3 4 5 6 7 8 9&quot;
-System.out.println(input.next()); //Returns 3
-System.out.println(input.nextLine());
-//Returns &quot; 4 5 6 7 8 9&quot; since the pointer has already been advanced from the previous call.
+<pre><code class="java">System.out.println(&quot;What's your name?&quot;); //A print statement to prompt the user
+String name = sc.nextLine(); //Takes in the next line from the user
+System.out.println(&quot;How old are you?&quot;); //A print statement to prompt the user
+int age = sc.nextInt(); //Takes in the integer from the user
+System.out.println(&quot;Hello &quot; + name + &quot;, you are &quot; + age + &quot; years old&quot;);
 </code></pre>
+
+<p><img alt="Before" src="../images/Input.gif" /></p>
               
             </div>
           </div>
