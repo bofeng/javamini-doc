@@ -74,9 +74,10 @@ Then, you call the scanner with any of the following functions, where input is t
 <br>
 <span style="color:blue">**Example**</span>    
 ```java
-//If the input is "3 4 5 6 7 8 9"
-System.out.println(input.next()); //Returns 3
-System.out.println(input.nextLine());
-//Returns " 4 5 6 7 8 9" since the pointer has already been advanced from the previous call.
+System.out.println("What's your name?"); //A print statement to prompt the user
+String name = sc.nextLine(); //Takes in the next line from the user
+System.out.println("How old are you?"); //A print statement to prompt the user
+int age = sc.nextInt(); //Takes in the integer from the user
+System.out.println("Hello " + name + ", you are " + age + " years old");
 ```
-
+![Before](images/Input.gif)
