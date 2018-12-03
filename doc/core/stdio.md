@@ -50,7 +50,6 @@ System.out.printf("%03d + %.2f = %.2f", a, b, (a + b));
 
 ---
 ##How to Use a Scanner
-####How to Declare a Scanner
 At the beginning of the program, you should have the import statement.
 ```java
 import java.util.Scanner;
