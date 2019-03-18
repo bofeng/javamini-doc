@@ -1,0 +1,21 @@
+diff --git a/doc/core/exceptions.md b/doc/core/exceptions.md
+index 09a0b41..69cc770 100644
+--- a/doc/core/exceptions.md
++++ b/doc/core/exceptions.md
+@@ -16,6 +16,3 @@ The ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBound
+ 
+ ###IllegalArgumentException  
+ This exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.  
+-
+-###NoSuchElementException
+-In Java Mini, you will get this exception whenever you are trying to read input, but did not put the correct input in the input box at the bottom of the output.
+diff --git a/mkdocs.yml b/mkdocs.yml
+index 356c39d..ea0098d 100644
+--- a/mkdocs.yml
++++ b/mkdocs.yml
+@@ -1,4 +1,4 @@
+-site_name: JavaMini Documentation
++site_name: Java Editor Documentation
+ theme: readthedocs
+ docs_dir: 'doc'
+ pages:
