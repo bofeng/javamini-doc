@@ -1,53 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/comments/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/number/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/operators/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/boolean/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/string/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/arrays/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/stdio/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/exceptions/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2018-12-03</lastmod>
+     <loc>/core/stdlib/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
 </urlset>

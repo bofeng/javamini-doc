@@ -1,0 +1,429 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "What's Java?\n\n\nJava is an interpreted programming language that is object oriented. Many programming languages like C and C++ are compiled languages, this means that the computer goes through the code, translates it into a binary instruction set for the specific computer architecture of the computer running the program, then runs the machine code. This means that a C or C++ program can be translated (compiled) totally differently depending on the machine it is being ran on. Java is much different, as previously stated Java is interpreted (translated) into what is known as byte code, which is compiled by the Java virtual machine (JVM) that compiles any byte code the same regardless of computer architecture.\n\n\nJava is an extremely popular and powerful programming language. It is one of the first languages usually taught on a computer science track and is widely supported for many different uses. Java can be used for game design using libraries like FXGL or Greenfoot, Java even has some game libraries akin to Unity and Unreal like LibGDX used for powerful 3D game development. Java can also be used to parse massive amounts of data, make applets and plugins on web pages, and even describe hardware using JHDL, Java's Hardware Description Library.\n\n\nThe world is slowly gravitating away from the verbosity of languages like Java but it is a great stepping stone and after learning Java, developing your skills in any other language will be a breeze. This is not to say Java is irrelevant, Java is the main programming language of everything Android and any Android developer on the app store got there through the use of Java code (most likely in the Android Studios IDE). Java is also and will most likely continue to be the High-School level standard for programming languages and advanced knowledge is useful for college accolades specifically the AP Java Test.\n\n\nAbout OYOclass' Java Editor\n\n\nJava Editor is an application built into the OYOclass platform which can be used to write Java code following the guidelines for the AP Computer Science A exam. It cannot do everything that can be done using the Java programming language. It is limited to simple standard input and output and the Java standard libraries. It is designed to allow you to run Java code in the browser, making storage and sharing your work easier.\n\n\nQuick Start\n\n\nCopy following example code to OYOclass' Java Editor then click the \"Run\" button:\n\n\n\n\nSay hello\n\n\n\n\npublic class Hello{\n    public static void main(String[] args) {\n        System.out.println(\nHello Java\n);\n    }\n}\n\n\n\n\n\n\nCalculator\n\n\n\n\npublic class Calculator {\n    public static void main(String[] args) {\n        // declare and initialize two values\n        int a = 10;\n        int b = 5;\n        // basic mathematical operations\n        System.out.println(a + b); // add\n        System.out.println(a - b); // subtract\n        System.out.println(a * b); // multiply\n        System.out.println(a / b); // divide\n        System.out.println(a + a / b); // mixed\n    }\n}\n\n\n\n\nBeyond OYOclass' Java Editor\n\n\nIf you would like to do more with Java and go beyond the capabilities of OYOclass' Java Editor, please download and install the JDK (Java Development Kit) and a Java IDE (Integrated Development Environment) which you can find links to below:\n\n\n\n\nTo download the JDK, \nClick here\n\n\nTo download the Eclipse IDE, \nClick here\n,\n\n\nIn the orange bar, choose your operating system (Windows, Mac OS X, or Linux)\n\n\nClick where it says \"64 bit\" next to \"Eclipse IDE for Java Developers\"\n\n\n\n\n\n\nTo download the Netbeans IDE, \nClick here\n\n\nUnderneath the first column, where it says \"Java SE\", click on the Download button\n\n\n\n\n\n\nIf you download the JDK from above, you are probably using JDK 11. OYOclass' Java Editor also uses JDK 11. If you are using a different version of JDK, like JDK 8 or JDK 7, there aren't too many differences. \nClick here\n for the documentation for JDK 8, and \nHere\n for JDK 7.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#whats-java", 
+            "text": "Java is an interpreted programming language that is object oriented. Many programming languages like C and C++ are compiled languages, this means that the computer goes through the code, translates it into a binary instruction set for the specific computer architecture of the computer running the program, then runs the machine code. This means that a C or C++ program can be translated (compiled) totally differently depending on the machine it is being ran on. Java is much different, as previously stated Java is interpreted (translated) into what is known as byte code, which is compiled by the Java virtual machine (JVM) that compiles any byte code the same regardless of computer architecture.  Java is an extremely popular and powerful programming language. It is one of the first languages usually taught on a computer science track and is widely supported for many different uses. Java can be used for game design using libraries like FXGL or Greenfoot, Java even has some game libraries akin to Unity and Unreal like LibGDX used for powerful 3D game development. Java can also be used to parse massive amounts of data, make applets and plugins on web pages, and even describe hardware using JHDL, Java's Hardware Description Library.  The world is slowly gravitating away from the verbosity of languages like Java but it is a great stepping stone and after learning Java, developing your skills in any other language will be a breeze. This is not to say Java is irrelevant, Java is the main programming language of everything Android and any Android developer on the app store got there through the use of Java code (most likely in the Android Studios IDE). Java is also and will most likely continue to be the High-School level standard for programming languages and advanced knowledge is useful for college accolades specifically the AP Java Test.", 
+            "title": "What's Java?"
+        }, 
+        {
+            "location": "/#about-oyoclass-java-editor", 
+            "text": "Java Editor is an application built into the OYOclass platform which can be used to write Java code following the guidelines for the AP Computer Science A exam. It cannot do everything that can be done using the Java programming language. It is limited to simple standard input and output and the Java standard libraries. It is designed to allow you to run Java code in the browser, making storage and sharing your work easier.", 
+            "title": "About OYOclass' Java Editor"
+        }, 
+        {
+            "location": "/#quick-start", 
+            "text": "Copy following example code to OYOclass' Java Editor then click the \"Run\" button:   Say hello   public class Hello{\n    public static void main(String[] args) {\n        System.out.println( Hello Java );\n    }\n}   Calculator   public class Calculator {\n    public static void main(String[] args) {\n        // declare and initialize two values\n        int a = 10;\n        int b = 5;\n        // basic mathematical operations\n        System.out.println(a + b); // add\n        System.out.println(a - b); // subtract\n        System.out.println(a * b); // multiply\n        System.out.println(a / b); // divide\n        System.out.println(a + a / b); // mixed\n    }\n}", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/#beyond-oyoclass-java-editor", 
+            "text": "If you would like to do more with Java and go beyond the capabilities of OYOclass' Java Editor, please download and install the JDK (Java Development Kit) and a Java IDE (Integrated Development Environment) which you can find links to below:   To download the JDK,  Click here  To download the Eclipse IDE,  Click here ,  In the orange bar, choose your operating system (Windows, Mac OS X, or Linux)  Click where it says \"64 bit\" next to \"Eclipse IDE for Java Developers\"    To download the Netbeans IDE,  Click here  Underneath the first column, where it says \"Java SE\", click on the Download button    If you download the JDK from above, you are probably using JDK 11. OYOclass' Java Editor also uses JDK 11. If you are using a different version of JDK, like JDK 8 or JDK 7, there aren't too many differences.  Click here  for the documentation for JDK 8, and  Here  for JDK 7.", 
+            "title": "Beyond OYOclass' Java Editor"
+        }, 
+        {
+            "location": "/core/comments/", 
+            "text": "Comments\n\n\nAll types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects.\n\n\nDifferent Type of Comments\n\n\n\n\n// text\n : This is a comment where the compiler ignores everything from the \"//\" to the end of the line\n\n\n/* text */\n : This is a comment where the compiler ignores everything enclosed by the \"/*\" and \"*/\". These type of quotes can span multiple lines.\n\n\n/** text */\n : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the \"\n/**\n\" and \"\n*/\n\". These type of documentation usually spans multiple lines.\n\n\n\n\nExample\n    \n\n\nSystem.out.println(\nHello\n); //Prints \nHello\n and the information after the // won't throw an error\n\nint x = 14;\n/*\n    x = 15; //This does not set a new value for x\n    System.out.println(x); //This is not printed\n*/\n\nSystem.out.println(x); //This would print out 14\n\n/* You can also do this - it does not have to be a multi-lined comment.*/\n\n\n\n\nJavadoc\n\n\nJavadoc is used by many programmers as a way to easily identify different parts of a function. It usually includes a short description about the function, @param and @return values. All of this information would be enclosed in \"\n/**\n\" and \"\n*/\n\" notation.  \n\n\nJavadoc Documentation\n\n\n\n\n@param\n:  \"param\" is short for parameter. This would denote the \ntypes\n of parameters that are used in a particular function along with a short description of the parameter.  \n\n\n@return\n: This gives a description of what is being returned from the function.\n\n\n\n\nExample\n    \n\n\n/**\n*   This function multiplies two integers.\n*   @param a the first integer that is being multiplied\n*   @param b the second integer that is being multiplied\n*   @return the product of multiplying a and b together\n*\n*/\npublic static int multiply(int a, int b){\n    return a*b;\n}", 
+            "title": "Comments"
+        }, 
+        {
+            "location": "/core/comments/#comments", 
+            "text": "All types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects.", 
+            "title": "Comments"
+        }, 
+        {
+            "location": "/core/comments/#different-type-of-comments", 
+            "text": "// text  : This is a comment where the compiler ignores everything from the \"//\" to the end of the line  /* text */  : This is a comment where the compiler ignores everything enclosed by the \"/*\" and \"*/\". These type of quotes can span multiple lines.  /** text */  : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the \" /** \" and \" */ \". These type of documentation usually spans multiple lines.   Example       System.out.println( Hello ); //Prints  Hello  and the information after the // won't throw an error\n\nint x = 14;\n/*\n    x = 15; //This does not set a new value for x\n    System.out.println(x); //This is not printed\n*/\n\nSystem.out.println(x); //This would print out 14\n\n/* You can also do this - it does not have to be a multi-lined comment.*/", 
+            "title": "Different Type of Comments"
+        }, 
+        {
+            "location": "/core/comments/#javadoc", 
+            "text": "Javadoc is used by many programmers as a way to easily identify different parts of a function. It usually includes a short description about the function, @param and @return values. All of this information would be enclosed in \" /** \" and \" */ \" notation.", 
+            "title": "Javadoc"
+        }, 
+        {
+            "location": "/core/comments/#javadoc-documentation", 
+            "text": "@param :  \"param\" is short for parameter. This would denote the  types  of parameters that are used in a particular function along with a short description of the parameter.    @return : This gives a description of what is being returned from the function.   Example       /**\n*   This function multiplies two integers.\n*   @param a the first integer that is being multiplied\n*   @param b the second integer that is being multiplied\n*   @return the product of multiplying a and b together\n*\n*/\npublic static int multiply(int a, int b){\n    return a*b;\n}", 
+            "title": "Javadoc Documentation"
+        }, 
+        {
+            "location": "/core/number/", 
+            "text": "Number\n\n\nNumbers of Java are all primitive types in Java.  \n\n\nTypes of Numbers in Java\n\n\nThere are \ninteger\n types and \nIEEE-754 floating point\n types.\n\nAn \ninteger\n is a number that is a positive or negative whole number or 0.\n\nAn \nIEEE-754 floating point\n is a number that can be an integer or decimal values between them.  \n\n\nInteger Types\n\n\n\n\nbyte\n: This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes \none byte\n). It has a minimum value of -128 and a maximum value of 127.\n\n\nshort\n: This is a signed 16-bit two's complement integer (this value takes \ntwo bytes\n). It has a minimum value of -32768 and a maximum value of 32767.  \n\n\nint\n: This is a signed 32-bit two's complement integer (this value takes \nfour bytes\n). It has a minimum value of -2\n31\n and a maximum value of 2\n31\n-1.  \n\n\nlong\n: This is a signed 64-bit two's complement integer (this value takes \neight bytes\n). It has a minimum value of -2\n63\n and a maximum value of 2\n63\n-1.\n\n\n\n\nIEEE-754 Floating Point\n\n\n\n\nfloat\n: This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.\n\n\n\n\nfloat f = 123.5f;\n\n\n\n\nNote:\n A floating point declaration must have a \"f\" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.  \n\n\n\n\ndouble\n: This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.\n\n\n\n\n\n\nHow to Cast Numbers\n\n\nYou can make it so that a smaller number is placed in a larger type \nwithout\n explicit casting. The rules are as follows:\n\n\n\n\nbyte to short, int, long, float, or double  \n\n\nshort to int, long, float, or double  \n\n\nint to long, float, or double  \n\n\nlong to float or double  \n\n\nfloat to double  \n\n\n\n\nExample\n    \n\n\nbyte x = 105;\nlong s = x; //Sets the long value \ns\n to \nx\n or 105.\nfloat f = s; //Sets the float value \nf\n to \ns\n or 105.0.\n\n\n\n\nExplicit casting is needed to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte.\n\nThe values have to be explicitly cast because the program may be \nlosing\n information so the values have to be explicitly cast. Note that when you cast a double or float (a number with a decimal) to an integer, no rounding occurs. It simply drops all the digits after the decimal point and leaves you with the integer portion of the number.\n\n\nExample\n    \n\n\ndouble x = 235.054;\nlong s = (int) x; // Sets the long value \ns\n to \nx\n as an integer or 235.\nfloat f = s; //Sets the float value \nf\n to \ns\n or 235.0.", 
+            "title": "Number"
+        }, 
+        {
+            "location": "/core/number/#number", 
+            "text": "Numbers of Java are all primitive types in Java.", 
+            "title": "Number"
+        }, 
+        {
+            "location": "/core/number/#types-of-numbers-in-java", 
+            "text": "There are  integer  types and  IEEE-754 floating point  types. \nAn  integer  is a number that is a positive or negative whole number or 0. \nAn  IEEE-754 floating point  is a number that can be an integer or decimal values between them.", 
+            "title": "Types of Numbers in Java"
+        }, 
+        {
+            "location": "/core/number/#integer-types", 
+            "text": "byte : This is the smallest type of number in Java and is a signed 8-bit two's complement integer (this value takes  one byte ). It has a minimum value of -128 and a maximum value of 127.  short : This is a signed 16-bit two's complement integer (this value takes  two bytes ). It has a minimum value of -32768 and a maximum value of 32767.    int : This is a signed 32-bit two's complement integer (this value takes  four bytes ). It has a minimum value of -2 31  and a maximum value of 2 31 -1.    long : This is a signed 64-bit two's complement integer (this value takes  eight bytes ). It has a minimum value of -2 63  and a maximum value of 2 63 -1.", 
+            "title": "Integer Types"
+        }, 
+        {
+            "location": "/core/number/#ieee-754-floating-point", 
+            "text": "float : This is a signed single-precision 32-bit IEEE-754 floating point number. The range is hard to be defined.   float f = 123.5f;  Note:  A floating point declaration must have a \"f\" at the end of the assigned value to indicate the value is a float and not a double number, as demonstrated below.     double : This is a signed double-precision 64-bit IEEE-754 floating point number. The range is hard to be defined. This type can hold smaller and larger values than the type of number.", 
+            "title": "IEEE-754 Floating Point"
+        }, 
+        {
+            "location": "/core/number/#how-to-cast-numbers", 
+            "text": "You can make it so that a smaller number is placed in a larger type  without  explicit casting. The rules are as follows:   byte to short, int, long, float, or double    short to int, long, float, or double    int to long, float, or double    long to float or double    float to double     Example       byte x = 105;\nlong s = x; //Sets the long value  s  to  x  or 105.\nfloat f = s; //Sets the float value  f  to  s  or 105.0.  Explicit casting is needed to convert from larger types to smaller types, ie. anything not included in the list above. Usually, double to any type or short to byte. \nThe values have to be explicitly cast because the program may be  losing  information so the values have to be explicitly cast. Note that when you cast a double or float (a number with a decimal) to an integer, no rounding occurs. It simply drops all the digits after the decimal point and leaves you with the integer portion of the number.  Example       double x = 235.054;\nlong s = (int) x; // Sets the long value  s  to  x  as an integer or 235.\nfloat f = s; //Sets the float value  f  to  s  or 235.0.", 
+            "title": "How to Cast Numbers"
+        }, 
+        {
+            "location": "/core/operators/", 
+            "text": "Operators\n\n\nArithmetic Operators\n\n\n\n\n+\n: if a + b, you add the two together\n\n\n-\n: if a - b, you subtract b from a\n\n\n*\n: if a * b, you multiply a and b\n\n\n/\n: if a / b, you divide a by b\n\n\n%\n: if a \n b, you return the remainder after a / b\n\n\n\n\n\n\nIncrementing or Decrementing\n\n\n\n\n++\n: if a++, you increase a by 1\n\n\n--\n: if a--, you decrease b by 1\n\n\n\n\n\n\nAssignment\n\n\n\n\n=\n: if a = 10, you set the value of a to 10\n\n\n+=\n: if a += b, you set the value of a to the original value of a + b\n\n\n-=\n: if a -= b, you set the value of a to the original value of a - b\n\n\n*=\n: if a *= b, you set the value of a to the original value of a * b\n\n\n/=\n: if a /= b, you set the value of a to the original value of a / b\n\n\n%=\n: if a %= b, you set the value of a to the original value of a % b\n\n\n\n\nExample\n    \n\n\nint a = 14;\na++; //This changes a to 15\na /= 3; //This changes a to 5\na %= 2; //This changes a to 1\n\nint c = a + 8; //This sets c to 1 + 8 = 9\nc *= 2; //This sets c to 18\n\n\n\n\nExample\n\n\nint a = 14;\nint x = a-- + --a;\n// a++ will use 14 in the addition, subtracts 1 from a, now a = 13\n// --a will first subtract 1 from a, so a = 12,\n// then it will add 14 to 12 and get 26\nSystem.out.println(\na = \n + a);\nSystem.out.println(\nx = \n + x);", 
+            "title": "Operators"
+        }, 
+        {
+            "location": "/core/operators/#operators", 
+            "text": "", 
+            "title": "Operators"
+        }, 
+        {
+            "location": "/core/operators/#arithmetic-operators", 
+            "text": "+ : if a + b, you add the two together  - : if a - b, you subtract b from a  * : if a * b, you multiply a and b  / : if a / b, you divide a by b  % : if a   b, you return the remainder after a / b", 
+            "title": "Arithmetic Operators"
+        }, 
+        {
+            "location": "/core/operators/#incrementing-or-decrementing", 
+            "text": "++ : if a++, you increase a by 1  -- : if a--, you decrease b by 1", 
+            "title": "Incrementing or Decrementing"
+        }, 
+        {
+            "location": "/core/operators/#assignment", 
+            "text": "= : if a = 10, you set the value of a to 10  += : if a += b, you set the value of a to the original value of a + b  -= : if a -= b, you set the value of a to the original value of a - b  *= : if a *= b, you set the value of a to the original value of a * b  /= : if a /= b, you set the value of a to the original value of a / b  %= : if a %= b, you set the value of a to the original value of a % b   Example       int a = 14;\na++; //This changes a to 15\na /= 3; //This changes a to 5\na %= 2; //This changes a to 1\n\nint c = a + 8; //This sets c to 1 + 8 = 9\nc *= 2; //This sets c to 18  Example  int a = 14;\nint x = a-- + --a;\n// a++ will use 14 in the addition, subtracts 1 from a, now a = 13\n// --a will first subtract 1 from a, so a = 12,\n// then it will add 14 to 12 and get 26\nSystem.out.println( a =   + a);\nSystem.out.println( x =   + x);", 
+            "title": "Assignment"
+        }, 
+        {
+            "location": "/core/boolean/", 
+            "text": "Boolean \n Comparison Operators\n\n\nBoolean\n\n\nBooleans are used to show the logical values of \ntrue\n and \nfalse\n.  \n\n\nConstants \n \n\n    -  true\n\n    -  false  \n\n\nLogical Operators\n\n\n\n\n!\n : Negates the value; For !x, if x is \ntrue\n, then !x is \nfalse\n. If x is \nfalse\n, then !x is \ntrue\n.\n\n\n : If x \n y, if both is \ntrue\n, then x \n y is \ntrue\n, else x \n y is \nfalse\n.\n\n\n||\n : If x || y, if both is \nfalse\n, then x || y is \nfalse\n, else x || y is \ntrue\n.\n\n\n\n\nExample\n     \n\n\nboolean x = true; //Sets the value of x to true\nboolean y = false; //Sets the value of y to false\nSystem.out.println(!x); //Prints false\nSystem.out.println(!y); //Prints true\nSystem.out.println(x\nx); //Prints true\nSystem.out.println(x\ny); //Prints false\nSystem.out.println(y\ny); //Prints false\nSystem.out.println(x||x); //Prints true\nSystem.out.println(x||y); //Prints true\nSystem.out.println(y||y); //Prints false\n\n\n\n\nComparison Operators\n\n\n\n\n==\n : equal\n\n\n!=\n : not equal\n\n\n : strictly less than\n\n\n=\n : less than or equal to\n\n\n : strictly greater than\n\n\n=\n : greater than or equal to\n\n\n\n\nExample\n    \n\n\nSystem.out.println(45 == 45); //Prints true\nSystem.out.println(45 != 45); //Prints false\nSystem.out.println(45 \n= 34); //Prints true\nSystem.out.println(45 \n= 45); //Prints true\nSystem.out.println(45 \n 23); //Prints true\nSystem.out.println(45 \n 45); //Prints false\nSystem.out.println(34 \n= 23); //Prints false\nSystem.out.println(34 \n 34); //Prints false\n\n\n\n\nObject Comparison\n\n\nThere are two ways to compare two objects. One way is using the \"==\" comparison and the other way is using the .equals() function that exists in objects.  \n\n\n == \n\nThe \"==\" is used to compare when primitive values, boolean, byte, char, double, int, float, short, and byte, are equal.It only checks if two values point to the same reference and does not check if the contents in the reference is the same.      \n\n\n .equals() \n\nThe \".equals()\" is used to compare when two objects are equal, such as Strings. It checks if the contents within the reference are the same. A user cannot use .equals() function to check if primitive values are the same because primitive values cannot be dereferenced.  \n\n\nExample\n    \n\n\nint x = 56; \nSystem.out.println(x == 56);//Prints true\nString str1 = \nHello\n; //Creates a new String called \nHello\n\nString str2 = new String(\nHello\n); //Creates a new String called \nHello\n\nSystem.out.println(str1 == str2); //Prints false\nSystem.out.println(str1.equals(str2)); //Prints true", 
+            "title": "Booleans & Comparison Operators"
+        }, 
+        {
+            "location": "/core/boolean/#boolean-comparison-operators", 
+            "text": "", 
+            "title": "Boolean &amp; Comparison Operators"
+        }, 
+        {
+            "location": "/core/boolean/#boolean", 
+            "text": "Booleans are used to show the logical values of  true  and  false .    Constants    \n    -  true \n    -  false", 
+            "title": "Boolean"
+        }, 
+        {
+            "location": "/core/boolean/#logical-operators", 
+            "text": "!  : Negates the value; For !x, if x is  true , then !x is  false . If x is  false , then !x is  true .   : If x   y, if both is  true , then x   y is  true , else x   y is  false .  ||  : If x || y, if both is  false , then x || y is  false , else x || y is  true .   Example        boolean x = true; //Sets the value of x to true\nboolean y = false; //Sets the value of y to false\nSystem.out.println(!x); //Prints false\nSystem.out.println(!y); //Prints true\nSystem.out.println(x x); //Prints true\nSystem.out.println(x y); //Prints false\nSystem.out.println(y y); //Prints false\nSystem.out.println(x||x); //Prints true\nSystem.out.println(x||y); //Prints true\nSystem.out.println(y||y); //Prints false", 
+            "title": "Logical Operators"
+        }, 
+        {
+            "location": "/core/boolean/#comparison-operators", 
+            "text": "==  : equal  !=  : not equal   : strictly less than  =  : less than or equal to   : strictly greater than  =  : greater than or equal to   Example       System.out.println(45 == 45); //Prints true\nSystem.out.println(45 != 45); //Prints false\nSystem.out.println(45  = 34); //Prints true\nSystem.out.println(45  = 45); //Prints true\nSystem.out.println(45   23); //Prints true\nSystem.out.println(45   45); //Prints false\nSystem.out.println(34  = 23); //Prints false\nSystem.out.println(34   34); //Prints false", 
+            "title": "Comparison Operators"
+        }, 
+        {
+            "location": "/core/boolean/#object-comparison", 
+            "text": "There are two ways to compare two objects. One way is using the \"==\" comparison and the other way is using the .equals() function that exists in objects.     ==  \nThe \"==\" is used to compare when primitive values, boolean, byte, char, double, int, float, short, and byte, are equal.It only checks if two values point to the same reference and does not check if the contents in the reference is the same.         .equals()  \nThe \".equals()\" is used to compare when two objects are equal, such as Strings. It checks if the contents within the reference are the same. A user cannot use .equals() function to check if primitive values are the same because primitive values cannot be dereferenced.    Example       int x = 56; \nSystem.out.println(x == 56);//Prints true\nString str1 =  Hello ; //Creates a new String called  Hello \nString str2 = new String( Hello ); //Creates a new String called  Hello \nSystem.out.println(str1 == str2); //Prints false\nSystem.out.println(str1.equals(str2)); //Prints true", 
+            "title": "Object Comparison"
+        }, 
+        {
+            "location": "/core/string/", 
+            "text": "String\n\n\nHow to Declare a String\n\n\nYou can declare a String in 3 different ways.\n\n\nchar\n\n\nYou can create a char[] array to represent a String.\n\n\nchar[] s1 = {'H', 'e', 'l', 'l', 'o'};\n\n\n\n\nStrings\n\n\nYou can create a String object.  \n\n\nString s2 = new String(\nHello\n);\n\n\n\n\nString literals\n\n\nYou can create a String using String literals.\n\nA String literal is something that is contained within quotation marks.\n\n\nString s3 = \nHello\n;\n\n\n\n\nDifference between String and String Literal\n\n\nThe difference between a String and a String Literal is that when assigned, if two String literals are created, it would point to the same reference in memory. For a String, if there is a new object created, it always creates a new reference.\n\n\nString s4 = \nHello\n;\nString s5 = \nHello\n;\nString s6 = new String(\nHello\n);\nString s7 = new String(\nHello\n);\n\nSystem.out.println(s4 == s5);\n//Prints true because they share the same memory address\nSystem.out.println(s4 == s7);\n//Prints false because s6 creates a String object with a different memory address\nSystem.out.println(s6 == s7);\n//Prints false because s6 and s7 are both String objects created with different memory addresses\n\n\n\n\nString concatenation\n\n\nString concatentation can be done in two ways.  \n\n\nconcat() Method\n\n\nYou use the method as follows:\ns1 = s1.concat(\"s2\");\ns1 is the original String and s2 is the String you want to concatenate with.\n\n\nString s1 = new String(\nHello\n);\ns1 = s1.concat(\n There\n);\nSystem.out.println(s1); //Prints out \nHello There\n\n\n\n\n\n+ operator\n\n\nString s2 = \nHi\n;\ns2 = s2 + \n, Hello There\n;\nSystem.out.println(s2); //Prints \nHi, Hello There\n\n\n\n\n\nEscape Sequences\n\n\nEscape sequences have specific meanings to a compiler.\n\n\n\\\"\n\n\nInserts a quotation mark into a String.\n\n\n\\\n\n\nInserts a backslash into a String.\n\n\n\\n\n\n\nInserts a newline into a String.\n\n\nString s = \n\\\\\\\nHello\\\n\\\\\n;\nSystem.out.println(s); //Prints out \\\nHello\n\\\n\nString ss = \nHi\\nHello\n;\nSystem.out.println(ss);\n//Prints out\n//Hi\n//Hello\n\n\n\n\nequals() vs. compareTo()\n\n\nBoth equals() and compareTo() compares 2 objects.\n\n\nequals()\n\n\nThe equals() method is from the Object class. It tells the user is \"equal to\" another String. It returns true if the contents of the String is the same.\n\n\nString sss1 = \nJava\n;\nString sss2 = \nPython\n;\nString sss3 = \nJava\n;\nSystem.out.println(sss1.equals(sss3));\n//Prints true because the contents of sss1 and sss3 both say \nJava\n.\nSystem.out.println(sss1.equals(sss2));\n//Prints false because one String is Java and the other is Python.\n\n\n\n\ncompareTo()\n\n\nThe compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. A negative integer is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive integer is returned if the String is greater than the String specified.  \n\n\nNote:\n Greater than refers to later in the alphabet and less than refers to earlier in the alphabet. Lowercase letters are considered later in the alphabet. It compares two strings, using the ASCII values for each character. For example, 'H' \n 'T' and 'T' \n 'b'. To see the table of ASCII characters, \nclick here\n. In the first table, the number under \"Dec\" is the number for that character. Therefore characters that appear later in the list are greater than those that appear before.\n\n\nString ss1 = \nHello\n;\nString ss2 = \nHi\n;\nString ss3 = \nThere\n;\nString ss4 = \nHi\n;\nSystem.out.println(ss2.compareTo(ss3));\n//Returns a negative integer since ss2 comes before ss3 alphabetically (ss2 is less than ss3).\nSystem.out.println(ss2.compareTo(ss1));\n//Returns a positive integer since ss2 comes after ss1 alphabetically (ss2 is greater than ss1).\nSystem.out.println(ss2.compareTo(ss4));\n//Returns 0 because ss2 is equal to ss4.", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/string/#string", 
+            "text": "", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/string/#how-to-declare-a-string", 
+            "text": "You can declare a String in 3 different ways.", 
+            "title": "How to Declare a String"
+        }, 
+        {
+            "location": "/core/string/#char", 
+            "text": "You can create a char[] array to represent a String.  char[] s1 = {'H', 'e', 'l', 'l', 'o'};", 
+            "title": "char"
+        }, 
+        {
+            "location": "/core/string/#strings", 
+            "text": "You can create a String object.    String s2 = new String( Hello );", 
+            "title": "Strings"
+        }, 
+        {
+            "location": "/core/string/#string-literals", 
+            "text": "You can create a String using String literals. \nA String literal is something that is contained within quotation marks.  String s3 =  Hello ;", 
+            "title": "String literals"
+        }, 
+        {
+            "location": "/core/string/#difference-between-string-and-string-literal", 
+            "text": "The difference between a String and a String Literal is that when assigned, if two String literals are created, it would point to the same reference in memory. For a String, if there is a new object created, it always creates a new reference.  String s4 =  Hello ;\nString s5 =  Hello ;\nString s6 = new String( Hello );\nString s7 = new String( Hello );\n\nSystem.out.println(s4 == s5);\n//Prints true because they share the same memory address\nSystem.out.println(s4 == s7);\n//Prints false because s6 creates a String object with a different memory address\nSystem.out.println(s6 == s7);\n//Prints false because s6 and s7 are both String objects created with different memory addresses", 
+            "title": "Difference between String and String Literal"
+        }, 
+        {
+            "location": "/core/string/#string-concatenation", 
+            "text": "String concatentation can be done in two ways.", 
+            "title": "String concatenation"
+        }, 
+        {
+            "location": "/core/string/#concat-method", 
+            "text": "You use the method as follows:\ns1 = s1.concat(\"s2\");\ns1 is the original String and s2 is the String you want to concatenate with.  String s1 = new String( Hello );\ns1 = s1.concat(  There );\nSystem.out.println(s1); //Prints out  Hello There", 
+            "title": "concat() Method"
+        }, 
+        {
+            "location": "/core/string/#operator", 
+            "text": "String s2 =  Hi ;\ns2 = s2 +  , Hello There ;\nSystem.out.println(s2); //Prints  Hi, Hello There", 
+            "title": "+ operator"
+        }, 
+        {
+            "location": "/core/string/#escape-sequences", 
+            "text": "Escape sequences have specific meanings to a compiler.", 
+            "title": "Escape Sequences"
+        }, 
+        {
+            "location": "/core/string/#_1", 
+            "text": "Inserts a quotation mark into a String.", 
+            "title": "\\\""
+        }, 
+        {
+            "location": "/core/string/#92", 
+            "text": "Inserts a backslash into a String.", 
+            "title": "\\"
+        }, 
+        {
+            "location": "/core/string/#n", 
+            "text": "Inserts a newline into a String.  String s =  \\\\\\ Hello\\ \\\\ ;\nSystem.out.println(s); //Prints out \\ Hello \\\n\nString ss =  Hi\\nHello ;\nSystem.out.println(ss);\n//Prints out\n//Hi\n//Hello", 
+            "title": "\\n"
+        }, 
+        {
+            "location": "/core/string/#equals-vs-compareto", 
+            "text": "Both equals() and compareTo() compares 2 objects.", 
+            "title": "equals() vs. compareTo()"
+        }, 
+        {
+            "location": "/core/string/#equals", 
+            "text": "The equals() method is from the Object class. It tells the user is \"equal to\" another String. It returns true if the contents of the String is the same.  String sss1 =  Java ;\nString sss2 =  Python ;\nString sss3 =  Java ;\nSystem.out.println(sss1.equals(sss3));\n//Prints true because the contents of sss1 and sss3 both say  Java .\nSystem.out.println(sss1.equals(sss2));\n//Prints false because one String is Java and the other is Python.", 
+            "title": "equals()"
+        }, 
+        {
+            "location": "/core/string/#compareto", 
+            "text": "The compareTo() method is from the Comparable interface. It tells the user if it is greater than, equal to or less than another String. A negative integer is returned if the String is less than the String specified. It returns 0 if the String is equal to the specified String. A positive integer is returned if the String is greater than the String specified.    Note:  Greater than refers to later in the alphabet and less than refers to earlier in the alphabet. Lowercase letters are considered later in the alphabet. It compares two strings, using the ASCII values for each character. For example, 'H'   'T' and 'T'   'b'. To see the table of ASCII characters,  click here . In the first table, the number under \"Dec\" is the number for that character. Therefore characters that appear later in the list are greater than those that appear before.  String ss1 =  Hello ;\nString ss2 =  Hi ;\nString ss3 =  There ;\nString ss4 =  Hi ;\nSystem.out.println(ss2.compareTo(ss3));\n//Returns a negative integer since ss2 comes before ss3 alphabetically (ss2 is less than ss3).\nSystem.out.println(ss2.compareTo(ss1));\n//Returns a positive integer since ss2 comes after ss1 alphabetically (ss2 is greater than ss1).\nSystem.out.println(ss2.compareTo(ss4));\n//Returns 0 because ss2 is equal to ss4.", 
+            "title": "compareTo()"
+        }, 
+        {
+            "location": "/core/arrays/", 
+            "text": "Arrays\n\n\n1-Dimensional Arrays\n\n\nHow to Declare an Array\n  \n\nIt is declared in the following format:\n\n\ntype[] name\n: the type represents the type of variable ie. int, and the name is the name of the new array\n\n\nint[] arr1; //Creates an array called arr1 that holds integer values\nfloat[] arr2; //Creates an array called arr2 that holds floating-point values\n\n\n\n\nHow to Initialize the Size of an Array\n \n \n\nIn Java, you must declare the size of the array. If not, the size will \nalways\n be zero.\n\n\n\n\ntype[] name;\n\n\nname = new type[size];\n\n  You declare the array first and then you create the size of the array after the declaration.\n\n\n\n\nint[] arr1; //This is the initial declaration of an array.\narr1 = new int[2]; //This sets the newly created array to size 2.\n\n\n\n\n\n\ntype[] name = new type[size]\n: You declare and initialize the array in the same line, and make an array of a type that has a certain size.\n\n\n\n\nint[] arr2 = new int[10]; //This makes an array that can hold 10 integers.\nString[] arr3 = new String[5]; //This makes an array that can hold 5 Strings.\n\n\n\n\nHow to Reference the Indices in an Array\n  \n\nThe indices of an array start at 0. So, the first element of an array would be at the 0th position.\n\nThe highest position would then be \nsize - 1\n.\n\n\nint[] arr4 = new int[20];\narr4[1] = 20; //Sets the 2nd integer in the array to 20.\narr4[0] = 40; //Sets the 1st integer in the array to 40.\n\nString[] arr5 = new String[25];\narr5[0] = \nHi\n; //Sets the 1st indice to \nHi\n\n\n\n\n\nHow to Find the Length in an Array\n  \n\nYou can find the length of an array using the .length function.  \n\n\nint[] arr4 = new int[20];\nSystem.out.print(arr4.length); //This would print out 20\n\n\n\n\n\n\n2-Dimensional Arrays\n\n\n How to Declare a 2-Dimensional Array \n \n\nDeclaring a 2-dimensional array is similar to the way that the 1-dimensional array is declared. Instead of only having a \"size\" parameter, the 2-dimensional array has two size parameters, usually denoted with row and column.  \n\n\nIt is declared in the following format:\n\n\ntype[][] name\n: the type represents the type of variable ie. int, and the name is the name of the new array\n\n\nint[][] arr1; //Creates an array called arr1 that holds integer values\nfloat[][] arr2; //Creates an array called arr2 that holds floating-point values\n\n\n\n\nHow to Initialize the Size of a 2-Dimensional Array\n \n  \n\n\n\n\ntype[][] name;\n\n\nname = new type[row][col];\n\n  You declare the array first and then you create the size of the array after the declaration.\n\n  There are \"row\" x \"col\" elements in an array.\n\n\n\n\nint[][] arr1; //This is the initial declaration of an array.\narr1 = new int[2][3]; //Sets the newly created array to 2 by 3. There are 6 elements in the array.\n\n\n\n\n\n\ntype[][] name = new type[row][col]\n: You declare and initialize the array in the same line, and make an array of a type that has a certain size.\n\n\n\n\nint[][] arr2 = new int[10][2]; //This makes an array that can hold 20 integers.\nString[][] arr3 = new String[5][3]; //This makes an array that can hold 15 Strings.\n\n\n\n\nHow to Reference the Indices in a 2D Array\n  \n\nThe indice of a 1-Dimensional Array starts at 0. Similarly, the 2-Dimensional array would start at index 0 too, but since there are two size parameters, the array would start at arr[0][0].\nThe highest position would then be \narr[size-1][size-1]\n.\n\n\nThink of a 2-Dimensional array like a table. The first index you place is the row number, the second number you place is the column number.\n\n\nint[][] arr4 = new int[20][5];\narr4[19][4] = 20; //Sets the last element at row 19 and col 4 in the array to 20.\narr4[0][0] = 40; //Sets the first integer, at index [0][0] in the array to 40.\n\nString[][] arr5 = new String[2][5];\narr5[0][0] = \nHello\n; //Sets the element at row 0 and col 0 to \nHi\n\n\n\n\n\nHow to Find the Length in an Array\n  \n\nTo find the length of the row and the length of the column.\n\n\n\n\narr.length: Find the number of rows in the array \"arr\".\n\n\narr[i].length: Find the number of columns in the row \"i\" in the array \"arr\".\n\n\n\n\nint[][] arr4 = new int[20][5];\nSystem.out.println(arr4.length); //This would print out 20\nSystem.out.println(arr4[0].length); //This would print out 5\n\n\n\n\n\n\nInitializing Arrays with a List\n\n\nHow to Initialize in an 1-Dimensional Array with a List\n  \n  \n\n\nYou need to use the \"{\" and \"}\" to denote the beginning and the end of the new list.\n\n\n\n\nDeclare the array first and then initialize the array afterwards:\n\n\nint[] arrays;\n\n\narrays = new int[]{w,x,y...};\n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.\n\n\n\n\nint[] arrays; //Declares a new array called arrays\narrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8.\n//arrays[0] = 4, arrays[4] = 8\n\n\n\n\n\n\nDeclare and initialize the array at the same time:\n\n\nint[] arrays = {w,x,y...};\n \n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.\n\n\n\n\nint[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8.\n// arrays[0] = 4, arrays[4] = 8\n\n\n\n\nHow to Initialize in an 2-Dimensional Array with a List\n  \n\nThe main difference between initializing a 2-Dimensional Array and a 1-Dimensional array is the addition of a second parameter for size.  \n\n\nRather than just using the \"{}\", to denote the new list, you need to nest \"{\" and \"}\". The notation for this is usually {{a,b,c}, {d,e,f}, {g,h,i}, {j,k,l}}.  \n\n\nThe first \"{\" and the last \"}\" denotes the entire list. The first pair of \"{}\" that encloses a,b, and c denotes the first row of index 0. The value a would be in index [0][0], the value b would be in [0][1], and the value b would be in [0][2]. The last grouping represented by {j,k,l} would be the fourth row, which has the index 0.\n\n\n\n\nDeclare the array first and then initialize the array afterwards:\n\n\nint[][] arrays;\n\n\narrays = new int[][]{{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};\n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][1] = x, and arrays[1][2] = y2.\n\n\n\n\nint[][] arrays; //Declares a new array called arrays\narrays = new int[]{\n  {4,5,6,7,8},\n  {2,1,2,9,5}\n}; //Initialized arrays with the values from the list.\n//arrays[0][0] = 4, arrays[1][3] = 9\n\n\n\n\n\n\nDeclare and initialize the array at the same time:\n\n\nint[] arrays = {{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};\n \n\nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][0] = w, and arrays[1][1] = x2.\n\n\n\n\nint[][] array4 = {\n  {4,5,6,7,8},\n  {0,1,3,2,11}\n}; //Initialized arrays with the list values.\n// arrays[0][0] = 4, arrays[1][4] = 11", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#arrays", 
+            "text": "", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#1-dimensional-arrays", 
+            "text": "How to Declare an Array    \nIt is declared in the following format:  type[] name : the type represents the type of variable ie. int, and the name is the name of the new array  int[] arr1; //Creates an array called arr1 that holds integer values\nfloat[] arr2; //Creates an array called arr2 that holds floating-point values  How to Initialize the Size of an Array     \nIn Java, you must declare the size of the array. If not, the size will  always  be zero.   type[] name;  name = new type[size]; \n  You declare the array first and then you create the size of the array after the declaration.   int[] arr1; //This is the initial declaration of an array.\narr1 = new int[2]; //This sets the newly created array to size 2.   type[] name = new type[size] : You declare and initialize the array in the same line, and make an array of a type that has a certain size.   int[] arr2 = new int[10]; //This makes an array that can hold 10 integers.\nString[] arr3 = new String[5]; //This makes an array that can hold 5 Strings.  How to Reference the Indices in an Array    \nThe indices of an array start at 0. So, the first element of an array would be at the 0th position. \nThe highest position would then be  size - 1 .  int[] arr4 = new int[20];\narr4[1] = 20; //Sets the 2nd integer in the array to 20.\narr4[0] = 40; //Sets the 1st integer in the array to 40.\n\nString[] arr5 = new String[25];\narr5[0] =  Hi ; //Sets the 1st indice to  Hi   How to Find the Length in an Array    \nYou can find the length of an array using the .length function.    int[] arr4 = new int[20];\nSystem.out.print(arr4.length); //This would print out 20", 
+            "title": "1-Dimensional Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#2-dimensional-arrays", 
+            "text": "How to Declare a 2-Dimensional Array    \nDeclaring a 2-dimensional array is similar to the way that the 1-dimensional array is declared. Instead of only having a \"size\" parameter, the 2-dimensional array has two size parameters, usually denoted with row and column.    It is declared in the following format:  type[][] name : the type represents the type of variable ie. int, and the name is the name of the new array  int[][] arr1; //Creates an array called arr1 that holds integer values\nfloat[][] arr2; //Creates an array called arr2 that holds floating-point values  How to Initialize the Size of a 2-Dimensional Array        type[][] name;  name = new type[row][col]; \n  You declare the array first and then you create the size of the array after the declaration. \n  There are \"row\" x \"col\" elements in an array.   int[][] arr1; //This is the initial declaration of an array.\narr1 = new int[2][3]; //Sets the newly created array to 2 by 3. There are 6 elements in the array.   type[][] name = new type[row][col] : You declare and initialize the array in the same line, and make an array of a type that has a certain size.   int[][] arr2 = new int[10][2]; //This makes an array that can hold 20 integers.\nString[][] arr3 = new String[5][3]; //This makes an array that can hold 15 Strings.  How to Reference the Indices in a 2D Array    \nThe indice of a 1-Dimensional Array starts at 0. Similarly, the 2-Dimensional array would start at index 0 too, but since there are two size parameters, the array would start at arr[0][0].\nThe highest position would then be  arr[size-1][size-1] .  Think of a 2-Dimensional array like a table. The first index you place is the row number, the second number you place is the column number.  int[][] arr4 = new int[20][5];\narr4[19][4] = 20; //Sets the last element at row 19 and col 4 in the array to 20.\narr4[0][0] = 40; //Sets the first integer, at index [0][0] in the array to 40.\n\nString[][] arr5 = new String[2][5];\narr5[0][0] =  Hello ; //Sets the element at row 0 and col 0 to  Hi   How to Find the Length in an Array    \nTo find the length of the row and the length of the column.   arr.length: Find the number of rows in the array \"arr\".  arr[i].length: Find the number of columns in the row \"i\" in the array \"arr\".   int[][] arr4 = new int[20][5];\nSystem.out.println(arr4.length); //This would print out 20\nSystem.out.println(arr4[0].length); //This would print out 5", 
+            "title": "2-Dimensional Arrays"
+        }, 
+        {
+            "location": "/core/arrays/#initializing-arrays-with-a-list", 
+            "text": "How to Initialize in an 1-Dimensional Array with a List        You need to use the \"{\" and \"}\" to denote the beginning and the end of the new list.   Declare the array first and then initialize the array afterwards:  int[] arrays;  arrays = new int[]{w,x,y...}; \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.   int[] arrays; //Declares a new array called arrays\narrays = new int[]{4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8.\n//arrays[0] = 4, arrays[4] = 8   Declare and initialize the array at the same time:  int[] arrays = {w,x,y...};   \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0] = w, and arrays[2] = y.   int[] arrays = {4,5,6,7,8}; //Initialized arrays with the values, 4, 5, 6, 7, and 8.\n// arrays[0] = 4, arrays[4] = 8  How to Initialize in an 2-Dimensional Array with a List    \nThe main difference between initializing a 2-Dimensional Array and a 1-Dimensional array is the addition of a second parameter for size.    Rather than just using the \"{}\", to denote the new list, you need to nest \"{\" and \"}\". The notation for this is usually {{a,b,c}, {d,e,f}, {g,h,i}, {j,k,l}}.    The first \"{\" and the last \"}\" denotes the entire list. The first pair of \"{}\" that encloses a,b, and c denotes the first row of index 0. The value a would be in index [0][0], the value b would be in [0][1], and the value b would be in [0][2]. The last grouping represented by {j,k,l} would be the fourth row, which has the index 0.   Declare the array first and then initialize the array afterwards:  int[][] arrays;  arrays = new int[][]{{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..}; \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][1] = x, and arrays[1][2] = y2.   int[][] arrays; //Declares a new array called arrays\narrays = new int[]{\n  {4,5,6,7,8},\n  {2,1,2,9,5}\n}; //Initialized arrays with the values from the list.\n//arrays[0][0] = 4, arrays[1][3] = 9   Declare and initialize the array at the same time:  int[] arrays = {{w,x,y...}, {w2, x2, y2...}, ... {wz, xz, yz..};   \nThe order that the values are in the list corresponds to the index of the values in the array, ie. arrays[0][0] = w, and arrays[1][1] = x2.   int[][] array4 = {\n  {4,5,6,7,8},\n  {0,1,3,2,11}\n}; //Initialized arrays with the list values.\n// arrays[0][0] = 4, arrays[1][4] = 11", 
+            "title": "Initializing Arrays with a List"
+        }, 
+        {
+            "location": "/core/stdio/", 
+            "text": "Stdio\n\n\nSystem.out.print() and System.out.println()\n\n\nBoth System.out.print() and System.out.println() print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.  \n\n\nYou can use the \"+\" to append multiple things together.  \n\n\nExample\n    \n\n\nSystem.out.println(3 + 4);\n\nSystem.out.println(3 + \nStrings\n + 4);\n\n\n\n\nArithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended. To do math after the string in the print statement, surround the arithmetic part with parentheses.\n\n\nExample\n    \n\n\nSystem.out.println(3 + 4); //This prints out 7\n\nSystem.out.println(3 + 4 + \nhi\n); //This prints out 7hi\n\nSystem.out.println(\nhi\n + 3 + 4); //This prints out hi34\n\nSystem.out.println(\nhi\n + (3 + 4)); //This prints out hi7\n\n\n\n\nFormatting Print Statements\n\n\nWhen formatting print statements you can use System.out.printf(string, args), where \"string\" is the entirety of the string you want to print with % and the type you want to use replacing where the variables will go and \"args\" is where you list out each argument in the order you want it to appear.\n\n\n\n\n%s\n is used for strings and characters.\n\n\n%d\n is used for integers, longs, bytes, and shorts\n\n\n%f\n is used for doubles and floats.\n\n\n\n\nBetween the percent sign and the letter for the type, you can put numbers to show how much space before the variable or how many digits to show in the variable.\n\n\nExample\n\n\nint a = 5;\ndouble b = 10.256;\nString s = \nHello\n;\nSystem.out.printf(\n%15s.\\n\n, s);\n// since \nHello\n is 5 letters long, then \nHello\n will now take up 15 spaces\n// prints out \n          Hello.\n (10 spaces (then \nHello\n))\n\nSystem.out.printf(\n%03d + %.2f = %.2f\n, a, b, (a + b));\n// since \n03\n comes before d, it will print out the value stored in a as 3 digits, like 005\n// \n.2f\n means it will print out the number rounded to the nearest 2 decimal places\n// prints out \n005 + 10.26 = 15.26\n\n\n\n\n\n\n\nHow to Use a Scanner\n\n\nAt the beginning of the program, you should have the import statement.\n\n\nimport java.util.Scanner;\n\n\n\n\nThen you must declare a Scanner, the scanner here is to be called \"input\".\n\n\nScanner input = new Scanner(System.in);\n\n\n\n\nThen, you call the scanner with any of the following functions, where input is the name of your new Scanner:\n\n\n\n\ninput.next(): Returns the next token from the input as a String up until the space\n\n\ninput.nextLine(): Returns the entire line from where the Scanner is currently pointing as a String.\n\n\ninput.nextByte(): Takes the next element from the input as a byte\n\n\ninput.nextShort(): Takes the next element from the input as a short\n\n\ninput.nextInt(): Takes the next element from the input as a integer\n\n\ninput.nextLong(): Takes the next element from the input as a long\n\n\ninput.nextFloat(): Takes the next element from the input as a float\n\n\ninput.nextDouble(): Takes the next element from the input as a double\n\n\n\n\n\n\nExample\n    \n\n\n\n\nSystem.out.println(\nWhat's your name?\n); //A print statement to prompt the user\nString name = sc.nextLine(); //Takes in the next line from the user\nSystem.out.println(\nHow old are you?\n); //A print statement to prompt the user\nint age = sc.nextInt(); //Takes in the integer from the user\nSystem.out.println(\nHello \n + name + \n, you are \n + age + \n years old\n);", 
+            "title": "Standard Input/Output"
+        }, 
+        {
+            "location": "/core/stdio/#stdio", 
+            "text": "", 
+            "title": "Stdio"
+        }, 
+        {
+            "location": "/core/stdio/#systemoutprint-and-systemoutprintln", 
+            "text": "Both System.out.print() and System.out.println() print out the resulting statement enclosed in the parentheses, the only difference is that System.out.println() prints the statement and then prints another new line with it.    You can use the \"+\" to append multiple things together.    Example       System.out.println(3 + 4);\n\nSystem.out.println(3 +  Strings  + 4);  Arithmetic operations are calculated within the parentheses if the mathematical operation comes before the String that is to be appended. To do math after the string in the print statement, surround the arithmetic part with parentheses.  Example       System.out.println(3 + 4); //This prints out 7\n\nSystem.out.println(3 + 4 +  hi ); //This prints out 7hi\n\nSystem.out.println( hi  + 3 + 4); //This prints out hi34\n\nSystem.out.println( hi  + (3 + 4)); //This prints out hi7", 
+            "title": "System.out.print() and System.out.println()"
+        }, 
+        {
+            "location": "/core/stdio/#formatting-print-statements", 
+            "text": "When formatting print statements you can use System.out.printf(string, args), where \"string\" is the entirety of the string you want to print with % and the type you want to use replacing where the variables will go and \"args\" is where you list out each argument in the order you want it to appear.   %s  is used for strings and characters.  %d  is used for integers, longs, bytes, and shorts  %f  is used for doubles and floats.   Between the percent sign and the letter for the type, you can put numbers to show how much space before the variable or how many digits to show in the variable.  Example  int a = 5;\ndouble b = 10.256;\nString s =  Hello ;\nSystem.out.printf( %15s.\\n , s);\n// since  Hello  is 5 letters long, then  Hello  will now take up 15 spaces\n// prints out            Hello.  (10 spaces (then  Hello ))\n\nSystem.out.printf( %03d + %.2f = %.2f , a, b, (a + b));\n// since  03  comes before d, it will print out the value stored in a as 3 digits, like 005\n//  .2f  means it will print out the number rounded to the nearest 2 decimal places\n// prints out  005 + 10.26 = 15.26", 
+            "title": "Formatting Print Statements"
+        }, 
+        {
+            "location": "/core/stdio/#how-to-use-a-scanner", 
+            "text": "At the beginning of the program, you should have the import statement.  import java.util.Scanner;  Then you must declare a Scanner, the scanner here is to be called \"input\".  Scanner input = new Scanner(System.in);  Then, you call the scanner with any of the following functions, where input is the name of your new Scanner:   input.next(): Returns the next token from the input as a String up until the space  input.nextLine(): Returns the entire line from where the Scanner is currently pointing as a String.  input.nextByte(): Takes the next element from the input as a byte  input.nextShort(): Takes the next element from the input as a short  input.nextInt(): Takes the next element from the input as a integer  input.nextLong(): Takes the next element from the input as a long  input.nextFloat(): Takes the next element from the input as a float  input.nextDouble(): Takes the next element from the input as a double    Example        System.out.println( What's your name? ); //A print statement to prompt the user\nString name = sc.nextLine(); //Takes in the next line from the user\nSystem.out.println( How old are you? ); //A print statement to prompt the user\nint age = sc.nextInt(); //Takes in the integer from the user\nSystem.out.println( Hello   + name +  , you are   + age +   years old );", 
+            "title": "How to Use a Scanner"
+        }, 
+        {
+            "location": "/core/exceptions/", 
+            "text": "Exceptions\n\n\nAn exception is defined as \"is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions\". This means that something that shouldn't have happened in your program happened and the program has been terminated.\n\n\nTypes of Exceptions\n\n\nArithmeticException\n\n\nThis exception is thrown when the math attempting to be calculated is not a valid arithmetic calculation, ie. if you try to divide a number by 0.\n\n\nNullPointerException\n\n\nThis exception is thrown when a program tries to call an object but the object is null, ie. if an object is attempted to be modified, but the object is null.\n\n\nIndexOutOfBoundsException\n\n\nAn index that is called in any object that is not in bounds or out of range. The index is either less than zero or greater than size - 1.\n\n\nArrayIndexOutOfBoundsException\n\n\nThe ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBoundsException. It is thrown specificially when an index that is referenced from an array is not in bounds or out of range. The index is either less than zero or greater than size - 1.\n\n\nIllegalArgumentException\n\n\nThis exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.  \n\n\nNoSuchElementException\n\n\nIn Java Mini, you will get this exception whenever you are trying to read input, but did not put the correct input in the input box at the bottom of the output.", 
+            "title": "Exceptions"
+        }, 
+        {
+            "location": "/core/exceptions/#exceptions", 
+            "text": "An exception is defined as \"is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions\". This means that something that shouldn't have happened in your program happened and the program has been terminated.", 
+            "title": "Exceptions"
+        }, 
+        {
+            "location": "/core/exceptions/#types-of-exceptions", 
+            "text": "", 
+            "title": "Types of Exceptions"
+        }, 
+        {
+            "location": "/core/exceptions/#arithmeticexception", 
+            "text": "This exception is thrown when the math attempting to be calculated is not a valid arithmetic calculation, ie. if you try to divide a number by 0.", 
+            "title": "ArithmeticException"
+        }, 
+        {
+            "location": "/core/exceptions/#nullpointerexception", 
+            "text": "This exception is thrown when a program tries to call an object but the object is null, ie. if an object is attempted to be modified, but the object is null.", 
+            "title": "NullPointerException"
+        }, 
+        {
+            "location": "/core/exceptions/#indexoutofboundsexception", 
+            "text": "An index that is called in any object that is not in bounds or out of range. The index is either less than zero or greater than size - 1.", 
+            "title": "IndexOutOfBoundsException"
+        }, 
+        {
+            "location": "/core/exceptions/#arrayindexoutofboundsexception", 
+            "text": "The ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBoundsException. It is thrown specificially when an index that is referenced from an array is not in bounds or out of range. The index is either less than zero or greater than size - 1.", 
+            "title": "ArrayIndexOutOfBoundsException"
+        }, 
+        {
+            "location": "/core/exceptions/#illegalargumentexception", 
+            "text": "This exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.", 
+            "title": "IllegalArgumentException"
+        }, 
+        {
+            "location": "/core/exceptions/#nosuchelementexception", 
+            "text": "In Java Mini, you will get this exception whenever you are trying to read input, but did not put the correct input in the input box at the bottom of the output.", 
+            "title": "NoSuchElementException"
+        }, 
+        {
+            "location": "/core/stdlib/", 
+            "text": "Stdio\n\n\nImporting Packages\n\n\nTo import every class within a package in Java, you would write the following in your code before the class declaration:\n\n\n// the general formula is:\nimport packageName.*;\n// example:\nimport java.util.*;\n\n\n\n\nIf you want to import only one class from a library, you replace the asterisk in the last example with the class name:\n\n\n// general formula:\nimport packageName.className;\n// example:\nimport java.util.ArrayList;\n\n\n\n\nObject\n\n\nclone\n  \n\nCloning in Java uses the .clone() method. The class must implement the Cloneable interface.\nFor the clone method, you must throw the exception that corresponds to the inferface.\n\n\nExample\n    \n\n\nclass Test implements Cloneable{\n    public static void main(String[] args){\n\n    }\n\n    protected Object clone() throws CloneNotSupportedException{\n    }\n}  \n\n\n\n\nShallow Cloning v. Deep Cloning\n\n\nShadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object.\nDeep cloning copies all the separate field and creates new references for the new object so all it's contents are copies to a new object.\n\n\nShallow Clone Example\n    \n\n\nclass Test implements Cloneable\n{\n    public Object clone() throws CloneNotSupportedException{\n        return super.clone();\n    }\n}\n\n\n\n\nDeep Clone Example\n    \n\n\nclass Test implements Cloneable\n{\n    ArrayList c = new ArrayList\n();\n\n    public Object clone() throws CloneNotSupportedException\n    {\n        Test t = (Test)super.clone();\n\n        t.c = new ArrayList\n();\n\n        // Create a new object for the field and assign it to shallow copy obtained to make it a deep copy\n        return t;\n    }\n}\n\n\n\n\ntoString\n  \n\n\nIn an object, the toString() method returns the string representation of the object.\n\n\nclass Test implements Cloneable{\n    private int a;\n    private int b;\n    //Overriding the toString() method\n    public String toString(){\n        return \nA: \n + a + \nB: \n + b;\n    }\n}\n\n\n\n\nInteger and Double\n\n\nInteger is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects.\n\n\n Autoboxing \n is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and \n unboxing \n is when the Java complier converts the wrapper class to the primitive type.\n\n\nConverting Between int and Integer\n\n\n\n\nint -\n Integer : Integer newInteger = new Integer(i);  \n\n\nInteger -\n int : Integer.valueOf(i)\n\n\n\n\nConverting Between Double and double\n\n\n\n\ndouble -\n Double : Double newDouble = new Double(d);\n\n\nDouble -\n double: double -\n Double : d.doubleValue()  \n\n\n\n\nExample\n     \n\n\nArrayList\nInteger\n numberList = new ArrayList\nInteger\n;\nnumberList.add(22); //This is compiled as numberList.add(new Integer(22));\n\n\n\n\nString\n\n\nThe String class\n\n\nMath\n\n\nStatic Methods\n\n\n\n\nabs(a): This returns the absolute value of the number \"a\"\n\n\nsqrt(a): This returns the square root of the number \"a\"\n\n\npow(a,b): This returns a\nb\n\n\nrandom(): This returns a number (0,1] (excluding 0 to including 1)\n\n\nmin(a,b): This returns the minimum between a and b\n\n\nmax(a,b): This returns the maximum between a and b\n\n\n\n\nVariables\n\n\n\n\nMath.PI: Represents \u03c0\n\n\nMath.E: Represents e\n\n\n\n\nHow to call the methods\n\n\nThe methods must be called using the dot notation and \"Math\" as the prefix.\n\n\n\n\nExample\n     \n\n\ndouble radius = 22;\ndouble areaOfCircle = 2*Math.PI*radius;\n\ndouble x = Math.min(22, 32); //This should assign 22 to the variable x\ndouble y = Math.max(22, 32); //This should assign 32 to the variable y\n\n\n\n\nList\nE\n and ArrayList\nE\n\n\nList\nE\n is an interface and java.util.ArrayList\nE\n implements List\nE\n. An ArrayList stores the elements within an \n array\n.\n\n\n\nBecause ArrayList\nE\n implements List\nE\n, an ArrayList can be declared in two ways with the type of object between \n and \n:\n\n\nArrayList\nInteger\n ints = new ArrayList\nInteger\n();\n\n\n\n\nor  \n\n\nList\nInteger\n ints = new ArrayList\nInteger\n();\n\n\n\n\nMethods Used for List\nE\n and ArrayList\nE\n\n\n\n\nint size(): Returns the number of values in the list\n\n\nboolean add(Object x): Adds Object x to the end of the list and returns true\n\n\nObject get(int index): Returns the object in the list at index\n\n\nObject set(int index, Object x): Sets the value at index to Object x and returns the old value at index\n\n\nObject remove(int index): Removes the value at index, shifts every element behind index towards the front of the list by 1 and returns the old value that was stored in index\n\n\nvoid add(int index, Object x): Adds Object x at index and shifts every element behind index towards the end of the list by 1\n\n\nboolean contains(Object x): Returns true if one of the elements in the List is equal to x\n\n\nint indexOf(Object x): Returns the index of the \n first \n occurence of x in the List and -1 if x never appears in the List\n\n\nboolean remove(Object x): If the List contains x, removes the \n first \n occurence and removes true, else returns false\n\n\n\n\n Note \n:\n\n\n add\n and \n remove \n changes the size of the ArrayList.\n\n\nExample\n     \n\n\nArrayList\nString\n newList = new ArrayList\nString\n();\nnewList.add(\nHello\n);\nnewList.add(\nHiThere\n);\n\nfor(String word: list)\n    System.out.println(word + \n \n);\n//Prints out Hello HiThere\n\nSystem.out.println(newList.get(0)); //Prints out Hello\nnewList.add(0, \nHi\n);\nSystem.out.println(newList.size()); //Prints out 3\n\nfor(String word: list)\n    System.out.println(word + \n \n);\n//Prints out Hi Hello HiThere\n\n\n\n\nCollection \nE\n, Collections and Arrays\n\n\nCollection \nE\n\n\nThe Collection interface is typically used to move and manipulate groups of object with maximum generality.\n\n\nMethods Used in Collection \nE\n\n\n\n\nboolean add(Element e): Makes Element e an element in the collection\n\n\nvoid clear(): Removes all elements in the collection\n\n\nboolean contains(Object o): Returns true is the Collection contains o\n\n\nboolean isEmpty(): Returns true is there are no elements in the collection\n\n\nboolean remove(Object o): Removes an instance of the element if it is present in the collection\n\n\nint size(): Returns the number of elements in the collection.\n\n\n\n\nMore information about Collection \nE\n Here\n\n\nCollections\n\n\nThis class consists of methods used to manipulate a Collection.\n\n\nMethods Used in Collections\n\n\n\n\nstatic void reverse: Reverses the order or elements in a specified list\n\n\nstatic void shuffle: Randomly orders the specified list using the default source of randomness  \n\n\n\n\nMore information about Collections Here\n\n\nArrays\n\n\nThis class consists of methods to manipulate arrays.\n\n\nMethods Used in Arrays\n\n\n\n\nsort(byte[] a): Orders the Array a based on acsending numerical value.   \n\n\n\n\nThere are many different methods to sort in Arrays  \n\n\n\n\nMore Information about Arrays Here", 
+            "title": "Standard Java Library"
+        }, 
+        {
+            "location": "/core/stdlib/#stdio", 
+            "text": "", 
+            "title": "Stdio"
+        }, 
+        {
+            "location": "/core/stdlib/#importing-packages", 
+            "text": "To import every class within a package in Java, you would write the following in your code before the class declaration:  // the general formula is:\nimport packageName.*;\n// example:\nimport java.util.*;  If you want to import only one class from a library, you replace the asterisk in the last example with the class name:  // general formula:\nimport packageName.className;\n// example:\nimport java.util.ArrayList;", 
+            "title": "Importing Packages"
+        }, 
+        {
+            "location": "/core/stdlib/#object", 
+            "text": "clone    \nCloning in Java uses the .clone() method. The class must implement the Cloneable interface.\nFor the clone method, you must throw the exception that corresponds to the inferface.  Example       class Test implements Cloneable{\n    public static void main(String[] args){\n\n    }\n\n    protected Object clone() throws CloneNotSupportedException{\n    }\n}", 
+            "title": "Object"
+        }, 
+        {
+            "location": "/core/stdlib/#shallow-cloning-v-deep-cloning", 
+            "text": "Shadow cloning creates an object that has the same references (if the field isn't a primitive type) as the original object.\nDeep cloning copies all the separate field and creates new references for the new object so all it's contents are copies to a new object.  Shallow Clone Example       class Test implements Cloneable\n{\n    public Object clone() throws CloneNotSupportedException{\n        return super.clone();\n    }\n}  Deep Clone Example       class Test implements Cloneable\n{\n    ArrayList c = new ArrayList ();\n\n    public Object clone() throws CloneNotSupportedException\n    {\n        Test t = (Test)super.clone();\n\n        t.c = new ArrayList ();\n\n        // Create a new object for the field and assign it to shallow copy obtained to make it a deep copy\n        return t;\n    }\n}  toString     In an object, the toString() method returns the string representation of the object.  class Test implements Cloneable{\n    private int a;\n    private int b;\n    //Overriding the toString() method\n    public String toString(){\n        return  A:   + a +  B:   + b;\n    }\n}", 
+            "title": "Shallow Cloning v. Deep Cloning"
+        }, 
+        {
+            "location": "/core/stdlib/#integer-and-double", 
+            "text": "Integer is the wrapper class for an integer(int) and Double is the wrapper class for a double, and these classes represents the numbers as objects.   Autoboxing   is the automatic conversion that the Java complier makes from the primitive type to the wrapper class and   unboxing   is when the Java complier converts the wrapper class to the primitive type.", 
+            "title": "Integer and Double"
+        }, 
+        {
+            "location": "/core/stdlib/#converting-between-int-and-integer", 
+            "text": "int -  Integer : Integer newInteger = new Integer(i);    Integer -  int : Integer.valueOf(i)", 
+            "title": "Converting Between int and Integer"
+        }, 
+        {
+            "location": "/core/stdlib/#converting-between-double-and-double", 
+            "text": "double -  Double : Double newDouble = new Double(d);  Double -  double: double -  Double : d.doubleValue()     Example        ArrayList Integer  numberList = new ArrayList Integer ;\nnumberList.add(22); //This is compiled as numberList.add(new Integer(22));", 
+            "title": "Converting Between Double and double"
+        }, 
+        {
+            "location": "/core/stdlib/#string", 
+            "text": "The String class", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/stdlib/#math", 
+            "text": "", 
+            "title": "Math"
+        }, 
+        {
+            "location": "/core/stdlib/#static-methods", 
+            "text": "abs(a): This returns the absolute value of the number \"a\"  sqrt(a): This returns the square root of the number \"a\"  pow(a,b): This returns a b  random(): This returns a number (0,1] (excluding 0 to including 1)  min(a,b): This returns the minimum between a and b  max(a,b): This returns the maximum between a and b", 
+            "title": "Static Methods"
+        }, 
+        {
+            "location": "/core/stdlib/#variables", 
+            "text": "Math.PI: Represents \u03c0  Math.E: Represents e", 
+            "title": "Variables"
+        }, 
+        {
+            "location": "/core/stdlib/#how-to-call-the-methods", 
+            "text": "The methods must be called using the dot notation and \"Math\" as the prefix.   Example        double radius = 22;\ndouble areaOfCircle = 2*Math.PI*radius;\n\ndouble x = Math.min(22, 32); //This should assign 22 to the variable x\ndouble y = Math.max(22, 32); //This should assign 32 to the variable y", 
+            "title": "How to call the methods"
+        }, 
+        {
+            "location": "/core/stdlib/#liste-and-arrayliste", 
+            "text": "List E  is an interface and java.util.ArrayList E  implements List E . An ArrayList stores the elements within an   array .  \nBecause ArrayList E  implements List E , an ArrayList can be declared in two ways with the type of object between   and  :  ArrayList Integer  ints = new ArrayList Integer ();  or    List Integer  ints = new ArrayList Integer ();", 
+            "title": "List&lt;E&gt; and ArrayList&lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-for-liste-and-arrayliste", 
+            "text": "int size(): Returns the number of values in the list  boolean add(Object x): Adds Object x to the end of the list and returns true  Object get(int index): Returns the object in the list at index  Object set(int index, Object x): Sets the value at index to Object x and returns the old value at index  Object remove(int index): Removes the value at index, shifts every element behind index towards the front of the list by 1 and returns the old value that was stored in index  void add(int index, Object x): Adds Object x at index and shifts every element behind index towards the end of the list by 1  boolean contains(Object x): Returns true if one of the elements in the List is equal to x  int indexOf(Object x): Returns the index of the   first   occurence of x in the List and -1 if x never appears in the List  boolean remove(Object x): If the List contains x, removes the   first   occurence and removes true, else returns false    Note  :   add  and   remove   changes the size of the ArrayList.  Example        ArrayList String  newList = new ArrayList String ();\nnewList.add( Hello );\nnewList.add( HiThere );\n\nfor(String word: list)\n    System.out.println(word +    );\n//Prints out Hello HiThere\n\nSystem.out.println(newList.get(0)); //Prints out Hello\nnewList.add(0,  Hi );\nSystem.out.println(newList.size()); //Prints out 3\n\nfor(String word: list)\n    System.out.println(word +    );\n//Prints out Hi Hello HiThere", 
+            "title": "Methods Used for List&lt;E&gt; and ArrayList&lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#collection-e-collections-and-arrays", 
+            "text": "", 
+            "title": "Collection &lt;E&gt;, Collections and Arrays"
+        }, 
+        {
+            "location": "/core/stdlib/#collection-e", 
+            "text": "The Collection interface is typically used to move and manipulate groups of object with maximum generality.", 
+            "title": "Collection &lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-in-collection-e", 
+            "text": "boolean add(Element e): Makes Element e an element in the collection  void clear(): Removes all elements in the collection  boolean contains(Object o): Returns true is the Collection contains o  boolean isEmpty(): Returns true is there are no elements in the collection  boolean remove(Object o): Removes an instance of the element if it is present in the collection  int size(): Returns the number of elements in the collection.   More information about Collection  E  Here", 
+            "title": "Methods Used in Collection &lt;E&gt;"
+        }, 
+        {
+            "location": "/core/stdlib/#collections", 
+            "text": "This class consists of methods used to manipulate a Collection.", 
+            "title": "Collections"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-in-collections", 
+            "text": "static void reverse: Reverses the order or elements in a specified list  static void shuffle: Randomly orders the specified list using the default source of randomness     More information about Collections Here", 
+            "title": "Methods Used in Collections"
+        }, 
+        {
+            "location": "/core/stdlib/#arrays", 
+            "text": "This class consists of methods to manipulate arrays.", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/core/stdlib/#methods-used-in-arrays", 
+            "text": "sort(byte[] a): Orders the Array a based on acsending numerical value.      There are many different methods to sort in Arrays     More Information about Arrays Here", 
+            "title": "Methods Used in Arrays"
+        }
+    ]
+}
