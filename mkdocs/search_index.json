@@ -272,7 +272,7 @@
         }, 
         {
             "location": "/core/exceptions/", 
-            "text": "Exceptions\n\n\nAn exception is defined as \"is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions\". This means that something that shouldn't have happened in your program happened and the program has been terminated.\n\n\nTypes of Exceptions\n\n\nArithmeticException\n\n\nThis exception is thrown when the math attempting to be calculated is not a valid arithmetic calculation, ie. if you try to divide a number by 0.\n\n\nNullPointerException\n\n\nThis exception is thrown when a program tries to call an object but the object is null, ie. if an object is attempted to be modified, but the object is null.\n\n\nIndexOutOfBoundsException\n\n\nAn index that is called in any object that is not in bounds or out of range. The index is either less than zero or greater than size - 1.\n\n\nArrayIndexOutOfBoundsException\n\n\nThe ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBoundsException. It is thrown specificially when an index that is referenced from an array is not in bounds or out of range. The index is either less than zero or greater than size - 1.\n\n\nIllegalArgumentException\n\n\nThis exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.  \n\n\nNoSuchElementException\n\n\nIn Java Mini, you will get this exception whenever you are trying to read input, but did not put the correct input in the input box at the bottom of the output.", 
+            "text": "Exceptions\n\n\nAn exception is defined as \"is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions\". This means that something that shouldn't have happened in your program happened and the program has been terminated.\n\n\nTypes of Exceptions\n\n\nArithmeticException\n\n\nThis exception is thrown when the math attempting to be calculated is not a valid arithmetic calculation, ie. if you try to divide a number by 0.\n\n\nNullPointerException\n\n\nThis exception is thrown when a program tries to call an object but the object is null, ie. if an object is attempted to be modified, but the object is null.\n\n\nIndexOutOfBoundsException\n\n\nAn index that is called in any object that is not in bounds or out of range. The index is either less than zero or greater than size - 1.\n\n\nArrayIndexOutOfBoundsException\n\n\nThe ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBoundsException. It is thrown specificially when an index that is referenced from an array is not in bounds or out of range. The index is either less than zero or greater than size - 1.\n\n\nIllegalArgumentException\n\n\nThis exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.", 
             "title": "Exceptions"
         }, 
         {
@@ -309,11 +309,6 @@
             "location": "/core/exceptions/#illegalargumentexception", 
             "text": "This exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.", 
             "title": "IllegalArgumentException"
-        }, 
-        {
-            "location": "/core/exceptions/#nosuchelementexception", 
-            "text": "In Java Mini, you will get this exception whenever you are trying to read input, but did not put the correct input in the input box at the bottom of the output.", 
-            "title": "NoSuchElementException"
         }, 
         {
             "location": "/core/stdlib/", 
