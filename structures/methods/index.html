@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Comments - Java Editor Documentation</title>
+  <title>Methods - Java Editor Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Comments";
-    var mkdocs_page_input_path = "core\\comments.md";
+    var mkdocs_page_name = "Methods";
+    var mkdocs_page_input_path = "structures\\methods.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -57,55 +57,41 @@
 		
     <span class="caption-text">Core</span>
     <ul class="subnav">
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Comments</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#comments">Comments</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#different-type-of-comments">Different Type of Comments</a></li>
-        
-            <li><a class="toctree-l4" href="#javadoc">Javadoc</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../../core/comments/">Comments</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../number/">Number</a>
+    <a class="" href="../../core/number/">Number</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../operators/">Operators</a>
+    <a class="" href="../../core/operators/">Operators</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../boolean/">Booleans & Comparison Operators</a>
+    <a class="" href="../../core/boolean/">Booleans & Comparison Operators</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../string/">String</a>
+    <a class="" href="../../core/string/">String</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../arrays/">Arrays</a>
+    <a class="" href="../../core/arrays/">Arrays</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../stdio/">Standard Input/Output</a>
+    <a class="" href="../../core/stdio/">Standard Input/Output</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../exceptions/">Exceptions</a>
+    <a class="" href="../../core/exceptions/">Exceptions</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../stdlib/">Standard Java Library</a>
+    <a class="" href="../../core/stdlib/">Standard Java Library</a>
                 </li>
     </ul>
 	    </li>
@@ -131,12 +117,8 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Core &raquo;</li>
-        
-      
     
-    <li>Comments</li>
+    <li>Methods</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -146,60 +128,20 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="comments">Comments</h1>
-<p>All types of comments are ignored by the Java Compiler. Comments are used for the user's own clarity as well as other user's clarity if there is collaboration on various projects.</p>
-<h3 id="different-type-of-comments">Different Type of Comments</h3>
-<ul>
-<li><code>// text</code> : This is a comment where the compiler ignores everything from the "//" to the end of the line</li>
-<li><code>/* text */</code> : This is a comment where the compiler ignores everything enclosed by the "/*" and "*/". These type of quotes can span multiple lines.</li>
-<li><code>/** text */</code> : This notation is specifically for Javadoc. This is a comment where the compiler ignores everything enclosed by the "<strong>/**</strong>" and "<strong>*/</strong>". These type of documentation usually spans multiple lines.</li>
-</ul>
-<p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code class="java">System.out.println(&quot;Hello&quot;); //Prints &quot;Hello&quot; and the information after the // won't throw an error
-
-int x = 14;
-/*
-    x = 15; //This does not set a new value for x
-    System.out.println(x); //This is not printed
-*/
-
-System.out.println(x); //This would print out 14
-
-/* You can also do this - it does not have to be a multi-lined comment.*/
-</code></pre>
-
-<h3 id="javadoc">Javadoc</h3>
-<p>Javadoc is used by many programmers as a way to easily identify different parts of a function. It usually includes a short description about the function, @param and @return values. All of this information would be enclosed in "<strong>/**</strong>" and "<strong>*/</strong>" notation.  </p>
-<h6 id="javadoc-documentation">Javadoc Documentation</h6>
-<ul>
-<li><code>@param</code>:  "param" is short for parameter. This would denote the <em>types</em> of parameters that are used in a particular function along with a short description of the parameter.  </li>
-<li><code>@return</code>: This gives a description of what is being returned from the function.</li>
-</ul>
-<p><span style="color:blue"><strong>Example</strong></span>    </p>
-<pre><code class="java">/**
-*   This function multiplies two integers.
-*   @param a the first integer that is being multiplied
-*   @param b the second integer that is being multiplied
-*   @return the product of multiplying a and b together
-*
-*/
-public static int multiply(int a, int b){
-    return a*b;
-}
-</code></pre>
+                <h2 id="to-do">TO DO</h2>
+<p>In this file, go over:
+  * method signatures
+    * visibility: public, private
+    * static, non-static
+    * parameter passing
+    * return
+  * overloading
+  * overriding
+  * recursion</p>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../number/" class="btn btn-neutral float-right" title="Number">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -223,10 +165,6 @@ public static int multiply(int a, int b){
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../number/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
