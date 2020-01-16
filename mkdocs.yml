@@ -1,4 +1,4 @@
-site_name: JavaMini Documentation
+site_name: Java Editor Documentation
 theme: readthedocs
 docs_dir: 'doc'
 pages:

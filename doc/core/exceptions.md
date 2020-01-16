@@ -16,6 +16,3 @@ The ArrayIndexOutOfBoundsException is a specific instance of the IndexOutOfBound
 
 ###IllegalArgumentException  
 This exception is thrown to show that the argument, or parameter, passed into a method is inapproriate or invalid.  
-
-###NoSuchElementException
-In Java Mini, you will get this exception whenever you are trying to read input, but did not put the correct input in the input box at the bottom of the output.
