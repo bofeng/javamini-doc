@@ -80,4 +80,5 @@ System.out.println("How old are you?"); //A print statement to prompt the user
 int age = sc.nextInt(); //Takes in the integer from the user
 System.out.println("Hello " + name + ", you are " + age + " years old");
 ```
+<br>
 ![Before](images/Input.gif)
